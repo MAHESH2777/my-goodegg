@@ -1,143 +1,101 @@
-.onesec {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    overflow: hidden;
-  }
-  .slide-image {
-    position: absolute;
-    top: -200px;
-    left: -200px;
-    width: calc(100% + 400px);
-    height: calc(100% + 400px);
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  .slide-title {
-    font-size: 4rem;
-    line-height: 1;
-    max-width: 50%;
-    white-space: normal;
-    word-break: break-word;
-    color: #FFF;
-    z-index: 100;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-  @media (min-width: 45em) {
-    .slide-title {
-      font-size: 7vw;
-      max-width: none;
-    }
-  }
-  .slide-title span {
-    white-space: pre;
-    display: inline-block;
-    opacity: 0;
-  }
-  
-  .slideshow {
-    position: relative;
-  }
-  .slideshow-pagination {
-    position: absolute;
-    bottom: 5rem;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transition: .3s opacity;
-    z-index: 10;
-  }
-  .slideshow-pagination-item {
-    display: flex;
-    align-items: center;
-  }
-  .slideshow-pagination-item .pagination-number {
-    opacity: 0.5;
-  }
-  .slideshow-pagination-item:hover, .slideshow-pagination-item:focus {
-    cursor: pointer;
-  }
-  .slideshow-pagination-item:last-of-type .pagination-separator {
-    width: 0;
-  }
-  .slideshow-pagination-item.active .pagination-number {
-    opacity: 1;
-  }
-  .slideshow-pagination-item.active .pagination-separator {
-    width: 10vw;
-  }
-  .slideshow-navigation-button {
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 5rem;
-    z-index: 1000;
-    transition: all .3s ease;
-    color: #FFF;
-  }
-  .slideshow-navigation-button:hover, .slideshow-navigation-button:focus {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .slideshow-navigation-button.prev {
-    left: 0;
-  }
-  .slideshow-navigation-button.next {
-    right: 0;
-  }
-  
-  .pagination-number {
-    font-size: 1.8rem;
-    color: #FFF;
-    font-family: 'Oswald', sans-serif;
-    padding: 0 0.5rem;
-  }
-  
-  .pagination-separator {
-    display: none;
-    position: relative;
-    width: 40px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.25);
-    transition: all .3s ease;
-  }
-  @media (min-width: 45em) {
-    .pagination-separator {
-      display: block;
-    }
-  }
-  .pagination-separator-loader {
-    position: absolute;
-  
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
-    transform-origin: 0 0;
-  }
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption {
+  bottom: 270px;
+}
 
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background: #fff;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-link {
+  padding: .2rem 1rem;
+}
+
+.nav-link.active,.nav-link:focus{
+  color: #fff;
+}
+.navbar.navbar-light .breadcrumb .nav-item .nav-link, .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #fff !important;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+/* ignore the code below */
+
+
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+}
+  
 
 /* wave animation style start here */
 /* wave one anumation start here */
@@ -174,7 +132,7 @@ div.waves{
     position: absolute;
     width: 100%;
     bottom: 0;
-    top: -72px;
+    top: -110px;
     left: 0;
     animation-name: move-left;
     animation-duration: 4s;
@@ -189,7 +147,8 @@ div.waves{
   
 
   .onerow{
-    background-color: #11cbd7;
+    background-color: #0dbfc9;
+    padding: 100px 0px;
  }
 /* wave2 animations start here */
 
@@ -223,15 +182,13 @@ div.waves{
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 110px;
+  top: 775px;
   left: 0;
   animation-name: move-left;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-
 
 /* wave3 animation start here */
 .threerow{
@@ -249,7 +206,7 @@ z-index: 99;
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 291px;
+  top: 957px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
@@ -268,20 +225,17 @@ bottom: 0;
 position: absolute;
 z-index: 99;
 }
-
 .seg4 {
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 472px;
+  top: 1139px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-direction: reverse;
 }
-
-
 /* wave five animation start here */
 .fiverow{
   background-color: #9feed1;
@@ -298,7 +252,7 @@ z-index: 99;
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 655px;
+  top: 1321px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
