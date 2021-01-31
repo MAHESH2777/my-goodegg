@@ -1,0 +1,307 @@
+.onesec {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .slide-image {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: calc(100% + 400px);
+    height: calc(100% + 400px);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .slide-title {
+    font-size: 4rem;
+    line-height: 1;
+    max-width: 50%;
+    white-space: normal;
+    word-break: break-word;
+    color: #FFF;
+    z-index: 100;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  @media (min-width: 45em) {
+    .slide-title {
+      font-size: 7vw;
+      max-width: none;
+    }
+  }
+  .slide-title span {
+    white-space: pre;
+    display: inline-block;
+    opacity: 0;
+  }
+  
+  .slideshow {
+    position: relative;
+  }
+  .slideshow-pagination {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .3s opacity;
+    z-index: 10;
+  }
+  .slideshow-pagination-item {
+    display: flex;
+    align-items: center;
+  }
+  .slideshow-pagination-item .pagination-number {
+    opacity: 0.5;
+  }
+  .slideshow-pagination-item:hover, .slideshow-pagination-item:focus {
+    cursor: pointer;
+  }
+  .slideshow-pagination-item:last-of-type .pagination-separator {
+    width: 0;
+  }
+  .slideshow-pagination-item.active .pagination-number {
+    opacity: 1;
+  }
+  .slideshow-pagination-item.active .pagination-separator {
+    width: 10vw;
+  }
+  .slideshow-navigation-button {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5rem;
+    z-index: 1000;
+    transition: all .3s ease;
+    color: #FFF;
+  }
+  .slideshow-navigation-button:hover, .slideshow-navigation-button:focus {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .slideshow-navigation-button.prev {
+    left: 0;
+  }
+  .slideshow-navigation-button.next {
+    right: 0;
+  }
+  
+  .pagination-number {
+    font-size: 1.8rem;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0.5rem;
+  }
+  
+  .pagination-separator {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    transition: all .3s ease;
+  }
+  @media (min-width: 45em) {
+    .pagination-separator {
+      display: block;
+    }
+  }
+  .pagination-separator-loader {
+    position: absolute;
+  
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    transform-origin: 0 0;
+  }
+
+
+/* wave animation style start here */
+/* wave one anumation start here */
+div.waves{
+    width: 100%;
+    bottom: 0;
+    /*height: 100%;*/
+    position: absolute;
+    z-index: 99;
+  }
+
+  .tutorial-link{
+    font-family: sans-serif;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  .tutorial-link h2{
+    background: linear-gradient(90deg, #00b4db 0%, #224488 50%, #0083b0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+  .tutorial-link a{
+    text-decoration: none;
+    background: linear-gradient(90deg, #00b4db 0%, #224488 50%, #0083b0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+  
+  svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: -72px;
+    left: 0;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+  .spacer{
+    height: 100px;
+    width: 100%;
+  }
+  
+
+  .onerow{
+    background-color: #11cbd7;
+ }
+/* wave2 animations start here */
+
+
+ .tworow{
+    background-color: #9feed1;
+ }
+ div.waves2{
+  width: 100%;
+  bottom: 0;
+  /*height: 100%;*/
+  position: absolute;
+  z-index: 99;
+}
+@keyframes example {
+  0%   {
+    left:0px;
+    top:0px;}
+  
+  50%  {
+    left:-2000px;
+    top:200px;}
+  
+  100% {
+    left:0px; 
+    top:0px;}
+}
+
+
+.seg2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 110px;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+/* wave3 animation start here */
+.threerow{
+  background-color: #fff6a2;
+}
+div.waves3{
+width: 100%;
+bottom: 0;
+/*height: 100%;*/
+position: absolute;
+z-index: 99;
+}
+
+.seg3 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 291px;
+  left: 0;
+  animation-name: move-right;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+/* wave four animation start here */
+.fourrow{
+  background-color: #fed972;
+}
+div.waves4{
+width: 100%;
+bottom: 0;
+/*height: 100%;*/
+position: absolute;
+z-index: 99;
+}
+
+.seg4 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 472px;
+  left: 0;
+  animation-name: move-right;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+
+/* wave five animation start here */
+.fiverow{
+  background-color: #9feed1;
+}
+div.waves5{
+width: 100%;
+bottom: 0;
+/*height: 100%;*/
+position: absolute;
+z-index: 99;
+}
+
+.seg5 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 655px;
+  left: 0;
+  animation-name: move-right;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
