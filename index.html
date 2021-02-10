@@ -11,11 +11,14 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -24,83 +27,302 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> 
 
+
+<!-- background video links -->
+	
+<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+
+	<link rel="stylesheet" href="assets/css/theme.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/themes/creative.css" />
+
+<script async src="assets/vendors/modernizr.min.js"></script>
+
+<!-- egg section links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js">
+
+<style>
+ 
+ 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  
+.slider-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .slider-wrapper:hover { cursor: none; }
+  
+  .comparison-slider {
+  
+  }
+  
+  .before-wrapper {
+    display: block;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    /* position: relative;
+    background: url("http://emphasizestudio.nl/img/dystopia.jpg") no-repeat center center #111111; */
+    background-size: 100% auto;
+  }
+  
+  .before-wrapper:before {
+    display: block;
+    content: '';
+    width: 100%; 
+    height:100%;
+  
+  }
+  @media (min-width: 992px){
+.ld-masked-image {
+    top: 0px;
+    right: -65vw;
+    left: 5vw;
+}
+  }
+  
+  .after-wrapper, .after-image {
+  
+  }
+  
+  .after-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .after-image {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: relative;
+  -webkit-transform: translateX(-50%);
+
+    transform: translateX(-50%); 
+  
+    background: url("http://emphasizestudio.nl/img/utopia.jpg") no-repeat center center #efefef;
+    background-size: 100% auto;
+  
+  }
+  
+  /* .past, .future{
+    padding: 40px;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-weight:800;
+  } */
+  
+  .past {
+   position: absolute;
+   display: block;
+   bottom: 0px;
+   left:0px;
+  }
+  
+  .you {
+    width: 200px;
+    height: 200px;
+   position: absolute;
+   display: block;
+   right:0px;
+   left: 0px;
+   z-index:999;
+   background: red;
+  }
+  
+  .future {
+   position: absolute;
+   display: block;
+   bottom: 0px;
+   right:0px;
+  }
+  
+  .after-wrapper {
+    overflow: initial;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+
+
+
+  figure.clip-svg.loaded {
+	clip-path: url(#masked-image-1);
+    background-blend-mode: color;
+    background-image: url('file:///D:/Prodigit-work/task/assets/demo/misc/masked-img-1.jpg');
+    background-color: aliceblue;
+}
+
+
+</style>
 </head>
 
 <body>
 
   <!-- Start your project here-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+  <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="past">The past</div>
+    <div class="future">The future</div> -->
+          <div class="lqd-vbg-wrap">
+        <div class="lqd-vbg-inner">
+          <span class="lqd-vbg-loader"></span>
+          <div class="lqd-vbg-video" data-video-bg="true" data-youtube-options='{"videoURL":"https://youtu.be/0BNNjZpMKRI"}'> </div>
+        </div><!-- /.lqd-vbg-inner -->
+      </div><!-- /.lqd-vbg-wrap -->
+
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <!-- <h1 class="bannertxt">loraom text</h1> -->
+      <img class="bannertxt0" src="img/text/CRACK OPEN BLACK.png" alt="">
+      <img class="bannertxt" src="img/text/GOOD.png" alt="">
+      <img class="bannertxt1" src="img/text/EGGS.png" alt="">
+
+      <div class="row before-wrapper d-flex flex-wrap align-items-center">
+        
+          <div class="lqd-column col-lg-7 col-md-6 hidden-xs hidden-sm hidden-md after-wrapper">
+          
+          
+            <div class="ld-masked-image " data-dynamic-shape="true" >
+              <svg version="1.1" class="scene " width="0" height="0" preserveAspectRatio="none" viewBox="0 0 1440 800">
+                <defs>
+                  <clipPath id="masked-image-1">
+                    <path
+                      fill="black"
+                      d="M131,40 C84.135,83.534 96.819,148.446 63.283,217.394 C31.508,282.723 -3.621,324.812 1.461,394.323 C3.451,421.533 12.117,449.828 29.796,480.002 C87.412,578.34 -15.301,663.448 94.611,833.387 C156.302,928.77 316.559,918.015 435.971,936.052 C572.741,956.711 653.384,1003.601 753.566,971.715 C877.689,932.209 924.99262,809.932822 972.63862,707.700822 C1063.84662,512.000822 1038.71071,197.732895 884.476705,67.2268952 C788.919705,-13.6291048 714.704,70.008 529,43 C339.693,15.468 212.609,-35.808 131,40 Z"
+                      pathdata:id="
+                      M175.270836,26.7977911 C128.405836,70.3317911 129.938279,144.739124 96.4022789,213.687124 C64.6272789,279.016124 41.242383,286.071679 46.324383,355.582679 C48.314383,382.792679 79.5246278,459.251586 88.7738696,492.334164 C116.497714,591.496483 -75.3047466,680.552915 34.6072534,850.491915 C96.2982534,945.874915 281.559,906.015 400.971,924.052 C537.741,944.711 678.161685,902.348368 778.343685,870.462368 C902.466685,830.956368 927.354,806.232 975,704 C1066.208,508.3 1058.68971,185.848951 904.455709,55.3429506 C808.898709,-25.5130494 786.027661,117.60054 600.323661,90.5925401 C411.016661,63.0605401 256.879836,-49.0102089 175.270836,26.7977911 Z;
+                      M200.391256,6 C138.06059,22.7990703 77.9622177,42.6445401 44.4262177,111.59254 C12.6512177,176.92154 -4.1051307,212.01786 0.976869296,281.52886 C2.9668693,308.73886 99.0297526,534.545109 108.278994,567.627688 C136.002839,666.790006 -29.1381304,721.523368 80.7738696,891.462368 C142.46487,986.845368 331.636556,840.153183 451.048556,858.190183 C587.818556,878.849183 705.371102,948.496676 805.553102,916.610676 C929.676102,877.104676 941.497784,689.3436 989.143784,587.1116 C1080.35178,391.4116 1050.68971,206.848951 896.455709,76.3429506 C800.898709,-4.5130494 778.027661,138.60054 592.323661,111.59254 C403.016661,84.0605401 312.765712,-24.2866392 200.391256,6 Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <figure class="clip-svg " data-responsive-bg="true" style="clip-path: url(#masked-image-1); -webkit-clip-path: url(#masked-image-1);">
+                <img src="./assets/demo/misc/masked-img-1.jpg" class="after-image" alt="Image">
+              
+              </figure>
+                            
+            </div><!-- /ld-masked-image -->
   
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/car1.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Slider One Item</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/car2.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Slider One Item</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/GE1.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Slider One Item</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  
+          </div><!-- /.col-lg-7 col-md-6 -->
+     
+      <div class="lqd-column col-lg-5 lqd-column" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
+
+        <div class="ld-fancy-heading mask-text">
+          <h1
+            data-split-text="true"
+            data-custom-animations="true"
+            data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+            data-split-options='{"type":"lines"}'
+          >
+            <span class="ld-fh-txt"> </span>
+          </h1>
+        </div><!-- /.ld-fancy-heading -->
+
+        <div class="ld-fancy-heading mask-text mb-75">
+          <p
+            data-split-text="true"
+            data-custom-animations="true"
+            data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+            data-split-options='{"type":"lines"}'>
+            <span class="ld-fh-txt"> </span>
+          </p>
+        </div><!-- /.ld-fancy-heading -->
+        
+        <div class="row">
+
+          <div class="lqd-column col-sm-6 mb-3 mb-md-0">
+
+           
+          </div><!-- /.col-sm-6 -->
+
+          <div class="lqd-column col-sm-6">
+
+            <div class="ld-fancy-heading">
+              <p>
+                <span class="ld-fh-txt">
+                  <strong><span style="color: #fe688b"></span></strong>
+                  <br>
+                  <span style="color: #a7a9b8"></span>
+                </span>
+              </p>
+            </div>
+
+          </div><!-- /.col-sm-6 -->
+
+        </div><!-- /.row -->
+
+      </div><!-- /.col-lg-5 col-md-6 -->
+     </div>
+ 
+
+
+    
+      
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
 
   
   
-  
+  <section>
+    <div class="container-fluid burosec">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-lg-7 align-self-center">
+          <h1 class="btxt">BUREAU VERITAS CERTIFIED</h1>
+        </div>
+        <div class="col-lg-4">
+          <img src="img/Bureau Veritas symbol.png" width="220px" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
   
   
   <!--- ignore the code below-->
@@ -112,9 +334,9 @@
     <div class="waves">
       <svg width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#0dbfc9" />
-          <stop offset="50%" stop-color="#0dbfc9" />
-          <stop offset="100%" stop-color="#0dbfc9" />
+          <stop offset="0%" stop-color="#09b0b9" />
+          <stop offset="50%" stop-color="#09b0b9" />
+          <stop offset="100%" stop-color="#09b0b9" />
         </linearGradient>
         <path fill="url(#grad1)" d="
         M0 67
@@ -191,6 +413,15 @@
         
         <div class="col-lg-5">
           <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3">
+               <img src="img/icons/Vitamin A Char1.png" alt="">
+            </div>
+            <div class="col-sm-3">
+              <img src="img/icons/Vitamin A Char2.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="col-lg-1"></div>
       </div>
@@ -214,9 +445,9 @@
     <div class="waves2">
       <svg class="seg2" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#9feed1" />
-          <stop offset="50%" stop-color="#9feed1" />
-          <stop offset="100%" stop-color="#9feed1" />
+          <stop offset="0%" stop-color="#f6b3d0" />
+          <stop offset="50%" stop-color="#f6b3d0" />
+          <stop offset="100%" stop-color="#f6b3d0" />
         </linearGradient>
         <path fill="url(#grad2)" d="
         M0 67
@@ -276,7 +507,7 @@
     </div>
     <div class="container-fluid tworow">
      
-
+<div class="oneshp">
      
         <div class="row">
           <div class="col-lg-2"></div>
@@ -294,6 +525,7 @@
           
           <div class="col-lg-5">
             <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+            
           </div>
           <div class="col-lg-1"></div>
         </div>
@@ -310,16 +542,16 @@
           </div>
           <div class="col-lg-1"></div>
         </div>
-    
-
+      </div>
+    </div>
   </section>
   <section>
     <div class="waves3">
       <svg class="seg3" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#fff6a2" />
-          <stop offset="50%" stop-color="#fff6a2" />
-          <stop offset="100%" stop-color="#fff6a2" />
+          <stop offset="0%" stop-color="#071838" />
+          <stop offset="50%" stop-color="#071838" />
+          <stop offset="100%" stop-color="#071838" />
         </linearGradient>
         <path fill="url(#grad3)" d="
         M0 67
@@ -417,9 +649,9 @@
     <div class="waves3">
       <svg class="seg4" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#fed972" />
-          <stop offset="50%" stop-color="#fed972" />
-          <stop offset="100%" stop-color="#fed972" />
+          <stop offset="0%" stop-color="#9e0b0f" />
+          <stop offset="50%" stop-color="#9e0b0f" />
+          <stop offset="100%" stop-color="#9e0b0f" />
         </linearGradient>
         <path fill="url(#grad4)" d="
         M0 67
@@ -599,7 +831,45 @@
           <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
         </div>
       </div>
-   
+      <div class="tile" id="tile-1">
+   <!-- Tab panes -->
+   <div class="tab-content">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <img src="img/EGG.png" alt="">
+    </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <img src="img/EGG.png" alt="">
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
+  <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">Settings</div>
+  </div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <div class="slider"></div>
+           <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-id-card"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-map-signs"></i> Contact</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false"><i class="fas fa-cogs"></i> Settings</a>
+            </li>
+        </ul>
+        <br>
+
+      
+     
+      </div>
+      
+      
+      <!-- Info -->
+    
+    
       </div>
     </div>
   </section>
@@ -701,11 +971,16 @@
                   </div>
               </div>
           </div>
+         
       </div>
   </div>
+  
   </section>
+
   <section class="blog_section">
+
     <div class="container">
+   
         <div class="blog_content">
             <div class="owl-carousel owl-theme">
                 <div class="blog_item">
@@ -763,8 +1038,10 @@
         </div>
     </div>
 </section>
+<img src="img/curves/curve2.png" class="curve2" alt="">
 <section class="textsec">
   <div class="container">
+  
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-9">
@@ -776,6 +1053,8 @@
     </div>
   </div>
 </section>
+<img src="img/curves/curve3.png" class="curve3" alt="">
+
 <section class="searchsec">
   <div class="container text-center">
     <div class="row">
@@ -797,26 +1076,51 @@
   </div>
 </section>
 <section>
-  <div class="conrainer-fluid">
+  <img src="img/curves/curve4.png" alt="">
+  <div class="conrainer-fluid sixsec">
     <div class="row">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-3"></div>
-      <div class="col-lg-3">
-     
+      <div class="col-lg-5">
+<img src="img/our recipes bg.png" width="400px" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-3 align-self-center">
+        <h1 class="bmtxt">TITLE TEXT</h1>
+        <p class="bmptxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat voluptatum id voluptas velit assumenda. Porro, laudantium similique expedita magnam mollitia culpa, ex, officiis aspernatur illo harum vitae nisi libero?</p>
+      </div>
+      <div class="col-lg-4 align-self-center">
+     <img src="img/GE11.png" alt="">
       </div>
     </div>
   </div>
 </section>
+<section>
+  <div class="container-fluid lastsec">
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="img/Signup.png" class="signimg" alt="">
+      </div>
+      <div class="col-lg-4">
+    <h2 class="ltxt"><span>sign up</span> loram text start here</h2>
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-arrow-right"></i>
+     </button>
+   </div>
 
+      </div>
+      <div class="col-lg-6"></div>
+    </div>
+  </div>
+</section>
 
-  <footer class="bg-primary text-white text-center text-lg-start">
+  <footer class="  text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Footer Content</h5>
+          <h5 class="text-uppercase bhtxt">Footer Content</h5>
   
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
@@ -828,20 +1132,20 @@
   
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase bhtxt">Links</h5>
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="#!" class="">Link 1</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="">Link 2</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="">Link 3</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="">Link 4</a>
             </li>
           </ul>
         </div>
@@ -849,20 +1153,20 @@
   
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-0">Links</h5>
+          <h5 class="text-uppercase bhtxt mb-0">Links</h5>
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="#!" class="">Link 1</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="">Link 2</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="">Link 3</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="">Link 4</a>
             </li>
           </ul>
         </div>
@@ -875,7 +1179,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a class="text-white" href="">GoodEggs</a>
     </div>
     <!-- Copyright -->
   </footer>
@@ -890,7 +1194,7 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
@@ -898,7 +1202,15 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 </body>
 <script>
-  
+  $("#tile-1 .nav-tabs a").click(function() {
+  var position = $(this).parent().position();
+  var width = $(this).parent().width();
+    $("#tile-1 .slider").css({"left":+ position.left,"width":width});
+});
+var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
+var actPosition = $("#tile-1 .nav-tabs .active").position();
+$("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
+
 </script>
 <script>
   $(document).ready(function(){
@@ -937,4 +1249,55 @@
     }
 })
 </script>
+
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/js/theme-vendors.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+
+
+<script>
+	(function($){
+$(function(){
+  $('.before-wrapper').on( "mousemove", function(e) {
+	var offsets = $(this).offset();
+	var fullWidth = $(this).width();
+	var mouseX = e.pageX - offsets.left;
+
+	if (mouseX < 0) { mouseX = 0; }
+	else if (mouseX > fullWidth) { mouseX = fullWidth }
+
+
+	$(this).parent().find('.comparison-slider').css({
+	  left: mouseX,
+	  transition: 'none'
+	});
+	$(this).find('.after-wrapper').css({
+	  transform: 'translateX(' + (mouseX) + 'px)',
+	  transition: 'none'
+	});
+	$(this).find('.after-image').css({
+	  transform: 'translateX(' + (-1*mouseX) + 'px)',
+	  transition: 'none'
+	});
+  });
+  $('.slider-wrapper').on( "mouseleave", function() {
+	$(this).parent().find('.comparison-slider').css({
+	  left: '50%',
+	  transition: 'all .80000s'
+	});
+	$(this).find('.after-wrapper').css({
+	  transform: 'translateX(50%)',
+	  transition: 'all .80000s'
+	});
+	$(this).find('.after-image').css({
+	  transform: 'translateX(-50%)',
+	  transition: 'all .70000s'
+	});
+  });
+
+}); 
+})(jQuery); 
+
+</script>
+
 </html>
