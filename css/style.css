@@ -11,6 +11,42 @@ footer p ,h5{
   font-size: 18px;
   font-weight: 600;
 }
+.nurotxt{
+  padding: 0px 0px 0px 100px;
+}
+.onerow ul{
+  color: white;
+}
+.sidehead{
+  font-weight: 400;
+}
+.betxt{
+  color: white;
+  font-size: 42px;
+  font-weight: 800;
+}
+.onerow p{
+  font-size: 17px;
+}
+.tworow ul{
+  color: white;
+}
+.tworow p{
+  font-size: 17px;
+}
+.threerow p{
+  font-size: 17px;
+}
+.threerow ul{
+  color: white;
+}
+.fourrow p{
+  color: white;
+  font-size: 17px;
+}
+.fourrow ul{
+  color: white;
+}
 .bhtxt{
   color: #00b4cc;
 
@@ -23,8 +59,19 @@ footer ul li a{
   background-color: #fed972;
 }
 .burosec{
-  opacity: 0.8;
-  background-color: #cd0030;
+
+  background-color: #cb0030;
+  padding: 93px 0px;
+
+
+  position: relative;
+  
+}
+img.bimg {
+  position: absolute;
+  top: 658px;
+  right: 161px;
+  z-index: 999;
 }
 .btxt{
   color: white;
@@ -312,7 +359,7 @@ div.waves{
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 1067px;
+  top: 1149px;
   left: 0;
   animation-name: move-left;
   animation-duration: 4s;
@@ -339,13 +386,12 @@ z-index: 99;
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 1879px;
+  top: 2145px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-direction: reverse;
-
 }
 /* wave four animation start here */
 .fourrow{
@@ -367,7 +413,7 @@ z-index: 99;
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 2690px;
+  top: 3119px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
@@ -393,7 +439,7 @@ z-index: 99;
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 3509px;
+  top: 4094px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
@@ -450,9 +496,7 @@ border:1px solid #ECECEC;
   transform: scale3d(1.0, 1.0, 1);
 }
 .owl-carousel .owl-item img {
-  transform-style: preserve-3d;
-  max-width: 90px;
-  margin: 0 auto 17px;
+
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
@@ -512,8 +556,8 @@ testimonials styles start here */
   border-bottom: 15px solid transparent;
 }
 .testimonial-content .testimonial-icon{
-  width: 50px;
-  height: 45px;
+  width: 63px;
+  height: 50px;
   background: #0CCA4A;
   text-align: center;
   font-size: 22px;
@@ -574,12 +618,7 @@ testimonials styles start here */
   background-color: #fff6a2;
 }
 .blog_section .blog_content .blog_item {
-  margin-bottom: 30px;
-  box-shadow: 0 0 11px 0 rgba(6, 22, 58, 0.14);
-  position: relative;
-  background-color: white;
-  border-radius: 2px;
-  overflow: hidden;
+
 }
 .blog_section .blog_content .blog_item:hover .blog_image img {
   transform: scale(1.1);
@@ -772,7 +811,7 @@ testimonials styles start here */
     position: absolute;
     width: 100%;
     bottom: 0;
-    top: 996px;
+    top: 1098px;
     left: 0;
     animation-name: move-left;
     animation-duration: 4s;
@@ -783,7 +822,7 @@ testimonials styles start here */
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 1813px;
+  top: 2075px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
@@ -794,7 +833,7 @@ testimonials styles start here */
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 2629px;
+  top: 3024px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
@@ -805,7 +844,7 @@ testimonials styles start here */
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 3448px;
+  top: 4007px;
   left: 0;
   animation-name: move-right;
   animation-duration: 8s;
@@ -949,14 +988,13 @@ img.curve2 {
   z-index: 99;
   width: 600px;
 }
-.bannertxt{
-
+.bannertxt {
   position: absolute;
   color: #ff180d;
   top: 43%;
-  right: 151px;
+  right: 60px;
   z-index: 99;
-  width: 400px;
+  width: 700px;
 }
 
 .bannertxt1{
@@ -994,7 +1032,7 @@ img.curve2 {
 {
   position:relative;
   margin-right:0px!important;
-  padding: 20px 40px!important;
+  padding: 10px 40px!important;
   font-size:16px;
   border:none!important;
   color:#333;
@@ -1025,4 +1063,4 @@ img.curve2 {
 }
 
 
-/* 3d carousel styles start here */
+/* mediaquerys strat here */

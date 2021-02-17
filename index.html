@@ -44,7 +44,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js">
 
 <style>
- 
+
  
 body{
   font-family: 'Roboto', sans-serif;
@@ -56,7 +56,7 @@ body{
     position: relative;
   }
   
-  .slider-wrapper:hover { cursor: none; }
+
   
   .comparison-slider {
   
@@ -79,14 +79,15 @@ body{
     height:100%;
   
   }
-  @media (min-width: 992px){
+  /* @media (min-width: 992px){
 .ld-masked-image {
     top: 0px;
     right: -65vw;
-    left: 5vw;
+    left: -25vw;
 }
-  }
-  
+  } */
+ 
+ 
   .after-wrapper, .after-image {
   
   }
@@ -168,10 +169,70 @@ body{
 	clip-path: url(#masked-image-1);
     background-blend-mode: color;
     background-image: url('file:///D:/Prodigit-work/task/assets/demo/misc/masked-img-1.jpg');
-    background-color: aliceblue;
+    background-color: #f7f7f7;
 }
 
 
+@media only screen and (min-width: 900px) and (max-width: 1025px)  {
+
+.burosec {
+  opacity: 0.8;
+  background-color: #cb0030;
+  padding: 56px 0px !important;
+}
+img.bimg {
+  position: absolute;
+  top: 717px;
+  right: 94px;
+  z-index: 999;
+}
+}
+@media only screen and (min-width: 1100px) and (max-width: 1370px)  {
+  .ld-masked-image {
+    top: -7vh;
+    right: -65vw;
+    left: -21vw;
+}
+    }
+
+    @media only screen and (min-width: 1380px) and (max-width: 1450px)  {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+    }
+    img.bimg {
+      position: absolute;
+      top: 722px;
+      right: 161px;
+      z-index: 999;
+  }
+        }
+
+        @media only screen and (min-width: 1460px) and (max-width: 1601px)  {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+    }
+    img.bimg {
+  position: absolute;
+  top: 722px;
+  right: 161px;
+  z-index: 999;
+}
+        }         
+@media only screen and (min-width: 1900px) and (max-width: 2600px)  {
+  .ld-masked-image {
+    top: -14vh;
+    right: -65vw;
+    left: -5vw;
+}
+.inline-YTPlayer {
+  position: relative;
+  max-width: 2560px;
+}
+}
 </style>
 </head>
 
@@ -220,8 +281,8 @@ body{
     <div class="container">
       <!-- <h1 class="bannertxt">loraom text</h1> -->
       <img class="bannertxt0" src="img/text/CRACK OPEN BLACK.png" alt="">
-      <img class="bannertxt" src="img/text/GOOD.png" alt="">
-      <img class="bannertxt1" src="img/text/EGGS.png" alt="">
+      <img class="bannertxt" src="img/HAPPY GRADIENT.png" alt="">
+      <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
 
       <div class="row before-wrapper d-flex flex-wrap align-items-center">
         
@@ -311,6 +372,7 @@ body{
   
   
   <section>
+    <img src="img/Bureau Veritas symbol.png" class="bimg" width="" alt="">
     <div class="container-fluid burosec">
       <div class="row">
         <div class="col-md-1"></div>
@@ -318,7 +380,7 @@ body{
           <h1 class="btxt">BUREAU VERITAS CERTIFIED</h1>
         </div>
         <div class="col-lg-4">
-          <img src="img/Bureau Veritas symbol.png" width="220px" alt="">
+    
         </div>
       </div>
     </div>
@@ -398,32 +460,48 @@ body{
   
    
       <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-4">
-          <h2 class="text-white"><strong>
-            ORGANIC
-            FREE RANGE
-          </strong>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <h2 class="text-white">
+            Vitamin A
+        
          
           </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
+          <p class="text-white">Vitamin A is the name of a group of fat-soluble retinoids, including retinol, retinal, and retinyl esters. Vitamin A is involved in immune function, vision, reproduction, and cellular communication.</p>
+       
+           <h5 class="text-white">
+            Benefits of Vitamin A:
+           </h5>
+          <ul>
+            <li>  It is a potent Antioxidant.</li>
+           <li>Essential for eye health and prevents macular degeneration. </li>
+           <li>Boosts the immune system and prevents certain types of cancers.</li>
+           <li>Vital for fertility and fetal development</li>
+        
+        
+        
+          </ul>
+         
         </div>
         
         <div class="col-lg-5">
           <img src="img/Egg Pack image.png" class="img-fluid" alt="">
           <div class="row">
-            <div class="col-sm-2"></div>
+            <div class="col-sm-1"></div>
             <div class="col-sm-3">
-               <img src="img/icons/Vitamin A Char1.png" alt="">
+              <img src="img/icons/Vitamin A Char1.png" alt="">
             </div>
             <div class="col-sm-3">
-              <img src="img/icons/Vitamin A Char2.png" alt="">
+               <img src="img/icons/Vitamin A Char2.png" alt="">
+            </div>
+            <div class="col-sm-3">
+              <img src="img/icons/Vitamin A Char3.png" alt="">
             </div>
           </div>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-lg-1">
+          <img src="img/" alt="">
+        </div>
       </div>
       <div class="row">
         <div class="col-lg-1"></div>
@@ -510,22 +588,42 @@ body{
 <div class="oneshp">
      
         <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-4">
-            <h2 class="text-white"><strong>
-              ORGANIC
-              FREE RANGE
-            </strong>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <h2 class="text-white">
+              VITAMIN E & SELENIUM                          
+         
            
             </h2>
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-              dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-              aliquid rem dicta provident totam?</p>
+            <p class="text-white">Vitamin E is a fat-soluble vitamin with several forms, but alpha-tocopherol is the only one used by the human body.</p>
+            <h5 class="text-white">Benefits of vitamin E:</h5>
+            <ul>
+              <li> Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.</li>
+              <li>It enhances immune function and prevents clots from forming in heart arteries.</li>
+              <li>Vitamin E supplements prevent cardiovascular diseases.</li>
+              <li>Vitamin E helps protect against Alzheimer’s, Parkinson’s, and other diseases of the brain and nervous system.</li>
+        
+        
+        
+            </ul>
+        
+        
           </div>
           
           <div class="col-lg-5">
             <img src="img/Egg Pack image.png" class="img-fluid" alt="">
-            
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-3">
+                <img src="img/icons/VitaminE Char1.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                 <img src="img/icons/VitaminE Char2.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="img/icons/VitaminE Char3.png" alt="">
+              </div>
+            </div>
           </div>
           <div class="col-lg-1"></div>
         </div>
@@ -612,22 +710,41 @@ body{
     <div class="container-fluid threerow">
      
       <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-4">
-          <h2 class="text-white"><strong>
-            ORGANIC
-            FREE RANGE
-          </strong>
-         
-          </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
-        </div>
-        
+        <div class="col-lg-1"></div>
         <div class="col-lg-5">
           <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+              <img src="img/icons/VitaminD Char1.png" alt="">
+            </div>
+            <div class="col-sm-3">
+               <img src="img/icons/VitaminD Char2.png" alt="">
+            </div>
+            <div class="col-sm-3">
+              <img src="img/icons/VitaminD Char3.png" alt="">
+            </div>
+          </div>
         </div>
+        <div class="col-lg-5">
+          <h2 class="text-white">
+            VITAMIN D
+        
+          </h2>
+          <p class="text-white">Vitamin D, sometimes called the ‘sunshine vitamin’ is a fat-soluble vitamin obtained from food and made by the body when sunlight hits the skin. It can also be found in supplements.</p>
+        <h5 class="text-white">Benefits of Vitamin D:</h5>
+        <ul>
+          <li> Plays a crucial role in maintaining healthy bones and teeth and muscle function.</li>
+          <li>Regulates our immune system. </li>
+          <li>Responsible for bone development in children and skeletal health in adults.</li>
+          <li>Aids in Calcium and phosphorus absorption and metabolism.</li>
+
+        </ul>
+     
+     
+        </div>
+        
+
         <div class="col-lg-1"></div>
       </div>
       <div class="row">
@@ -713,22 +830,35 @@ body{
  
           
         <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-4">
-            <h2 class="text-white"><strong>
-              ORGANIC
-              FREE RANGE
-            </strong>
+          <div class="col-lg-1"></div>
+           <div class="col-lg-5">
+            <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-3">
+                <img src="img/icons/SELENIUM Char1.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                 <img src="img/icons/SELENIUM Char2.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="img/icons/SELENIUM Char3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h2 class="text-white">
+            PREMIUM FRESH
+          
            
             </h2>
-            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-              dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-              aliquid rem dicta provident totam?</p>
+            <p class="text-white">What would we do without the egg? It's a dietary mainstay, not only for breakfast but to feed finicky kids, stand in for a quick lunch or supper, blend raw into holiday nogs, and as an ingredient in all kinds of sweet and savory dishes. </p>
+            <p>Along with milk, eggs contain the highest biological value (or gold standard) for protein. One egg has only 75 calories but 7 grams of high-quality protein, 5 grams of fat, and 1.6 grams of saturated fat, along with iron, vitamins and minerals. Eggs are easy to eat, well-tolerated by young and old, adaptable to any meal, and inexpensive. Whether you prefer designer or generic Good Eggs, you can manage your egg intake over the course of a week.</p>
+         
+         
           </div>
           
-          <div class="col-lg-5">
-            <img src="img/Egg Pack image.png" class="img-fluid" alt="">
-          </div>
+         
           <div class="col-lg-1"></div>
         </div>
         <div class="row">
@@ -816,9 +946,8 @@ body{
      
            <div class="col-lg-2"></div>
         <div class="col-lg-3">
-          <h2>
-            ORGANIC
-            FREE RANGE
+          <h2 class="text-white sidehead">
+             <span class="betxt">BENE</span>FITS
           </h2>
           <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
             dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
@@ -831,17 +960,24 @@ body{
           <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
         </div>
       </div>
+      <h1 class="text-white nurotxt">
+        Nutrients
+      </h1>
       <div class="tile" id="tile-1">
    <!-- Tab panes -->
    <div class="tab-content">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <img src="img/EGG.png" alt="">
+      <img src="img/Cracked egg series egg1.png" alt="">
     </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <img src="img/EGG.png" alt="">
+    <img src="img/Cracked egg series egg2.png" alt="">
   </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Contact</div>
-  <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">Settings</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <img src="img/Cracked egg series egg4.png" alt="">
+  </div>
+  <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+    <img src="img/Cracked egg series egg5.png" alt="">
+  </div>
   </div>
 
         <!-- Nav tabs -->
@@ -921,7 +1057,7 @@ body{
                   <div class="testimonial">
                       <div class="testimonial-content">
                           <div class="testimonial-icon">
-                              <i class="fa fa-quote-left"></i>
+                             <img src="img/CUSTOMER STORIES.png" alt="">
                           </div>
                           <p class="description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
@@ -934,7 +1070,7 @@ body{
                   <div class="testimonial">
                       <div class="testimonial-content">
                           <div class="testimonial-icon">
-                              <i class="fa fa-quote-left"></i>
+                            <img src="img/CUSTOMER STORIES.png" alt="">
                           </div>
                           <p class="description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
@@ -947,7 +1083,7 @@ body{
                   <div class="testimonial">
                       <div class="testimonial-content">
                           <div class="testimonial-icon">
-                              <i class="fa fa-quote-left"></i>
+                            <img src="img/CUSTOMER STORIES.png" alt="">
                           </div>
                           <p class="description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
@@ -960,7 +1096,7 @@ body{
                   <div class="testimonial">
                       <div class="testimonial-content">
                           <div class="testimonial-icon">
-                              <i class="fa fa-quote-left"></i>
+                            <img src="img/CUSTOMER STORIES.png" alt="">
                           </div>
                           <p class="description">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
@@ -982,58 +1118,35 @@ body{
     <div class="container">
    
         <div class="blog_content">
+          <h2 class="text-center text-white fgetxt ">OUR BRAND PARTNERS</h2>
             <div class="owl-carousel owl-theme">
                 <div class="blog_item">
-                    <div class="blog_image">
-                        <img class="img-fluid" src="https://cdn.pixabay.com/photo/2019/03/10/18/31/hong-kong-4046913_960_720.jpg" alt="images not found">
-                        <span><i class="icon ion-md-create"></i></span>
-                    </div>
-                    <div class="blog_details">
-                        <div class="blog_title">
-                            <h5><a href="#">We are best for any industrial & business solution.</a></h5>
-                        </div>
-                        <ul>
-                            <li><i class="icon ion-md-person"></i>Alex</li>
-                            <li><i class="icon ion-md-calendar"></i>August 1, 2018</li>
-                        </ul>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</p>
-                        <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
-                    </div>
+                
+                        <img class="img-fluid" src="img/BRAND PARTNERS1.png" width="300px" alt="">
+                     
                 </div>                        
                 <div class="blog_item">
-                    <div class="blog_image">
-                        <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_960_720.jpg" alt="images not found">
-                        <span><i class="icon ion-md-create"></i></span>
-                    </div>
-                    <div class="blog_details">
-                        <div class="blog_title">
-                            <h5><a href="#">We are best for any industrial & business solution.</a></h5>
-                        </div>
-                        <ul>
-                            <li><i class="icon ion-md-person"></i>Alex</li>
-                            <li><i class="icon ion-md-calendar"></i>August 1, 2018</li>
-                        </ul>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</p>
-                        <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
-                    </div>
+                  
+                        <img class="img-fluid" src="img/BRAND PARTNERS2.png">
+                
+                  
+                 
                 </div>                        
                 <div class="blog_item">
-                    <div class="blog_image">
-                        <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_960_720.jpg" alt="images not found">
-                        <span><i class="icon ion-md-create"></i></span>
-                    </div>
-                    <div class="blog_details">
-                        <div class="blog_title">
-                            <h5><a href="#">We are best for any industrial & business solution.</a></h5>
-                        </div>
-                        <ul>
-                            <li><i class="icon ion-md-person"></i>Alex</li>
-                            <li><i class="icon ion-md-calendar"></i>August 1, 2018</li>
-                        </ul>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem...</p>
-                        <a href="#">Read More<i class="icofont-long-arrow-right"></i></a>
-                    </div>
+                   
+                        <img class="img-fluid" src="img/BRAND PARTNERS3.png" alt="images not found">
+                     
                 </div>
+                <div class="blog_item">
+                   
+                  <img class="img-fluid" src="img/BRAND PARTNERS4.png" alt="images not found">
+               
+          </div>
+          <div class="blog_item">
+                   
+            <img class="img-fluid" src="img/BRAND PARTNERS5.png" alt="images not found">
+         
+    </div>
             </div>
         </div>
     </div>
@@ -1255,7 +1368,7 @@ $("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
 <script src="./assets/js/theme.min.js"></script>
 
 
-<script>
+<!-- <script>
 	(function($){
 $(function(){
   $('.before-wrapper').on( "mousemove", function(e) {
@@ -1283,21 +1396,21 @@ $(function(){
   $('.slider-wrapper').on( "mouseleave", function() {
 	$(this).parent().find('.comparison-slider').css({
 	  left: '50%',
-	  transition: 'all .80000s'
+	  transition: 'all .80s'
 	});
 	$(this).find('.after-wrapper').css({
 	  transform: 'translateX(50%)',
-	  transition: 'all .80000s'
+	  transition: 'all .80s'
 	});
 	$(this).find('.after-image').css({
 	  transform: 'translateX(-50%)',
-	  transition: 'all .70000s'
+	  transition: 'all .70s'
 	});
   });
 
 }); 
 })(jQuery); 
 
-</script>
+</script> -->
 
 </html>
