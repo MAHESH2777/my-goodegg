@@ -11,525 +11,1298 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
-  <link rel="stylesheet" href="">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> 
+
+
+<!-- background video links -->
+	
+<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+
+	<link rel="stylesheet" href="assets/css/theme.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/themes/creative.css" />
+
+<script async src="assets/vendors/modernizr.min.js"></script>
+
+<!-- egg section links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js">
+
+<style>
+
+ 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  
+.slider-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+
+  
+  .comparison-slider {
+  
+  }
+  
+  .before-wrapper {
+    display: block;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    /* position: relative;
+    background: url("http://emphasizestudio.nl/img/dystopia.jpg") no-repeat center center #111111; */
+    background-size: 100% auto;
+  }
+  
+  .before-wrapper:before {
+    display: block;
+    content: '';
+    width: 100%; 
+    height:100%;
+  
+  }
+  /* @media (min-width: 992px){
+.ld-masked-image {
+    top: 0px;
+    right: -65vw;
+    left: -25vw;
+}
+  } */
+ 
+ 
+  .after-wrapper, .after-image {
+  
+  }
+  
+  .after-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .after-image {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: relative;
+  -webkit-transform: translateX(-50%);
+
+    transform: translateX(-50%); 
+  
+    background: url("http://emphasizestudio.nl/img/utopia.jpg") no-repeat center center #efefef;
+    background-size: 100% auto;
+  
+  }
+  
+  /* .past, .future{
+    padding: 40px;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-weight:800;
+  } */
+  
+  .past {
+   position: absolute;
+   display: block;
+   bottom: 0px;
+   left:0px;
+  }
+  
+  .you {
+    width: 200px;
+    height: 200px;
+   position: absolute;
+   display: block;
+   right:0px;
+   left: 0px;
+   z-index:999;
+   background: red;
+  }
+  
+  .future {
+   position: absolute;
+   display: block;
+   bottom: 0px;
+   right:0px;
+  }
+  
+  .after-wrapper {
+    overflow: initial;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+
+
+
+  figure.clip-svg.loaded {
+	clip-path: url(#masked-image-1);
+    background-blend-mode: color;
+    background-image: url('file:///D:/Prodigit-work/task/assets/demo/misc/masked-img-1.jpg');
+    background-color: #f7f7f7;
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1025px)  {
+
+.burosec {
+  opacity: 0.8;
+  background-color: #cb0030;
+  padding: 56px 0px !important;
+}
+img.bimg {
+  position: absolute;
+  top: 717px;
+  right: 94px;
+  z-index: 999;
+}
+}
+@media only screen and (min-width: 1100px) and (max-width: 1370px)  {
+  .ld-masked-image {
+    top: -7vh;
+    right: -65vw;
+    left: -21vw;
+}
+    }
+
+    @media only screen and (min-width: 1380px) and (max-width: 1450px)  {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+    }
+    img.bimg {
+      position: absolute;
+      top: 722px;
+      right: 161px;
+      z-index: 999;
+  }
+        }
+
+        @media only screen and (min-width: 1460px) and (max-width: 1601px)  {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+    }
+    img.bimg {
+  position: absolute;
+  top: 722px;
+  right: 161px;
+  z-index: 999;
+}
+        }         
+@media only screen and (min-width: 1900px) and (max-width: 2600px)  {
+  .ld-masked-image {
+    top: -14vh;
+    right: -65vw;
+    left: -5vw;
+}
+.inline-YTPlayer {
+  position: relative;
+  max-width: 2560px;
+}
+div#YTP_1613547492898 {
+    display: block;
+    position: fixed;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    height: 0px;
+}
+}
+</style>
 </head>
 
 <body>
 
   <!-- Start your project here-->
+
+  <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="past">The past</div>
+    <div class="future">The future</div> -->
+          <div class="lqd-vbg-wrap">
+        <div class="lqd-vbg-inner">
+          <span class="lqd-vbg-loader"></span>
+          <div class="lqd-vbg-video" data-video-bg="true" data-youtube-options='{"videoURL":"https://youtu.be/0BNNjZpMKRI"}'> </div>
+        </div><!-- /.lqd-vbg-inner -->
+      </div><!-- /.lqd-vbg-wrap -->
+
+    <div class="container">
+      <!-- <h1 class="bannertxt">loraom text</h1> -->
+      <img class="bannertxt0" src="img/text/CRACK OPEN BLACK.png" alt="">
+      <img class="bannertxt" src="img/HAPPY GRADIENT.png" alt="">
+      <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
+
+      <div class="row before-wrapper d-flex flex-wrap align-items-center">
+        
+          <div class="lqd-column col-lg-7 col-md-6 hidden-xs hidden-sm hidden-md after-wrapper">
+          
+          
+            <div class="ld-masked-image " data-dynamic-shape="true" >
+              <svg version="1.1" class="scene " width="0" height="0" preserveAspectRatio="none" viewBox="0 0 1440 800">
+                <defs>
+                  <clipPath id="masked-image-1">
+                    <path
+                      fill="black"
+                      d="M131,40 C84.135,83.534 96.819,148.446 63.283,217.394 C31.508,282.723 -3.621,324.812 1.461,394.323 C3.451,421.533 12.117,449.828 29.796,480.002 C87.412,578.34 -15.301,663.448 94.611,833.387 C156.302,928.77 316.559,918.015 435.971,936.052 C572.741,956.711 653.384,1003.601 753.566,971.715 C877.689,932.209 924.99262,809.932822 972.63862,707.700822 C1063.84662,512.000822 1038.71071,197.732895 884.476705,67.2268952 C788.919705,-13.6291048 714.704,70.008 529,43 C339.693,15.468 212.609,-35.808 131,40 Z"
+                      pathdata:id="
+                      M175.270836,26.7977911 C128.405836,70.3317911 129.938279,144.739124 96.4022789,213.687124 C64.6272789,279.016124 41.242383,286.071679 46.324383,355.582679 C48.314383,382.792679 79.5246278,459.251586 88.7738696,492.334164 C116.497714,591.496483 -75.3047466,680.552915 34.6072534,850.491915 C96.2982534,945.874915 281.559,906.015 400.971,924.052 C537.741,944.711 678.161685,902.348368 778.343685,870.462368 C902.466685,830.956368 927.354,806.232 975,704 C1066.208,508.3 1058.68971,185.848951 904.455709,55.3429506 C808.898709,-25.5130494 786.027661,117.60054 600.323661,90.5925401 C411.016661,63.0605401 256.879836,-49.0102089 175.270836,26.7977911 Z;
+                      M200.391256,6 C138.06059,22.7990703 77.9622177,42.6445401 44.4262177,111.59254 C12.6512177,176.92154 -4.1051307,212.01786 0.976869296,281.52886 C2.9668693,308.73886 99.0297526,534.545109 108.278994,567.627688 C136.002839,666.790006 -29.1381304,721.523368 80.7738696,891.462368 C142.46487,986.845368 331.636556,840.153183 451.048556,858.190183 C587.818556,878.849183 705.371102,948.496676 805.553102,916.610676 C929.676102,877.104676 941.497784,689.3436 989.143784,587.1116 C1080.35178,391.4116 1050.68971,206.848951 896.455709,76.3429506 C800.898709,-4.5130494 778.027661,138.60054 592.323661,111.59254 C403.016661,84.0605401 312.765712,-24.2866392 200.391256,6 Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <figure class="clip-svg " data-responsive-bg="true" style="clip-path: url(#masked-image-1); -webkit-clip-path: url(#masked-image-1);">
+                <img src="./assets/demo/misc/masked-img-1.jpg" class="after-image" alt="Image">
+              
+              </figure>
+                            
+            </div><!-- /ld-masked-image -->
+  
+          </div><!-- /.col-lg-7 col-md-6 -->
+     
+      <div class="lqd-column col-lg-5 lqd-column" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}' >
+
+        <div class="ld-fancy-heading mask-text">
+          <h1
+            data-split-text="true"
+            data-custom-animations="true"
+            data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+            data-split-options='{"type":"lines"}'
+          >
+            <span class="ld-fh-txt"> </span>
+          </h1>
+        </div><!-- /.ld-fancy-heading -->
+
+        <div class="ld-fancy-heading mask-text mb-75">
+          <p
+            data-split-text="true"
+            data-custom-animations="true"
+            data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+            data-split-options='{"type":"lines"}'>
+            <span class="ld-fh-txt"> </span>
+          </p>
+        </div><!-- /.ld-fancy-heading -->
+        
+        <div class="row">
+
+          <div class="lqd-column col-sm-6 mb-3 mb-md-0">
+
+           
+          </div><!-- /.col-sm-6 -->
+
+          <div class="lqd-column col-sm-6">
+
+            <div class="ld-fancy-heading">
+              <p>
+                <span class="ld-fh-txt">
+                  <strong><span style="color: #fe688b"></span></strong>
+                  <br>
+                  <span style="color: #a7a9b8"></span>
+                </span>
+              </p>
+            </div>
+
+          </div><!-- /.col-sm-6 -->
+
+        </div><!-- /.row -->
+
+      </div><!-- /.col-lg-5 col-md-6 -->
+     </div>
  
 
 
+    
+      
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
 
-
-  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <section class="onesec">
-
-    <div class="swiper-container slideshow">
   
-      <div class="swiper-wrapper">
   
-        <div class="swiper-slide slide">
-          <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80)"></div>
-          <span class="slide-title">Exotic places</span>
+  <section>
+    <img src="img/Bureau Veritas symbol.png" class="bimg" width="" alt="">
+    <div class="container-fluid burosec">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-lg-7 align-self-center">
+          <h1 class="btxt">BUREAU VERITAS CERTIFIED</h1>
         </div>
-  
-        <div class="swiper-slide slide">
-          <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80"></div>
-          <span class="slide-title">Meet ocean</span>
+        <div class="col-lg-4">
+    
         </div>
-  
-        <div class="swiper-slide slide">
-          <div class="slide-image" style="background-image: url(https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80"></div>
-          <span class="slide-title">Around the world</span>
-        </div>
-  
-        <!--         <div class="swiper-slide slide">
-            <div class="slide-imageswiper-lazy" data-background="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
-            </div>
-            </div>
-            <span class="slide-title">Exotic places</span>
-          </div>
-        
-          <div class="swiper-slide slide">
-            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80">
-            </div>
-            <span class="slide-title">Meet ocean</span>
-          </div>
-        
-          <div class="swiper-slide slide">
-            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80">
-            </div>
-            <span class="slide-title">Around the world</span>
-          </div> -->
-  
       </div>
-  
-      <div class="slideshow-pagination"></div>
-  
-      <div class="slideshow-navigation">
-        <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
-        <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
-      </div>
-  
     </div>
+  </section>
   
+  
+  <!--- ignore the code below-->
+  
+
+
+
+  <section>
+    <div class="waves">
+      <svg width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#09b0b9" />
+          <stop offset="50%" stop-color="#09b0b9" />
+          <stop offset="100%" stop-color="#09b0b9" />
+        </linearGradient>
+        <path fill="url(#grad1)" d="
+        M0 67
+        C 273,183
+        822,-40
+        1920.00,106 
+        
+        V 359 
+        H 0 
+        V 67
+        Z">
+          <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"
+            values="
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,-40
+          1222,283
+          1920,136 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 973,260
+          1722,-53
+          1920,120 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z
+        ">
+          </animate>
+        </path>
+      </svg>
+    </div>
+    <div class="container-fluid onerow">
+  
+   
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <h2 class="text-white">
+            Vitamin A
+        
+         
+          </h2>
+          <p class="text-white">Vitamin A is the name of a group of fat-soluble retinoids, including retinol, retinal, and retinyl esters. Vitamin A is involved in immune function, vision, reproduction, and cellular communication.</p>
+       
+           <h5 class="text-white">
+            Benefits of Vitamin A:
+           </h5>
+          <ul>
+            <li>  It is a potent Antioxidant.</li>
+           <li>Essential for eye health and prevents macular degeneration. </li>
+           <li>Boosts the immune system and prevents certain types of cancers.</li>
+           <li>Vital for fertility and fetal development</li>
+        
+        
+        
+          </ul>
+         
+        </div>
+        
+        <div class="col-lg-5">
+          <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+              <img src="img/icons/Vitamin A Char1.png" alt="">
+            </div>
+            <div class="col-sm-3">
+               <img src="img/icons/Vitamin A Char2.png" alt="">
+            </div>
+            <div class="col-sm-3">
+              <img src="img/icons/Vitamin A Char3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1">
+          <img src="img/" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3">
+          <img src="img/GE2.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="img/GE3.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img src="img/GE4.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    
+    </div>
   </section>
   <section>
+    <div class="waves2">
+      <svg class="seg2" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#f6b3d0" />
+          <stop offset="50%" stop-color="#f6b3d0" />
+          <stop offset="100%" stop-color="#f6b3d0" />
+        </linearGradient>
+        <path fill="url(#grad2)" d="
+        M0 67
+        C 273,183
+        822,-40
+        1920.00,106 
+        
+        V 359 
+        H 0 
+        V 67
+        Z">
+          <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"
+            values="
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,-40
+          1222,283
+          1920,136 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 973,260
+          1722,-53
+          1920,120 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z
+        ">
+          </animate>
+        </path>
+      </svg>
+    </div>
+    <div class="container-fluid tworow">
+     
+<div class="oneshp">
+     
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <h2 class="text-white">
+              VITAMIN E & SELENIUM                          
+         
+           
+            </h2>
+            <p class="text-white">Vitamin E is a fat-soluble vitamin with several forms, but alpha-tocopherol is the only one used by the human body.</p>
+            <h5 class="text-white">Benefits of vitamin E:</h5>
+            <ul>
+              <li> Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.</li>
+              <li>It enhances immune function and prevents clots from forming in heart arteries.</li>
+              <li>Vitamin E supplements prevent cardiovascular diseases.</li>
+              <li>Vitamin E helps protect against Alzheimer’s, Parkinson’s, and other diseases of the brain and nervous system.</li>
+        
+        
+        
+            </ul>
+        
+        
+          </div>
+          
+          <div class="col-lg-5">
+            <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-3">
+                <img src="img/icons/VitaminE Char1.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                 <img src="img/icons/VitaminE Char2.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="img/icons/VitaminE Char3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3">
+            <img src="img/GE5.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="img/GE6.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/GE7.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="waves3">
+      <svg class="seg3" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#071838" />
+          <stop offset="50%" stop-color="#071838" />
+          <stop offset="100%" stop-color="#071838" />
+        </linearGradient>
+        <path fill="url(#grad3)" d="
+        M0 67
+        C 273,183
+        822,-40
+        1920.00,106 
+        
+        V 359 
+        H 0 
+        V 67
+        Z">
+          <animate repeatCount="indefinite" fill="url(#grad3)" attributeName="d" dur="15s" attributeType="XML"
+            values="
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,-40
+          1222,283
+          1920,136 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 973,260
+          1722,-53
+          1920,120 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z
+        ">
+          </animate>
+        </path>
+      </svg>
+    </div>
+    <div class="container-fluid threerow">
+     
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+              <img src="img/icons/VitaminD Char1.png" alt="">
+            </div>
+            <div class="col-sm-3">
+               <img src="img/icons/VitaminD Char2.png" alt="">
+            </div>
+            <div class="col-sm-3">
+              <img src="img/icons/VitaminD Char3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="text-white">
+            VITAMIN D
+        
+          </h2>
+          <p class="text-white">Vitamin D, sometimes called the ‘sunshine vitamin’ is a fat-soluble vitamin obtained from food and made by the body when sunlight hits the skin. It can also be found in supplements.</p>
+        <h5 class="text-white">Benefits of Vitamin D:</h5>
+        <ul>
+          <li> Plays a crucial role in maintaining healthy bones and teeth and muscle function.</li>
+          <li>Regulates our immune system. </li>
+          <li>Responsible for bone development in children and skeletal health in adults.</li>
+          <li>Aids in Calcium and phosphorus absorption and metabolism.</li>
 
-    <div class="container-fluid">
-      
-      <div class="row onerow">
-        <div class="waves">
-          <svg width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#11cbd7" />
-              <stop offset="50%" stop-color="#11cbd7" />
-              <stop offset="100%" stop-color="#11cbd7" />
-            </linearGradient>
-            <path fill="url(#grad1)" d="
-            M0 67
-            C 273,183
-            822,-40
-            1920.00,106 
-            
-            V 359 
-            H 0 
-            V 67
-            Z">
-              <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"
-                values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-              </animate>
-            </path>
-          </svg>
+        </ul>
+     
+     
         </div>
         
+
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3">
+          <img src="img/GE2.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-3">
+          <img src="img/GE3.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img src="img/GE4.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="waves3">
+      <svg class="seg4" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#9e0b0f" />
+          <stop offset="50%" stop-color="#9e0b0f" />
+          <stop offset="100%" stop-color="#9e0b0f" />
+        </linearGradient>
+        <path fill="url(#grad4)" d="
+        M0 67
+        C 273,183
+        822,-40
+        1920.00,106 
+        
+        V 359 
+        H 0 
+        V 67
+        Z">
+          <animate repeatCount="indefinite" fill="url(#grad4)" attributeName="d" dur="15s" attributeType="XML"
+            values="
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,-40
+          1222,283
+          1920,136 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 973,260
+          1722,-53
+          1920,120 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z
+        ">
+          </animate>
+        </path>
+      </svg>
+    </div>
+    <div class="container-fluid fourrow">
+ 
+          
+        <div class="row">
+          <div class="col-lg-1"></div>
+           <div class="col-lg-5">
+            <img src="img/Egg Pack image.png" class="img-fluid" alt="">
+            <div class="row">
+              <div class="col-sm-1"></div>
+              <div class="col-sm-3">
+                <img src="img/icons/SELENIUM Char1.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                 <img src="img/icons/SELENIUM Char2.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="img/icons/SELENIUM Char3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h2 class="text-white">
+            PREMIUM FRESH
+          
+           
+            </h2>
+            <p class="text-white">What would we do without the egg? It's a dietary mainstay, not only for breakfast but to feed finicky kids, stand in for a quick lunch or supper, blend raw into holiday nogs, and as an ingredient in all kinds of sweet and savory dishes. </p>
+            <p>Along with milk, eggs contain the highest biological value (or gold standard) for protein. One egg has only 75 calories but 7 grams of high-quality protein, 5 grams of fat, and 1.6 grams of saturated fat, along with iron, vitamins and minerals. Eggs are easy to eat, well-tolerated by young and old, adaptable to any meal, and inexpensive. Whether you prefer designer or generic Good Eggs, you can manage your egg intake over the course of a week.</p>
+         
+         
+          </div>
+          
+         
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3">
+            <img src="img/GE2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-3">
+            <img src="img/GE3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img src="img/GE4.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+   
+  </section>
+  <section>
+    <div class="waves5">
+      <svg class="seg5" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#9feed1" />
+          <stop offset="50%" stop-color="#9feed1" />
+          <stop offset="100%" stop-color="#9feed1" />
+        </linearGradient>
+        <path fill="url(#grad5)" d="
+        M0 67
+        C 273,183
+        822,-40
+        1920.00,106 
+        
+        V 359 
+        H 0 
+        V 67
+        Z">
+          <animate repeatCount="indefinite" fill="url(#grad5)" attributeName="d" dur="15s" attributeType="XML"
+            values="
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,-40
+          1222,283
+          1920,136 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 973,260
+          1722,-53
+          1920,120 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+  
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        
+        V 359 
+        H 0 
+        V 67 
+        Z
+        ">
+          </animate>
+        </path>
+      </svg>
+    </div>
+    <div class="container-fluid fiverow">
+   
+      <div class="row ">
+     
+           <div class="col-lg-2"></div>
+        <div class="col-lg-3">
+          <h2 class="text-white sidehead">
+             <span class="betxt">BENE</span>FITS
+          </h2>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
+            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
+            aliquid rem dicta provident totam?</p>
+        </div>
+        <div class="col-lg-1">
+  
+        </div>
         <div class="col-lg-6">
-          <h2>
-            ORGANIC
-            FREE RANGE
-          </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
+          <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <h1 class="text-white nurotxt">
+        Nutrients
+      </h1>
+      <div class="tile" id="tile-1">
+   <!-- Tab panes -->
+   <div class="tab-content">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <img src="img/Cracked egg series egg1.png" alt="">
+    </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <img src="img/Cracked egg series egg2.png" alt="">
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <img src="img/Cracked egg series egg4.png" alt="">
+  </div>
+  <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
+    <img src="img/Cracked egg series egg5.png" alt="">
+  </div>
+  </div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <div class="slider"></div>
+           <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-id-card"></i> Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-map-signs"></i> Contact</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false"><i class="fas fa-cogs"></i> Settings</a>
+            </li>
+        </ul>
+        <br>
+
+      
+     
+      </div>
+      
+      
+      <!-- Info -->
+    
+    
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3">
+          <img src="img/BLOG BG.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8"></div>
+      
+      </div>
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-5">
+          <h1 class="sideheads"><strong>TITLEHERE</strong></h1>
+          <P class="side p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni earum asperiores id incidunt velit assumenda veniam atque voluptatem. Ut culpa consequuntur deserunt praesentium aliquam quia similique facilis accusamus ipsa cumque.</P>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/BLOG IMAGE2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="img/BLOG IMAGE3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="img/BLOG IMAGE4.png" class="img-fluid" alt="">
+          </div>
         </div>
         
-        <div class="col-lg-6"></div>
+        </div>
       </div>
-    
     </div>
   </section>
   <section>
-
-    <div class="container-fluid">
-      
-      <div class="row tworow">
-        <div class="waves2">
-          <svg class="seg2" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#9feed1" />
-              <stop offset="50%" stop-color="#9feed1" />
-              <stop offset="100%" stop-color="#9feed1" />
-            </linearGradient>
-            <path fill="url(#grad2)" d="
-            M0 67
-            C 273,183
-            822,-40
-            1920.00,106 
-            
-            V 359 
-            H 0 
-            V 67
-            Z">
-              <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML"
-                values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-              </animate>
-            </path>
-          </svg>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-          <h2>
-            ORGANIC
-            FREE RANGE
-          </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
-        </div>
-        <div class="col-md-4">
+    <div class="container-fluid " >
+      <div class="row ">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 align-self-center">
+          <h1 class="sideheads"><strong>TITLEHERE</strong></h1>
+          <p class="side p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea sequi dolor. Quisquam veniam, quibusdam ea labore reiciendis optio maiores nobis illum eaque fugit quae dolor cum et, explicabo ipsum?</p>
 
         </div>
-        <div class="col-md-4"></div>
+          <div class="col-lg-8 testicon" style="background-image: url('./img/CUSTOMER\ STORIES\ BG.png');">
+              <div id="testimonial-slider" class="owl-carousel">
+                  <div class="testimonial">
+                      <div class="testimonial-content">
+                          <div class="testimonial-icon">
+                             <img src="img/CUSTOMER STORIES.png" alt="">
+                          </div>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                          </p>
+                      </div>
+                      <h3 class="title">John</h3>
+                      <span class="post">Web Developer</span>
+                  </div>
+
+                  <div class="testimonial">
+                      <div class="testimonial-content">
+                          <div class="testimonial-icon">
+                            <img src="img/CUSTOMER STORIES.png" alt="">
+                          </div>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                          </p>
+                      </div>
+                      <h3 class="title">Kelle</h3>
+                      <span class="post">Web Designer</span>
+                  </div>
+
+                  <div class="testimonial">
+                      <div class="testimonial-content">
+                          <div class="testimonial-icon">
+                            <img src="img/CUSTOMER STORIES.png" alt="">
+                          </div>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                          </p>
+                      </div>
+                      <h3 class="title">Steven</h3>
+                      <span class="post">Web Developer</span>
+                  </div>
+
+                  <div class="testimonial">
+                      <div class="testimonial-content">
+                          <div class="testimonial-icon">
+                            <img src="img/CUSTOMER STORIES.png" alt="">
+                          </div>
+                          <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                          </p>
+                      </div>
+                      <h3 class="title">Peter</h3>
+                      <span class="post">Web Developer</span>
+                  </div>
+              </div>
+          </div>
+         
       </div>
+  </div>
+  
+  </section>
+
+  <section class="blog_section">
+
+    <div class="container">
+   
+        <div class="blog_content">
+          <h2 class="text-center text-white fgetxt ">OUR BRAND PARTNERS</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="blog_item">
+                
+                        <img class="img-fluid" src="img/BRAND PARTNERS1.png" width="300px" alt="">
+                     
+                </div>                        
+                <div class="blog_item">
+                  
+                        <img class="img-fluid" src="img/BRAND PARTNERS2.png">
+                
+                  
+                 
+                </div>                        
+                <div class="blog_item">
+                   
+                        <img class="img-fluid" src="img/BRAND PARTNERS3.png" alt="images not found">
+                     
+                </div>
+                <div class="blog_item">
+                   
+                  <img class="img-fluid" src="img/BRAND PARTNERS4.png" alt="images not found">
+               
+          </div>
+          <div class="blog_item">
+                   
+            <img class="img-fluid" src="img/BRAND PARTNERS5.png" alt="images not found">
+         
+    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<img src="img/curves/curve2.png" class="curve2" alt="">
+<section class="textsec">
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9">
+        <h1 class="fgetxt "><strong>
+          Find Good Eggs 
+        </strong></h1>
+        <h2 class="fge2txt">near you</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<img src="img/curves/curve3.png" class="curve3" alt="">
+
+<section class="searchsec">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, blanditiis! Voluptatum esse eum voluptatem? Dolorem nulla explicabo, repellat eum culpa soluta libero sed, quisquam minima rem architecto provident dicta qui?</p>
+        <img src="img/location icon.png" alt="">
+  <br>
+  <br>
+        <div class="search">
+          <input type="text" class="searchTerm" placeholder="What are you looking for?">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+         </button>
+       </div>
     
-    </div>
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="row threerow">
-        <div class="waves3">
-          <svg class="seg3" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#fff6a2" />
-              <stop offset="50%" stop-color="#fff6a2" />
-              <stop offset="100%" stop-color="#fff6a2" />
-            </linearGradient>
-            <path fill="url(#grad3)" d="
-            M0 67
-            C 273,183
-            822,-40
-            1920.00,106 
-            
-            V 359 
-            H 0 
-            V 67
-            Z">
-              <animate repeatCount="indefinite" fill="url(#grad3)" attributeName="d" dur="15s" attributeType="XML"
-                values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-              </animate>
-            </path>
-          </svg>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-          <h2>
-            ORGANIC
-            FREE RANGE
-          </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
-        </div>
-        <div class="col-md-4">
-  
-        </div>
-        <div class="col-md-4"></div>
       </div>
     </div>
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="row fourrow">
-        <div class="waves3">
-          <svg class="seg4" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#fed972" />
-              <stop offset="50%" stop-color="#fed972" />
-              <stop offset="100%" stop-color="#fed972" />
-            </linearGradient>
-            <path fill="url(#grad4)" d="
-            M0 67
-            C 273,183
-            822,-40
-            1920.00,106 
-            
-            V 359 
-            H 0 
-            V 67
-            Z">
-              <animate repeatCount="indefinite" fill="url(#grad4)" attributeName="d" dur="15s" attributeType="XML"
-                values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-              </animate>
-            </path>
-          </svg>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-          <h2>
-            ORGANIC
-            FREE RANGE
-          </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
-        </div>
-        <div class="col-md-4">
-  
-        </div>
-        <div class="col-md-4"></div>
+  </div>
+</section>
+<section>
+  <img src="img/curves/curve4.png" alt="">
+  <div class="conrainer-fluid sixsec">
+    <div class="row">
+      <div class="col-lg-5">
+<img src="img/our recipes bg.png" width="400px" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-3 align-self-center">
+        <h1 class="bmtxt">TITLE TEXT</h1>
+        <p class="bmptxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat voluptatum id voluptas velit assumenda. Porro, laudantium similique expedita magnam mollitia culpa, ex, officiis aspernatur illo harum vitae nisi libero?</p>
+      </div>
+      <div class="col-lg-4 align-self-center">
+     <img src="img/GE11.png" alt="">
       </div>
     </div>
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="row fiverow">
-        <div class="waves5">
-          <svg class="seg5" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#9feed1" />
-              <stop offset="50%" stop-color="#9feed1" />
-              <stop offset="100%" stop-color="#9feed1" />
-            </linearGradient>
-            <path fill="url(#grad5)" d="
-            M0 67
-            C 273,183
-            822,-40
-            1920.00,106 
-            
-            V 359 
-            H 0 
-            V 67
-            Z">
-              <animate repeatCount="indefinite" fill="url(#grad5)" attributeName="d" dur="15s" attributeType="XML"
-                values="
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,-40
-              1222,283
-              1920,136 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 973,260
-              1722,-53
-              1920,120 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z; 
-      
-            M0 77 
-            C 473,283
-              822,-40
-              1920,116 
-            
-            V 359 
-            H 0 
-            V 67 
-            Z
-            ">
-              </animate>
-            </path>
-          </svg>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-          <h2>
-            ORGANIC
-            FREE RANGE
-          </h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum laborum
-            dignissimos odit omnis molestias unde cumque earum, minus reiciendis tenetur atque veritatis est, architecto
-            aliquid rem dicta provident totam?</p>
-        </div>
-        <div class="col-md-4">
-  
-        </div>
-        <div class="col-md-4"></div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid lastsec">
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="img/Signup.png" class="signimg" alt="">
       </div>
+      <div class="col-lg-4">
+    <h2 class="ltxt"><span>sign up</span> loram text start here</h2>
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-arrow-right"></i>
+     </button>
+   </div>
+
+      </div>
+      <div class="col-lg-6"></div>
     </div>
-  </section>
+  </div>
+</section>
+
+  <footer class="  text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase bhtxt">Footer Content</h5>
+  
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase bhtxt">Links</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase bhtxt mb-0">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="">GoodEggs</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -541,187 +1314,110 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-  <script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
-  </script>
-     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+     
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 </body>
 <script>
-  // The Slideshow class.
-  class Slideshow {
-    constructor(el) {
+  $("#tile-1 .nav-tabs a").click(function() {
+  var position = $(this).parent().position();
+  var width = $(this).parent().width();
+    $("#tile-1 .slider").css({"left":+ position.left,"width":width});
+});
+var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
+var actPosition = $("#tile-1 .nav-tabs .active").position();
+$("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
 
-      this.DOM = { el: el };
-
-      this.config = {
-        slideshow: {
-          delay: 3000,
-          pagination: {
-            duration: 3,
-          }
+</script>
+<script>
+  $(document).ready(function(){
+      $("#testimonial-slider").owlCarousel({
+          items:3,
+          itemsDesktop:[1000,3],
+          itemsDesktopSmall:[980,2],
+          itemsTablet:[768,2],
+          itemsMobile:[650,1],
+          pagination:true,
+          navigation:false,
+          slideSpeed:1000,
+          autoPlay:true
+      });
+  });
+</script>
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    autoplay:true,   
+    smartSpeed: 3000, 
+    autoplayTimeout:7000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
         }
-      };
-
-      // Set the slideshow
-      this.init();
-
     }
-    init() {
-
-      var self = this;
-
-      // Charmed title
-      this.DOM.slideTitle = this.DOM.el.querySelectorAll('.slide-title');
-      this.DOM.slideTitle.forEach((slideTitle) => {
-        charming(slideTitle);
-      });
-
-      // Set the slider
-      this.slideshow = new Swiper(this.DOM.el, {
-
-        loop: true,
-        autoplay: {
-          delay: this.config.slideshow.delay,
-          disableOnInteraction: false,
-        },
-        speed: 500,
-        preloadImages: true,
-        updateOnImagesReady: true,
-
-        // lazy: true,
-        // preloadImages: false,
-
-        pagination: {
-          el: '.slideshow-pagination',
-          clickable: true,
-          bulletClass: 'slideshow-pagination-item',
-          bulletActiveClass: 'active',
-          clickableClass: 'slideshow-pagination-clickable',
-          modifierClass: 'slideshow-pagination-',
-          renderBullet: function (index, className) {
-
-            var slideIndex = index,
-              number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
-
-            var paginationItem = '<span class="slideshow-pagination-item">';
-            paginationItem += '<span class="pagination-number">' + number + '</span>';
-            paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
-            paginationItem += '</span>';
-
-            return paginationItem;
-
-          },
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.slideshow-navigation-button.next',
-          prevEl: '.slideshow-navigation-button.prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-
-        on: {
-          init: function () {
-            self.animate('next');
-          },
-        }
-
-      });
-
-      // Init/Bind events.
-      this.initEvents();
-
-    }
-    initEvents() {
-
-      this.slideshow.on('paginationUpdate', (swiper, paginationEl) => this.animatePagination(swiper, paginationEl));
-      //this.slideshow.on('paginationRender', (swiper, paginationEl) => this.animatePagination());
-
-      this.slideshow.on('slideNextTransitionStart', () => this.animate('next'));
-
-      this.slideshow.on('slidePrevTransitionStart', () => this.animate('prev'));
-
-    }
-    animate(direction = 'next') {
-
-      // Get the active slide
-      this.DOM.activeSlide = this.DOM.el.querySelector('.swiper-slide-active'),
-        this.DOM.activeSlideImg = this.DOM.activeSlide.querySelector('.slide-image'),
-        this.DOM.activeSlideTitle = this.DOM.activeSlide.querySelector('.slide-title'),
-        this.DOM.activeSlideTitleLetters = this.DOM.activeSlideTitle.querySelectorAll('span');
-
-      // Reverse if prev  
-      this.DOM.activeSlideTitleLetters = direction === "next" ? this.DOM.activeSlideTitleLetters : [].slice.call(this.DOM.activeSlideTitleLetters).reverse();
-
-      // Get old slide
-      this.DOM.oldSlide = direction === "next" ? this.DOM.el.querySelector('.swiper-slide-prev') : this.DOM.el.querySelector('.swiper-slide-next');
-      if (this.DOM.oldSlide) {
-        // Get parts
-        this.DOM.oldSlideTitle = this.DOM.oldSlide.querySelector('.slide-title'),
-          this.DOM.oldSlideTitleLetters = this.DOM.oldSlideTitle.querySelectorAll('span');
-        // Animate
-        this.DOM.oldSlideTitleLetters.forEach((letter, pos) => {
-          TweenMax.to(letter, .3, {
-            ease: Quart.easeIn,
-            delay: (this.DOM.oldSlideTitleLetters.length - pos - 1) * .04,
-            y: '50%',
-            opacity: 0
-          });
-        });
-      }
-
-      // Animate title
-      this.DOM.activeSlideTitleLetters.forEach((letter, pos) => {
-        TweenMax.to(letter, .6, {
-          ease: Back.easeOut,
-          delay: pos * .05,
-          startAt: { y: '50%', opacity: 0 },
-          y: '0%',
-          opacity: 1
-        });
-      });
-
-      // Animate background
-      TweenMax.to(this.DOM.activeSlideImg, 1.5, {
-        ease: Expo.easeOut,
-        startAt: { x: direction === 'next' ? 200 : -200 },
-        x: 0,
-      });
-
-      //this.animatePagination()
-
-    }
-    animatePagination(swiper, paginationEl) {
-
-      // Animate pagination
-      this.DOM.paginationItemsLoader = paginationEl.querySelectorAll('.pagination-separator-loader');
-      this.DOM.activePaginationItem = paginationEl.querySelector('.slideshow-pagination-item.active');
-      this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
-
-      console.log(swiper.pagination);
-      // console.log(swiper.activeIndex);
-
-      // Reset and animate
-      TweenMax.set(this.DOM.paginationItemsLoader, { scaleX: 0 });
-      TweenMax.to(this.DOM.activePaginationItemLoader, this.config.slideshow.pagination.duration, {
-        startAt: { scaleX: 0 },
-        scaleX: 1,
-      });
-
-
-    }
-
-  }
-
-  const slideshow = new Slideshow(document.querySelector('.slideshow'));
+})
 </script>
 
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/js/theme-vendors.js"></script>
+<script src="./assets/js/theme.min.js"></script>
 
+
+<!-- <script>
+	(function($){
+$(function(){
+  $('.before-wrapper').on( "mousemove", function(e) {
+	var offsets = $(this).offset();
+	var fullWidth = $(this).width();
+	var mouseX = e.pageX - offsets.left;
+
+	if (mouseX < 0) { mouseX = 0; }
+	else if (mouseX > fullWidth) { mouseX = fullWidth }
+
+
+	$(this).parent().find('.comparison-slider').css({
+	  left: mouseX,
+	  transition: 'none'
+	});
+	$(this).find('.after-wrapper').css({
+	  transform: 'translateX(' + (mouseX) + 'px)',
+	  transition: 'none'
+	});
+	$(this).find('.after-image').css({
+	  transform: 'translateX(' + (-1*mouseX) + 'px)',
+	  transition: 'none'
+	});
+  });
+  $('.slider-wrapper').on( "mouseleave", function() {
+	$(this).parent().find('.comparison-slider').css({
+	  left: '50%',
+	  transition: 'all .80s'
+	});
+	$(this).find('.after-wrapper').css({
+	  transform: 'translateX(50%)',
+	  transition: 'all .80s'
+	});
+	$(this).find('.after-image').css({
+	  transform: 'translateX(-50%)',
+	  transition: 'all .70s'
+	});
+  });
+
+}); 
+})(jQuery); 
+
+</script> -->
 
 </html>
