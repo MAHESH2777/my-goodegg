@@ -39,10 +39,10 @@
 
 @font-face {
   font-family: 'Aileron-Black';
-  src:url(./fonts/Aileron-Black.otf);
+  src:url(./fonts/Aileron-Regular.otf);
 }
 body{
-  font-family: 'Aileron-Black';
+  font-family: 'Aileron-Regular';
 }
 h1, .h1,
 h2, .h2,
@@ -52,7 +52,15 @@ h5, .h5,
 h6 .h6 {
   font-family: 'Aileron-Black' !important;
 }
-  
+.eggsul {
+    background-color: rgba(255, 255, 255, 0) !important;
+    position: relative;
+    border: none!important;
+
+    /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%); */
+    border-radius: 6px;
+    height: 24px;
+  }
 .slider-wrapper {
     width: 100%;
     height: 100vh;
@@ -105,7 +113,7 @@ h6 .h6 {
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
   }
-  
+
   .after-image {
     display: block;
     width: auto;
@@ -175,7 +183,25 @@ h6 .h6 {
     background-color: #f7f7f7;
 }
 
-
+img.onewave {
+  position: absolute;
+    top: 1988px;
+    z-index: 999;
+    width: 194px;
+}
+img.twowave {
+  position: absolute;
+    top: 3044px;
+    z-index: 999;
+    width: 194px;
+}
+img.threewave {
+  position: absolute;
+    top: 4074px;
+    right: 0px;
+    z-index: 999;
+    width: 194px;
+}
 @media only screen and (min-width: 900px) and (max-width: 1025px)  {
 
 .burosec {
@@ -252,10 +278,10 @@ img.bimg {
     width: 31px;
 }
 .seg2 {
-    position: absolute;
+  position: absolute;
     width: 100%;
     bottom: 0;
-    top: 1167px;
+    top: 1179px;
     left: 0;
     animation-name: move-left;
     animation-duration: 4s;
@@ -263,10 +289,10 @@ img.bimg {
     animation-direction: alternate;
 }
 .seg3 {
-    position: absolute;
+  position: absolute;
     width: 100%;
     bottom: 0;
-    top: 2205px;
+    top: 3256px;
     left: 0;
     animation-name: move-right;
     animation-duration: 8s;
@@ -274,10 +300,10 @@ img.bimg {
     animation-direction: reverse;
 }
 .seg4 {
-    position: absolute;
+  position: absolute;
     width: 100%;
     bottom: 0;
-    top: 3216px;
+    top: 3261px;
     left: 0;
     animation-name: move-right;
     animation-duration: 8s;
@@ -457,16 +483,16 @@ div#YTP_1613547492898 {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="goodhens.html">GoodHens</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="recipe.html">Recipes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -599,12 +625,14 @@ div#YTP_1613547492898 {
 
 
   <section>
+
+   
     <div class="waves">
       <svg class="zero" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#09b0b9" />
-          <stop offset="50%" stop-color="#09b0b9" />
-          <stop offset="100%" stop-color="#09b0b9" />
+          <stop offset="0%" stop-color="#33b6bb" />
+          <stop offset="50%" stop-color="#33b6bb" />
+          <stop offset="100%" stop-color="#33b6bb" />
         </linearGradient>
         <path fill="url(#grad1)" d="
         M0 67
@@ -728,6 +756,8 @@ div#YTP_1613547492898 {
     </div>
   </section>
   <section>
+    <img class="onewave" src="img/wavy design.png" alt="">
+ 
     <div class="waves2">
       <svg class="seg2" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -856,6 +886,8 @@ div#YTP_1613547492898 {
     </div>
   </section>
   <section>
+    <img class="twowave" src="img/wavy design.png" alt="">
+ 
     <div class="waves3">
       <svg class="seg3" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -984,6 +1016,7 @@ div#YTP_1613547492898 {
     </div>
   </section>
   <section>
+    <img class="threewave" src="img/wavy design.png" alt="">
     <div class="waves3">
       <svg class="seg4" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -1167,6 +1200,7 @@ div#YTP_1613547492898 {
       </svg>
     </div>
     <div class="container-fluid fiverow">
+   
    <img src="img/NUTRIENTS WAVY LINE.png" class="wave" alt="">
       <div class="row ">
      
@@ -1197,32 +1231,76 @@ div#YTP_1613547492898 {
    <div class="tab-content">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <img src="img/Cracked egg series egg1.png" alt="">
+      <h1 class="cartxt text-white">Nutrients</h1>
     </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
     <img src="img/Cracked egg series egg2.png" alt="">
+    <h1 class="cartxt text-white">Loram</h1>
   </div>
   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
     <img src="img/Cracked egg series egg3.png" alt="">
+    <h1 class="cartxt text-white">loram</h1>
   </div>
   <div class="tab-pane fade" id="setting" role="tabpanel" aria-labelledby="setting-tab">
     <img src="img/Cracked egg series egg4.png" alt="">
+    <h1 class="cartxt text-white">loram</h1>
   </div>
   </div>
 
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs nav-justified" role="tablist">
+   
+        <ul class="eggsul nav nav-tabs  nav-justified" role="tablist">
           <div class="slider"></div>
+      
            <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><img src="img/HEN ICON.png" class="henimg" alt=""></a>
+           
+              <a class="nav-link" id="home-tab"  role="tab" aria-controls="home" aria-selected="true">
+                <img src="img/Cracked egg series egg1.png" width="30px" alt="">
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><img src="img/HEN ICON.png" class="henimg" alt=""></a>
+              <a class="nav-link" id="profile-tab"  role="tab" aria-controls="profile" aria-selected="false">
+                <!-- <img src="img/HEN ICON.png" class="henimg" alt=""> -->
+                <img src="img/Cracked egg series egg1.png" width="30px" alt="">
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><img src="img/HEN ICON.png" class="henimg" alt=""></a>
+              <a class="nav-link" id="contact-tab"   role="tab" aria-controls="contact" aria-selected="false">
+                <img src="img/Cracked egg series egg1.png" width="30px" alt="">
+              </a>
             </li>
           <li class="nav-item">
-              <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false"><img src="img/HEN ICON.png" class="henimg" alt=""></a>
+              <a class="nav-link" id="setting-tab" data-toggle="tab"  role="tab" aria-controls="setting" aria-selected="false">
+                <img src="img/Cracked egg series egg1.png" width="30px" alt="">
+              </a>
+            </li>
+        </ul>
+        <br>
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <div class="slider"></div>
+      
+           <li class="nav-item">
+           
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                <button class="sldbtn">click</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                <!-- <img src="img/HEN ICON.png" class="henimg" alt=""> -->
+                <button class="sldbtn">click</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                <button class="sldbtn">click</button>
+              </a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" id="setting-tab" data-toggle="tab" href="#setting" role="tab" aria-controls="setting" aria-selected="false">
+                <button class="sldbtn"
+                >click</button>
+              </a>
             </li>
         </ul>
         <br>
@@ -1254,7 +1332,7 @@ div#YTP_1613547492898 {
           <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-5">
-          <h1 class="sideheads"><strong>TITLEHERE</strong></h1>
+          <h1 class="sideheads"><strong>TITLE HERE</strong></h1>
           <P class="side p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni earum asperiores id incidunt velit assumenda veniam atque voluptatem. Ut culpa consequuntur deserunt praesentium aliquam quia similique facilis accusamus ipsa cumque.</P>
           <button class="lrnbtn">Learn More</button>
           <div class="row">
@@ -1284,7 +1362,7 @@ div#YTP_1613547492898 {
           </div>
           </div>
           <div class="row">
-            <h1 class="sideheads"><strong>TITLEHERE</strong></h1>
+            <h1 class="sideheads"><strong>TITLE HERE</strong></h1>
             <p class="side p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea sequi dolor. Quisquam veniam, quibusdam ea labore reiciendis optio maiores nobis illum eaque fugit quae dolor cum et, explicabo ipsum?</p>
   
           </div>
@@ -1414,7 +1492,7 @@ div#YTP_1613547492898 {
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, blanditiis! Voluptatum esse eum voluptatem? Dolorem nulla explicabo, repellat eum culpa soluta libero sed, quisquam minima rem architecto provident dicta qui?</p>
+     <h5>Enter your zip code to find GoodEggs <br> in your neck of the woods</h5>
         <img src="img/location icon.png" alt="">
   <br>
   <br>
@@ -1442,7 +1520,7 @@ div#YTP_1613547492898 {
 <img src="img/our recipes bg.png"  class="repimg" alt="">
       </div>
       <div class="col-lg-3 align-self-center">
-        <h1 class="bmtxt">TITLE TEXT</h1>
+        <h1 class="bmtxt">Title Text</h1>
         <p class="bmptxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat voluptatum id voluptas velit assumenda. Porro, laudantium similique expedita magnam mollitia culpa, ex, officiis aspernatur illo harum vitae nisi libero?</p>
         <button class="lrnbtn">Learn More</button>
       </div>
@@ -1476,6 +1554,20 @@ div#YTP_1613547492898 {
 </section>
 
   <footer class="  text-lg-start">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 class="folotxt">FOllOW US</h4>
+          <ul class="social">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- Grid container -->
     <div class="container p-4">
       <!--Grid row-->
@@ -1544,6 +1636,7 @@ div#YTP_1613547492898 {
       <a class="text-white" href="">GoodEggs</a>
     </div>
     <!-- Copyright -->
+
   </footer>
 
   <!-- jQuery -->

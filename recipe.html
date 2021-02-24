@@ -40,12 +40,12 @@
 
   <style>
     @font-face {
-      font-family: 'Aileron-Black';
-      src: url(./fonts/Aileron-Black.otf);
+      font-family: 'Aileron-Regular';
+      src: url(./fonts/Aileron-Regular.otf);
     }
 
     body {
-      font-family: 'Aileron-Black';
+      font-family: 'Aileron-Regular';
 
       background-image: url('./img/recipe\ page\ splash5.png');
  background-repeat: no-repeat;
@@ -391,6 +391,17 @@
     position: relative;
     
 }
+img.onewave {
+    position: absolute;
+    left: 116px;
+    z-index: 9;
+}
+img.twowave {
+    position: absolute;
+    right: 63px;
+    top: 50%;
+    z-index: 9;
+}
   </style>
 
 
@@ -410,16 +421,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="goodhens.html">GoodHens</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="recipe.html">Recipes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -538,7 +549,7 @@
       </div>
     </div>
     <div class="portfolio">
-
+      <img class="onewave" src="img/wavy design.png" alt="">
       <div class="filters">
   
   
@@ -569,8 +580,8 @@
   
         <div class="all-types all-media content custom photos">
           <div class="c-container">
-            <a client="Canadian Cancer Society" data-featherlight="image"
-              href="">
+            <a 
+              href="inner-recipe.html">
               <h3 class="imgphtxt">Loram text here</h3>
               <img alt=""
                 src="img/Recipe image2.png"
@@ -580,8 +591,8 @@
   
         <div class="all-types all-media content custom photos">
           <div class="c-container">
-            <a client="Canadian Cancer Society" data-featherlight="image"
-              href="">
+            <a 
+              href="inner-recipe.html">
               <h3 class="imgphtxt">Loram text here</h3>
               <img alt=""
                 src="img/Recipe image3.png"
@@ -611,7 +622,7 @@
               </video></a>
           </div>
         </div>
-  
+        
         <div class="all-types all-media content custom graphics">
           <div class="c-container">
             <a client="Aquisio" data-featherlight="#grade-graphic" href="#"><img alt=""
@@ -688,6 +699,7 @@
        
       </div>
     </div>
+    <img class="twowave" src="img/wavy design.png" alt="">
   </section>
  
 
