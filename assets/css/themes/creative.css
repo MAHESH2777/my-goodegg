@@ -78,10 +78,10 @@ h6 {
 }
 
 .main-nav > li > a {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   letter-spacing: 0.05em;
-  color: #858694;
+  color: #20b4b1;
 }
 
 .main-nav > li.is-active > a,
@@ -105,13 +105,13 @@ h6 {
 
 @media (min-width: 1200px) {
   .main-header .is-stuck {
-    background: #fff !important;
+    background: #33b6bbd9  !important;
   }
   .mainbar-wrap.is-stuck .social-icon a,
   .mainbar-wrap.is-stuck .header-module .ld-module-trigger,
   .mainbar-wrap.is-stuck .main-nav > li > a,
   .mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
-    color: rgba(0, 0, 0, 0.7) !important;
+    color: #20b4b1!important;
   }
   .mainbar-wrap.is-stuck .social-icon a:hover,
   .mainbar-wrap.is-stuck .main-nav > li > a:hover {

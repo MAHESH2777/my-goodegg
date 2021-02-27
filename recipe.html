@@ -64,6 +64,33 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
+.main-nav > li > a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #24b6b2 !important;
+    white-space: nowrap;
+}
+@media screen and (min-width: 1200px){
+.is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
+    color: rgb(0 164 170) !important;
+}
+}
+@font-face {
+      font-family: 'Aileron-Black';
+      src: url(./fonts/Aileron-Black.otf);
+      src: url(./fonts/Aileron-Regular.otf);
+
+    }
+
+   
+
     h1,
     .h1,
     h2,
@@ -77,6 +104,15 @@
     h6 .h6 {
       font-family: 'Aileron-Black' !important;
     }
+ p{
+  font-family: 'Aileron-Regular' !important;
+ }
+ ul{
+  font-family: 'Aileron-Regular' !important;
+ }
+ .lqd-sticky-placeholder.hide {
+    height: 0px !important;
+}
 
     .slider-wrapper {
       width: 100%;
@@ -85,7 +121,24 @@
     }
 
 
-
+    .owlimgs li{
+  padding: 0px 127px;
+}
+ul#primary-nav {
+  background-color: white;
+  padding: 13px 18px;
+  font-family: 'Aileron-Black' !important;
+  border-radius: 35px;
+}
+ul#primary-nav li {
+  padding: 0px 20px;
+}
+div#main-header-collapse {
+  width: 100%;
+  height: 61px !important;
+  margin-top: 33px;
+  font-family: 'Aileron-Black' !important;
+}
     .comparison-slider {}
 
     .before-wrapper {
@@ -221,12 +274,48 @@
         right: -65vw;
         left: -21vw;
       }
-
-      .burosec {
-        background-color: #cb0030;
-        padding: 83px 0px;
-        position: relative;
-      }
+      .ld-masked-image {
+    top: -7vh;
+    right: -65vw;
+    left: -34vw;
+}
+.bannertxt {
+    position: absolute;
+    top: 38%;
+    right: 36px;
+    z-index: 99;
+    width: 715px;
+}
+.bannertxt0 {
+    position: absolute;
+    top: 27%;
+    right: 212px;
+    z-index: 99;
+    width: 530px;
+}
+.smlogo {
+    position: absolute;
+    bottom: 169px;
+    /* left: 0px; */
+    right: 7px;
+}
+ul#primary-nav li {
+    padding: 0px 17px;
+}
+.is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
+    color: rgb(29 178 177) !important;
+}
+.main-nav > li, .main-nav > li > a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #24b6b2;
+}
+img.onewave {
+    position: absolute;
+    left: 10px;
+    z-index: 9;
+}
 
     }
 
@@ -247,6 +336,15 @@
       .henimg {
         width: 31px;
       }
+      .is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
+    color: rgb(29 178 177) !important;
+}
+.main-nav > li, .main-nav > li > a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #24b6b2;
+}
     }
 
     @media only screen and (min-width: 1460px) and (max-width: 1601px) {
@@ -266,7 +364,15 @@
       .henimg {
         width: 31px;
       }
-
+      .is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
+    color: rgb(29 178 177) !important;
+}
+.main-nav > li, .main-nav > li > a {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #24b6b2;
+}
 
 
     }
@@ -278,13 +384,51 @@
         right: 227px;
         z-index: 999;
       }
-
       .ld-masked-image {
-        top: 9vh;
-        right: -65vw;
-        left: -12vw;
-      }
-
+    top: 13vh;
+    right: -65vw;
+    left: -12vw;
+    width: 3998px;
+    height: 1080px;
+}
+.bannertxt {
+    position: absolute;
+    top: 38%;
+    right: 36px;
+    z-index: 99;
+    width: 688px;
+}
+.bannertxt0 {
+    position: absolute;
+    top: 31%;
+    right: 244px;
+    z-index: 99;
+    width: 471px;
+}
+img.onewave {
+    position: absolute;
+    left: 258px !important;
+    z-index: 9;
+}
+img.twowave {
+    position: absolute;
+    right: 254px !important;
+    top: 50%;
+    z-index: 9;
+}
+.main-nav > li.active > a, .main-nav > li.current-menu-item > a, .main-nav > li > a:hover {
+    color: #0dbfc9;
+}
+nav > li > a:hover, .is-stuck .ld-module-search-visible-form .input-icon {
+    color: #0dbfc9 !important;
+}
+.smlogo {
+    position: absolute;
+    bottom: 187px;
+    /* left: 0px; */
+    right: 41px;
+    width: 224px;
+}
       .inline-YTPlayer {
         position: relative;
         max-width: 1920px;
@@ -410,35 +554,121 @@ img.twowave {
 <body>
 
   <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <header class="main-header main-header-overlay" data-sticky-header="true"
+    data-sticky-options="{ &quot;stickyTrigger&quot;: &quot;first-section&quot; }">
+    <div class="mainbar-wrap">
+      <div class="container-fluid mainbar-container">
+        <div class="mainbar">
+          <div class="row mainbar-row align-items-lg-stretch px-4">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="goodhens.html">GoodHens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="recipe.html">Recipes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+            <div class="col">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" rel="home">
+                  <span class="navbar-brand-inner">
+                    <img class="logo-dark" src="img/logo.png" alt="Ave HTML Template">
+                    <img class="logo-sticky" src="img/logo.png" alt="Ave HTML Template">
+                    <img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
+                    <img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
+                  </span>
+                </a>
+                <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse"
+                  data-target="#main-header-collapse" aria-expanded="false"
+                  data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </span>
+                </button>
+              </div><!-- /.navbar-header -->
+            </div><!-- /.col -->
+
+            <div class="col">
+
+              <div class="collapse navbar-collapse" id="main-header-collapse">
+
+                <ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-end"
+                  data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
+
+                  <li>
+                    <a href="index.html">
+                      <span class="link-icon"></span>
+                      <span class="link-txt">
+                        <span class="link-ext"></span>
+                        <span class="txt">
+                          GoodEggs
+                          <span class="submenu-expander">
+                            <i class="fa fa-angle-down"></i>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+
+
+                  <li class="menu-item-has-children megamenu megamenu-fullwidth columns-4 position-applied"
+                    data-bg-color="rgb(33, 33, 33)" data-megamenu-bg-scheme="dark">
+                    <a href="goodhens.html">
+                      <span class="link-icon"></span>
+                      <span class="link-txt">
+                        <span class="link-ext"></span>
+                        <span class="txt">
+                          GoodHens
+                          <span class="submenu-expander">
+                            <i class="fa fa-angle-down"></i>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+
+                  </li>
+                  <li class="menu-item-has-children position-applied">
+                    <a href="recipe.html">
+                      <span class="link-icon"></span>
+                      <span class="link-txt">
+                        <span class="link-ext"></span>
+                        <span class="txt">
+                          Recipes
+                          <span class="submenu-expander">
+                            <i class="fa fa-angle-down"></i>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+
+                  </li>
+                  <li class="menu-item-has-children position-applied">
+                    <a href="contact.html">
+                      <span class="link-icon"></span>
+                      <span class="link-txt">
+                        <span class="link-ext"></span>
+                        <span class="txt">
+                          Contact
+                          <span class="submenu-expander">
+                            <i class="fa fa-angle-down"></i>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+
+                  </li>
+
+
+                </ul><!-- /#primary-nav  -->
+
+              </div><!-- /#main-header-collapse -->
+
+
+
+            </div><!-- /.col -->
+
+          </div><!-- /.mainbar-row -->
+        </div><!-- /.mainbar -->
+      </div><!-- /.mainbar-container -->
+    </div><!-- /.mainbar-wrap -->
+
+  </header>
     <!-- <div class="past">The past</div>
             <div class="future">The future</div> -->
     <div class="lqd-vbg-wrap">
@@ -539,11 +769,11 @@ img.twowave {
 
   <section class="secrep">
     <div class="container-fluid p-0">
-      <div class="row">
+      <div class="row recpone">
      <div class="col-lg-6">
 
      </div>
-     <div class="col-lg-6 recpone">
+     <div class="col-lg-6 ">
 
      </div>
       </div>
@@ -569,8 +799,8 @@ img.twowave {
         <div class="all-types all-media content licensed articles">
           <div class="c-container">
   
-            <a client="CityNews" data-featherlight="iframe"
-              href="">
+            <a 
+              href="inner-recipe.html">
               <h3 class="imgphtxt">hello</h3>
               <img alt=""
                 src="img/Recipe image1.png"
@@ -704,76 +934,87 @@ img.twowave {
  
 
   <footer class="  text-lg-start">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
+    <div class="container-fluid">
       <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase bhtxt">Footer Content</h5>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-            voluptatem veniam, est atque cumque eum delectus sint!
-          </p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase bhtxt">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="">Link 4</a>
-            </li>
+        <div class="col-lg-12 text-center">
+          <h4 class="folotxt">FOllOW US</h4>
+          <ul class="social">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
           </ul>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase bhtxt mb-0">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
       </div>
-      <!--Grid row-->
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(255 255 255 / 0%);    color: black;">
-      © 2020 Copyright:
-      <a class="text-white" href="">GoodEggs</a>
+ <div class="container-fluid">
+   <div class="row">
+    <div class="col-lg-2"></div>
+   
+    <div class="col-lg-3 footerbgshadow">
+     <div class="row">
+       <div class="col-lg-5 ">
+         <ul>
+           <li>Vitamin A</li>
+           <li>Vitamin B</li>
+           <li>Vitamin C</li>
+           <li>Vitamin D</li>
+         </ul>
+       </div>
+       <div class="col-lg-4">
+         <ul>
+           <li>GoodEgg</li>
+           <li>About</li>
+           <li>GoodHend</li>
+           <li>Recipes</li>
+         </ul>
+       </div>
+       <div class="col-lg-3">
+         <ul>
+           <li>faq</li>
+        
+         </ul>
+       </div>
+     </div>
+  
     </div>
-    <!-- Copyright -->
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1 bdron"></div>
+    <div class="col-lg-3">
+      <h3>Contact</h3>
+      <p style="font-family: 'Aileron-Black' !important;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fugit necessitatibus nostrum perferendis deserunt animi porro quis</p>
+    </div>
+    <div class="col-lg-2">
+      <img src="img/logo.png" class="smlogo" width="130px" alt="">
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-lg-3"></div>
+     <div class="col-lg-6">
+       <div class="row">
+         <div class="col-lg-4 ">
+           <h6 class="text-white"> careers</h6>
+         </div>
+         <div class="col-lg-4 ">
+           <h6 class="text-white">
+            Privacy Policy
+           </h6>
+         
+         </div>
+         <div class="col-lg-4 ">
+           <h6 class="text-white">
+            Terms of Use
+           </h6>
+          
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-3"></div>
+   </div>
+ </div>
+     
   </footer>
-
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->

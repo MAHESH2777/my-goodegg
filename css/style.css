@@ -1,23 +1,98 @@
 
 @font-face {
   font-family: 'Aileron-Black';
-  src:url(./fonts/Aileron-Black.otf);
+  src: url(./fonts/Aileron-Black.otf);
+  src: url(./fonts/Aileron-Regular.otf);
+
 }
-body{
-  font-family: 'Aileron-Black' !important;
-}
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
+
+
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
 h6 .h6 {
   font-family: 'Aileron-Black' !important;
 }
-  
+p{
+font-family: 'Aileron-Regular' !important;
+}
+ul{
+font-family: 'Aileron-Regular' !important;
+}
 footer {
   background-color: #ffffff;
 
+}
+.bdron{
+  border-left: 3px solid #00a4aa;
+    padding: 20px;
+    margin: 20px 0px;
+
+   
+}
+.smlogo{
+  position: absolute;
+  bottom: 187px;
+  /* left: 0px; */
+  right: 41px;
+}
+.footerbgshadow {
+  font-family: 'Aileron-Black' !important;
+  box-shadow: 0 16px 18px rgb(0 0 0 / 7%);
+}
+.footerbgshadow ul {
+  font-family: 'Aileron-Regular' !important;
+  border-top: 5px solid #00a4aa;
+  padding: 10px;
+  /* border-radius: 11px 11px 11px 11px; */
+  margin-top: 5px;
+}
+.footerbgshadow ul li {
+  color: #00a4aa;
+  padding: 13px 0px;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: 'Aileron-Black' !important;
+}
+.dragtxt {
+  height: 0px;
+  width: 85px;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  z-index: 5;
+  transform: rotate( 
+-90deg
+);
+  -webkit-transform: rotate( 
+90deg
+);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+
+}
+.dragtxt h6{
+
+    display: block;
+
+    height: 52px;
+    padding-top: 10px;
+    width: 155px;
+    text-align: center;
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
 }
 .owlimgs{
   list-style-type: none;
@@ -26,7 +101,31 @@ footer {
 .owlimgs li{
   padding: 0px 127px;
 }
-
+ul#primary-nav {
+  background-color: white;
+  padding: 13px 18px;
+  font-family: 'Aileron-Black' !important;
+  border-radius: 35px;
+}
+ul#primary-nav li {
+  padding: 0px 20px;
+}
+div#main-header-collapse {
+  width: 100%;
+  height: 61px !important;
+  margin-top: 33px;
+  font-family: 'Aileron-Black' !important;
+}
+.main-nav > li > a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #1ab1b0;
+}
+.main-header .is-stuck {
+  background: #33b6bbd9 !important;
+  backdrop-filter: none;
+}
 .folotxt {
   font-weight: 700;
   color: #00a4aa;
@@ -152,23 +251,23 @@ footer p ,h5{
   width: 97px;
 }
 .onerow p{
-  font-size: 17px;
+  font-size: 19px;
 }
 .tworow ul{
   color: white;
 }
 .tworow p{
-  font-size: 17px;
+  font-size: 19px;
 }
 .threerow p{
-  font-size: 17px;
+  font-size: 19px;
 }
 .threerow ul{
   color: white;
 }
 .fourrow p{
   color: white;
-  font-size: 17px;
+  font-size: 19px;
 }
 .fourrow ul{
   color: white;
@@ -221,7 +320,14 @@ img.bimg {
 }
 .sideheads {
   color: #00a4aa;
-  /* font-weight: 600; */
+  text-align: right;
+  margin: 0px;
+}
+.sideheadsh2{
+  color: #00a4aa;
+  text-align: right;
+  font-weight: 200;
+  margin: 0px;
 }
 .navbar {
 
@@ -375,7 +481,7 @@ ul.navbar-nav.ml-auto {
     -webkit-transition: .35s;
     transition: .35s;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 19px;
 }
 .navbar {
   font-weight: 300;
@@ -411,7 +517,7 @@ div.waves{
     bottom: 0;
     /*height: 100%;*/
     position: absolute;
-    z-index: 99;
+    z-index: 8 !important;
   }
 
   .tutorial-link{
@@ -480,7 +586,7 @@ div.waves{
   bottom: 0;
   /*height: 100%;*/
   position: absolute;
-  z-index: 99;
+  z-index: 8 !important;
 }
 @keyframes example {
   0%   {
@@ -520,7 +626,7 @@ width: 100%;
 bottom: 0;
 /*height: 100%;*/
 position: absolute;
-z-index: 99;
+z-index: 8 !important;
 }
 .seg3 {
   position: absolute;
@@ -573,7 +679,7 @@ width: 100%;
 bottom: 0;
 /*height: 100%;*/
 position: absolute;
-z-index: 99;
+z-index: 8 !important;
 }
 .seg5 {
   position: absolute;
@@ -603,7 +709,7 @@ border:1px solid #ECECEC;
 }
 #customers-testimonials .shadow-effect p {
   font-family: inherit;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.5;
   margin: 0 0 17px 0;
   font-weight: 300;
@@ -672,11 +778,16 @@ testimonials styles start here */
   margin: 0 20px 40px;
 }
 .testimonial .testimonial-content{
-  padding: 35px 25px 35px 50px;
+  padding: 20px 15px 20px 47px;
   margin-bottom: 35px;
   background: #fff;
+  color: #33b6bb;
   position: relative;
   border-radius: 16px;
+  box-shadow: 0 16px 18px rgb(0 0 0 / 7%);
+  background-image: url('../img/line.png');
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .testimonial-content .testimonial-icon{
@@ -702,8 +813,8 @@ testimonials styles start here */
 }
 .testimonial .description{
   font-size: 15px;
-  font-style: italic;
-  color: #8a8a8a;
+  /* font-style: italic; */
+  color: #33b6bb;
   line-height: 23px;
   margin: 0;
 }
@@ -711,7 +822,7 @@ testimonials styles start here */
   display: block;
   font-size: 18px;
   font-weight: 700;
-  color: #525252;
+  color: #33b6bb;
   text-transform: capitalize;
   letter-spacing: 1px;
   margin: 0 0 5px 0;
@@ -719,7 +830,7 @@ testimonials styles start here */
 .testimonial .post {
   display: block;
   font-size: 14px;
-  color: #000000;
+  color: #949494;
 }
 .owl-theme .owl-controls{
   margin-top: 20px;
@@ -970,8 +1081,9 @@ testimonials styles start here */
     position: absolute;
     width: 100%;
     bottom: 0;
-    top: 1188px;
+    top: 1067px;
     left: 0;
+    height: 166px;
     animation-name: move-left;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -981,19 +1093,21 @@ testimonials styles start here */
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 2248px;
+  top: 2146px;
   left: 0;
+  height: 166px;
   animation-name: move-right;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: reverse
 }
 .seg4 {
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 3311px;
+  top: 3237px;
   left: 0;
+  height: 166px;
   animation-name: move-right;
   animation-duration: 8s;
   animation-iteration-count: infinite;
@@ -1003,8 +1117,9 @@ testimonials styles start here */
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 4404px;
+  top: 4317px;
   left: 0;
+  height: 166px;
   animation-name: move-right;
   animation-duration: 8s;
   animation-iteration-count: infinite;
@@ -1231,7 +1346,7 @@ img.curve2 {
   background-color:transparent!important;
   border:none!important;
   color:#39bcd3!important;
-  background-image: url(../img/HEN\ ICON.png);
+  background-image: url(../img/hens2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1616,6 +1731,10 @@ audio {
 .container-fluid.ghsec {
   padding: 100px 0px;
   background-color: #f39b19;
+  background-image: url('../img/googhens/GOOD\ HENS\ PAGE\ SPLASH2.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
 }
 .ghh1{
   padding: 0px 47px;
@@ -1624,5 +1743,12 @@ audio {
 .ghsec2{
   padding: 100px 0px;
   background-color: #071838;
+  background-image: url('../img/googhens/GOOD\ HENS\ PAGE\ SPLASH3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 
+}
+.henimgone {
+  padding: 206px 0px 0px 47px;
 }
