@@ -170,6 +170,7 @@ div#main-header-collapse {
   color: white;
     font-weight: 600;
     font-size: 55px;
+    margin: 10px 0px;
 
 }
 .myvideo{
@@ -314,14 +315,18 @@ footer ul li a{
 }
 .burosec {
   background-color: #cb0030;
-  padding: 110px 0px;
+  padding: 80px 0px 120px 0px;
   position: relative;
 }
 img.bimg {
   position: absolute;
-  top: 658px;
-  right: 161px;
-  z-index: 999;
+  /* top: 658px; */
+  top: -134%;
+  padding: 0px;
+  margin: 0px;
+  /* bottom: -38px; */
+  /* right: 120px; */
+  z-index: 9;
 }
 .btxt{
   color: white;
@@ -593,10 +598,9 @@ div.waves{
 
   .onerow {
     background-color: #00a4aa;
-    padding: 100px 0px;
-    /* z-index: 1100; */
+    padding: 0px 0px 120px 0px;
 
-    opacity: 0.8;
+    width: 100%;
     background-image: url(../img/shapes/splash1.png);
     background-repeat: no-repeat;
     background-position: inherit;
@@ -605,14 +609,16 @@ div.waves{
 /* wave2 animations start here */
 
 
- .tworow{
-    background-color: #f6b3d0;
-    padding: 100px 0px;
-    background-image: url(../img/shapes/splash2.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
- }
+.tworow {
+  background-color: #f6b3d0;
+  padding: 0px 0px 120px 0px;
+  background-image: url(../img/shapes/splash2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  /* width: 100%; */
+  /* width: 1920px; */
+}
  div.waves2{
   width: 100%;
   bottom: 0;
@@ -634,22 +640,25 @@ div.waves{
     top:0px;}
 }
 .seg2 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 1149px;
+  top: 0px;
+  
   left: 0;
+  height: 178px;
   animation-name: move-left;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 /* wave3 animation start here */
-.threerow{
+.threerow {
   background-color: #071838;
-  padding: 100px 0px;
+  padding: 0px 0px 120px 0px;
   background-image: url(../img/shapes/splash3.png);
   background-repeat: no-repeat;
+ 
   background-position: inherit;
   background-size: contain;
 }
@@ -661,20 +670,21 @@ position: absolute;
 z-index: 8 !important;
 }
 .seg3 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 2145px;
+  top: 0px;
   left: 0;
-  animation-name: move-right;
-  animation-duration: 8s;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
 }
 /* wave four animation start here */
-.fourrow{
+.fourrow {
   background-color: #9e0b0f;
-  padding: 100px 0px;
+  padding: 0px 0px 120px 0px;
   background-image: url(../img/shapes/splash4.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -688,15 +698,16 @@ position: absolute;
 z-index: 99;
 }
 .seg4 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 3119px;
+  top: 0px;
   left: 0;
-  animation-name: move-right;
-  animation-duration: 8s;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
 }
 /* wave five animation start here */
 .fiverow{
@@ -705,6 +716,7 @@ z-index: 99;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  padding: 0px 0px 30px 0px;
 }
 div.waves5{
 width: 100%;
@@ -714,15 +726,16 @@ position: absolute;
 z-index: 8 !important;
 }
 .seg5 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 4094px;
+  top: 0px;
   left: 0;
-  animation-name: move-right;
-  animation-duration: 8s;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
 }
 figure.clip-svg.loaded {
   z-index: 1000;
@@ -1689,25 +1702,30 @@ width: 1401px;
   }
   img.bimg {
     position: absolute;
-    top: 670px;
-    right: 161px;
+    /* top: 658px; */
+    top: -134%;
+    padding: 0px;
+    margin: 0px;
+    width: 285px;
+    /* bottom: -38px; */
+    /* right: 120px; */
     z-index: 9;
 }
 img.onewave {
   position: absolute;
-  top: 1798px;
+  top: 1669px;
   z-index: 9;
   width: 194px;
 }
 img.twowave {
   position: absolute;
-  top: 2771px;
+  top: 2480px;
   z-index: 9;
   width: 194px;
 }
 img.threewave {
   position: absolute;
-  top: 3830px;
+  top: 3332px;
   right: 0px;
   z-index: 9;
   width: 194px;
@@ -1716,7 +1734,7 @@ img.threewave {
   height: 0px;
   width: 85px;
   right: 4px;
-  top: 54%;
+  top: 58%;
   position: absolute;
   z-index: 5;
   transform: rotate( 
@@ -1744,7 +1762,7 @@ img.threewave {
   height: 0px;
   width: 85px;
   right: 4px;
-  top: 47%;
+  top: 54%;
   position: absolute;
   z-index: 5;
   transform: rotate( 
@@ -1776,7 +1794,7 @@ right: 1px;
 }
 .burosec {
   background-color: #cb0030;
-  padding: 86px 0px;
+  padding: 86px 0px 100px 0px;
   position: relative;
 }
 ul#primary-nav li {
@@ -1790,64 +1808,66 @@ ul#primary-nav li {
     padding: 30px;
   }
   .zero {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+    top: 0px;
+    height: 198px;
     left: 0;
-    top: 125px;
-    height: 156px;
+ 
     animation-name: move-left;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 .seg2 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 1025px;
+  top: 0px;
+  height: 188px;
   left: 0;
-  height: 166px;
+  height: 210px;
   animation-name: move-left;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 .seg3 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 1994px;
+  top: 0px;
   left: 0;
-  height: 166px;
-  animation-name: move-right;
-  animation-duration: 8s;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
 }
 .seg4 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 3009px;
+  top: 0px;
   left: 0;
-  height: 166px;
-  animation-name: move-right;
-  animation-duration: 8s;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
 }
 .seg5 {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  top: 4012px;
+  top: 0px;
   left: 0;
-  height: 173px;
-  animation-name: move-right;
-  animation-duration: 8s;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-direction: alternate;
 }
 img.crackimgs {
   width: 300px;
@@ -1958,10 +1978,15 @@ img.curve2 {
 
   img.bimg {
     position: absolute;
-    top: 722px;
-    right: 161px;
-    z-index: 999;
-  }
+    /* top: 658px; */
+    top: -134%;
+    padding: 0px;
+    width: 285px;
+    margin: 0px;
+    /* bottom: -38px; */
+    /* right: 120px; */
+    z-index: 9;
+}
 
   .henimg {
     width: 31px;
@@ -1979,10 +2004,15 @@ img.curve2 {
   }
   img.bimg {
     position: absolute;
-    top: 718px;
-    right: 161px;
+    /* top: 658px; */
+    top: -134%;
+    padding: 0px;
+    width: 285px;
+    margin: 0px;
+    /* bottom: -38px; */
+    /* right: 120px; */
     z-index: 9;
-  }
+}
   img.crackimgs {
 width: 350px;
 }
@@ -2031,7 +2061,7 @@ img.twowave {
   height: 0px;
   width: 85px;
   right: 4px;
-  top: 54%;
+  top: 59%;
   position: absolute;
   z-index: 5;
   transform: rotate( 
@@ -2058,8 +2088,8 @@ img.twowave {
 .dragtxt1 {
   height: 0px;
   width: 85px;
-  right: 4px;
-  top: 47%;
+  right: 8px;
+  top: 53%;
   position: absolute;
   z-index: 5;
   transform: rotate( 
@@ -2094,23 +2124,25 @@ img.threewave {
     width: 31px;
   }
   .zero {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+    top: 0px;
+    height: 225px;
+
     left: 0;
-    top: 165px;
-    height: 172px;
+
     animation-name: move-left;
-    animation-duration: 9000s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 .seg2 {
-position: absolute;
+position: relative;
 width: 100%;
 bottom: 0;
-top: 1084px;
-height: 264px;
+top: 0px;
+
 left: 0;
 height: 178px;
 animation-name: move-left;
@@ -2120,41 +2152,44 @@ animation-direction: alternate;
 }
 
 .seg3 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 2064px;
-height: 178px;
-left: 0;
-animation-name: move-right;
-animation-duration: 8s;
-animation-iteration-count: infinite;
-animation-direction: reverse;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+
+  left: 0;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .seg4 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 3119px;
-height: 178px;
-left: 0;
-animation-name: move-right;
-animation-duration: 8s;
-animation-iteration-count: infinite;
-animation-direction: reverse;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+
+  left: 0;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .seg5 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 4163px;
-height: 178px;
-left: 0;
-animation-name: move-right;
-animation-duration: 8s;
-animation-iteration-count: infinite;
-animation-direction: reverse;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+
+  left: 0;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 img.twowave {
 position: absolute;
@@ -2173,10 +2208,18 @@ width: 194px;
 }
 @media only screen and (min-width: 1610px) and (max-width: 1950px) {
   img.bimg {
-position: absolute;
-top: 1012px;
-right: 227px;
-z-index: 999;
+    position: absolute;
+    /* top: 658px; */
+    top: -134%;
+    padding: 0px;
+    margin: 0px;
+    width: 352px;
+    /* bottom: -38px; */
+    /* right: 120px; */
+    z-index: 9;
+}
+img.crackimgs {
+  width: 400px;
 }
 
   .ld-masked-image {
@@ -2208,32 +2251,100 @@ right: 41px;
 width: 224px;
 }
 .dragtxt {
-height: 0px;
-width: 85px;
-right: 48px;
-top: 50%;
-position: absolute;
-z-index: 5;
-transform: rotate( 
+  height: 0px;
+  width: 85px;
+  right: 40px;
+  top: 55%;
+  position: absolute;
+  z-index: 5;
+  transform: rotate( 
 -90deg
 );
--webkit-transform: rotate( 
+  -webkit-transform: rotate( 
 90deg
 );
--moz-transform: rotate(-90deg);
--o-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.dragtxt h6 {
+  display: block;
+  height: 52px;
+  padding-top: 10px;
+  width: 155px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.dragtxt1 {
+  height: 0px;
+  width: 85px;
+  right: 40px;
+  top: 55%;
+  position: absolute;
+  z-index: 5;
+  transform: rotate( 
+-90deg
+);
+  -webkit-transform: rotate( 
+90deg
+);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.dragtxt1 h6 {
+  display: block;
+  height: 52px;
+  padding-top: 10px;
+  width: 155px;
+  text-align: center;
+  color: #f39b19;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.dragtxt2 {
+  height: 0px;
+  width: 85px;
+  right: 40px;
+  top: 55%;
+  position: absolute;
+  z-index: 5;
+  transform: rotate( 
+-90deg
+);
+  -webkit-transform: rotate( 
+90deg
+);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+.dragtxt2 h6 {
+  display: block;
+  height: 52px;
+  padding-top: 10px;
+  width: 155px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
 }
 .zero{
-position: absolute;
-width: 100%;
-bottom: 0;
-height: 166px;
-left: 0;
-top: 146px;
-animation-name: move-left;
-animation-duration: 4s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+  height: 230px;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
   .inline-YTPlayer {
@@ -2249,9 +2360,9 @@ animation-direction: alternate;
 
   .burosec {
     background-color: #cb0030;
-    padding: 72px 0px;
+    padding: 72px 0px 115px;
     position: relative;
-  }
+}
 
   .tworow p {
     font-size: 20px;
@@ -2265,53 +2376,54 @@ animation-direction: alternate;
   }
 
   .seg2 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 1196px;
-left: 0;
-height: 173px;
-animation-name: move-left;
-animation-duration: 4s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    top: 0px;
+   
+    left: 0;
+    height: 178px;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .seg3 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 2328px;
-left: 0;
-animation-name: move-right;
-height: 173px;
-animation-duration: 8s;
-animation-iteration-count: infinite;
-animation-direction: reverse;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+  left: 0;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .seg4 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 3405px;
-left: 0;
-height: 173px;
-animation-name: move-right;
-animation-duration: 8s;
-animation-iteration-count: infinite;
-animation-direction: reverse;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+  left: 0;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .seg5 {
-position: absolute;
-width: 100%;
-bottom: 0;
-top: 4492px;
-height: 173px;
-left: 0;
-animation-name: move-right;
-animation-duration: 8s;
-animation-iteration-count: infinite;
-animation-direction: reverse;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top: 0px;
+  left: 0;
+  height: 178px;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .wave {
 position: absolute;
@@ -2320,23 +2432,23 @@ top: 5548px;
 width: 1920px;
 }
 img.onewave {
-position: absolute;
-top: 2262px;
-z-index: 9;
-width: 194px;
+  position: absolute;
+  top: 2182px;
+  z-index: 9;
+  width: 194px;
 }
 img.twowave {
-position: absolute;
-top: 3398px;
-z-index: 9;
-width: 194px;
+  position: absolute;
+  top: 3136px;
+  z-index: 9;
+  width: 194px;
 }
 img.threewave {
-position: absolute;
-top: 4507px;
-right: 0px;
-z-index: 9;
-width: 194px;
+  position: absolute;
+  top: 4136px;
+  right: 0px;
+  z-index: 9;
+  width: 194px;
 }
 
   img.curve3,
@@ -2363,18 +2475,16 @@ width: 194px;
 
   img.bimg {
     position: absolute;
-    top: 715px;
-    right: 227px;
-    z-index: 999;
-  }
-
-  .zero,
-  .seg2,
-  .seg3,
-  .seg4,
-  .seg5 {
-    display: none;
-  }
+    /* top: 658px; */
+    top: -134%;
+    padding: 0px;
+    margin: 0px;
+    width: 320px;
+    /* bottom: -38px; */
+    /* right: 120px; */
+    z-index: 9;
+}
+ 
 
   img.curve2 {
     background-color: #9feed1;
