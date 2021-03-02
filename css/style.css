@@ -22,31 +22,54 @@ h6 .h6 {
   font-family: 'Aileron-Black' !important;
 }
 p{
-font-family: 'Aileron-Regular' !important;
+  font-family: 'Cabin', sans-serif;
 }
 ul{
 font-family: 'Aileron-Regular' !important;
 }
-.onlybgclr {
-  background-color: #20b4b1b5;
-  /* padding: 20px; */
-  border-radius: 23px;
-  padding: 23px 0x;
+.gtxt{
+  color: #00b4db;
+  background-color: #c3ff9ce3;
+    padding: 30px 44px 30px 18px;
+    margin-top: 20px;
+    font-size: 98px;
+    border-radius: 20px;
+    
+}
+.benp{
+  font-size: 19px;
+  color: white;
 }
 h2.cracktxt.split-text-applied {
   color: aliceblue;
   margin: 0px;
-  padding: 20px 20px 0;
+  background-color: #48acfbc7;
+  padding: 11px 20px 0;
   font-size: 50px;
+  border-radius: 16px;
 }
-h1.goodtxt.split-text-applied {
-  font-size: 96px;
-  color: #ffeb3b;
-  margin: 0px;
-  padding: 0px 20px 0;
+.onlybgclr {
+  margin-top: 100px;
 }
 footer {
   background-color: #ffffff;
+
+}
+.line{
+  background-color: #00a4aa;
+  border-radius: 25px;
+  padding: 5px !important;
+}
+.line2 {
+  background-color: #cccccc;
+  border-radius: 25px;
+  padding: 5px 14px !important;
+}
+p.bptxt {
+  color: white;
+  font-size: 16px;
+  padding: 0px 8px;
+  font-family: 'Aileron-Black' !important;
 
 }
 .bdron{
@@ -58,7 +81,7 @@ footer {
 }
 .smlogo{
   position: absolute;
-  bottom: 187px;
+  bottom: 130px;
   /* left: 0px; */
   right: 41px;
 }
@@ -68,14 +91,24 @@ footer {
 }
 .footerbgshadow {
   font-family: 'Aileron-Black' !important;
-  box-shadow: 0 16px 18px rgb(0 0 0 / 7%);
+  border-radius: 15px;
+  box-shadow: 0 10px 33px rgb(0 0 0 / 8%);
 }
 .footerbgshadow ul {
   font-family: 'Aileron-Regular' !important;
-  border-top: 5px solid #00a4aa;
+
   padding: 10px;
-  /* border-radius: 11px 11px 11px 11px; */
+
   margin-top: 5px;
+}
+h3.conttxt {
+  color: #00a4aa;
+  border-radius: 27px;
+  box-shadow: 0 10px 33px rgb(0 0 0 / 8%);
+  width: 140px;
+  padding: 3px 8px;
+  text-align: center;
+  margin: 8px 0px;
 }
 .footerbgshadow ul li {
   color: #00a4aa;
@@ -155,6 +188,9 @@ div#main-header-collapse {
 .folotxt {
   font-weight: 700;
   color: #00a4aa;
+  margin: 0px;
+  font-size: 34px;
+  padding: 20px 0px 0px;
 }
 .social {
   list-style-type: none;
@@ -261,10 +297,11 @@ button.lrnbtn1 {
 .wave{
   position: absolute;
 }
-footer p ,h5{
+footer p, h5 {
   color: #00b4cc;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
+  padding: 0px 14px;
 }
 .nurotxt{
   padding: 0px 0px 0px 100px;
@@ -274,6 +311,12 @@ footer p ,h5{
 }
 
 .dragimg{
+  position: absolute;
+  top: 85px;
+  right: 36px;
+  width: 97px;
+}
+.dragimg2{
   position: absolute;
   top: 85px;
   right: 36px;
@@ -414,6 +457,7 @@ h6.burosmtxt {
 h2.ltxt {
   color: white;
   font-weight: 700;
+  font-size: 55px;
   text-transform: uppercase;
 }
 .ltxt span {
@@ -867,10 +911,11 @@ testimonials styles start here */
   display: block;
   font-size: 18px;
   font-weight: 700;
+  margin: 0px;
   color: #33b6bb;
   text-transform: capitalize;
   letter-spacing: 1px;
-  margin: 0 0 5px 0;
+
 }
 .testimonial .post {
   display: block;
@@ -1076,17 +1121,18 @@ testimonials styles start here */
   width: 100%;
   border: 2px solid #00b4cc;
   border-right: none;
-  padding: 29px;
+  padding: 32px 29px;
   height: 20px;
   border-radius: 34px 0 0 34px;
   outline: none;
-  color: #9DBFAF;
+  color: #00b4cc !important;
+  font-size: 19px;
 }
 
 
 .searchButton2 {
-  width: 66px;
-  height: 62px;
+  width: 77px;
+  height: 68px;
   border: 2px solid #00b4cc;
   background: no-repeat;
   text-align: center;
@@ -1648,6 +1694,20 @@ top: -7vh;
 right: -65vw;
 left: -30vw;
 }
+.single-container {
+  width: 261px;
+  min-height: 260px;
+  max-height: 345px;
+}
+.single-container img {
+  margin-top: 3px;
+  height: 241px;
+  max-height: 320px;
+  width: 277px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
 .bannertxt {
 position: absolute;
 top: 38%;
@@ -1713,19 +1773,19 @@ width: 1401px;
 }
 img.onewave {
   position: absolute;
-  top: 1669px;
+  top: 1269px;
   z-index: 9;
   width: 194px;
 }
 img.twowave {
   position: absolute;
-  top: 2480px;
+  top: 2080px;
   z-index: 9;
   width: 194px;
 }
 img.threewave {
   position: absolute;
-  top: 3332px;
+  top: 2950px;
   right: 0px;
   z-index: 9;
   width: 194px;
@@ -1758,11 +1818,26 @@ img.threewave {
   text-decoration: none;
   border-radius: 30px;
 }
+.dragimg {
+  position: absolute;
+  top: 85px;
+  right: 36px;
+  width: 98px;
+}
+.dragimg2 {
+  position: absolute;
+  top: 85px;
+  right: 36px;
+  width: 71px;
+}
+.pdfoot {
+  padding-bottom: 42px;
+}
 .dragtxt1 {
   height: 0px;
   width: 85px;
-  right: 4px;
-  top: 54%;
+  right: 2px;
+  top: 60%;
   position: absolute;
   z-index: 5;
   transform: rotate( 
@@ -1787,10 +1862,10 @@ img.threewave {
   border-radius: 30px;
 }
 .smlogo {
-position: absolute;
-bottom: 187px;
-/* left: 0px; */
-right: 1px;
+  position: absolute;
+  bottom: 137px;
+  /* left: 0px; */
+  right: 10px;
 }
 .burosec {
   background-color: #cb0030;
@@ -1878,8 +1953,9 @@ img.crackimgs {
 }
 .signimg {
   position: absolute;
-  bottom: 71px;
+  bottom: 192px;
   left: 75px;
+
 }
 }
 
@@ -2016,12 +2092,38 @@ img.curve2 {
   img.crackimgs {
 width: 350px;
 }
+.single-container {
+  width: 329px;
+  min-height: 345px;
+  max-height: 345px;
+}
+.signimg {
+  position: absolute;
+  bottom: 131px;
+  left: 61px;
+}
 
+.single-container img {
+  margin-top: 3px;
+  height: 296px;
+  max-height: 320px;
+  width: 320px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 23px;
+  box-shadow: 0 10px 33px rgb(0 0 0 / 8%);
+}
 img.onewave {
   position: absolute;
-  top: 1798px;
+  top: 1388px;
   z-index: 9;
   width: 194px;
+}
+.dragimg2 {
+  position: absolute;
+  top: 85px;
+  right: 36px;
+  width: 83px;
 }
 img.twowave {
   position: absolute;
@@ -2089,7 +2191,7 @@ img.twowave {
   height: 0px;
   width: 85px;
   right: 8px;
-  top: 53%;
+  top: 57%;
   position: absolute;
   z-index: 5;
   transform: rotate( 
@@ -2192,17 +2294,17 @@ animation-direction: alternate;
   animation-direction: alternate;
 }
 img.twowave {
-position: absolute;
-top: 2852px;
-z-index: 9;
-width: 194px;
+  position: absolute;
+  top: 2263px;
+  z-index: 9;
+  width: 194px;
 }
 img.threewave {
-position: absolute;
-top: 3915px;
-right: 0px;
-z-index: 9;
-width: 194px;
+  position: absolute;
+  top: 3180px;
+  right: 0px;
+  z-index: 9;
+  width: 194px;
 }
 
 }
@@ -2554,3 +2656,177 @@ img.threewave {
 .henimgone {
   padding: 206px 0px 0px 47px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================================================
+ * style.css v1.0
+ * ===========================================================
+ * Copyright 2015 Shivam Pandya - Tutorial Drive.
+ * https://www.github.com/tutorialdrive
+ *
+ * Bootstrap Vertical Image Showcase v1.0
+ * Create an Vertical Thumbnail Carousel For Twitter Bootstrap v3.0.3
+ *
+ * 
+ * License: MIT License
+ * https://opensource.org/licenses/MIT
+ *
+ * ========================================================== */
+
+.carousel-indicators .active {
+  position: absolute;
+  top: 12% !important;
+  width: 53px;
+  height: 53px;
+ 
+}
+
+.carousel-control {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  font-size: 30px !important;
+  font-weight: 100;
+  line-height: 44px !important;
+  color: #FFF;
+  text-align: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+
+/* --------- END --------- */
+
+.carousel {
+  height: 245px;
+  min-width: 70px;
+  max-width: 70px;
+  text-align: center;
+}
+
+
+/*For top Indicator*/
+
+.carousel-indicators-top {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+
+}
+
+.carousel-indicators-top li {
+  background: #333333;
+}
+
+.carousel-indicators-top .active {
+  background: #333333;
+}
+
+
+/* vertical start*/
+
+.vertical .carousel-inner {
+  /*height: 74%;*/
+  padding-top: 0px;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+  -moz-transition: 0.6s ease-in-out top;
+  -ms-transition: 0.6s ease-in-out top;
+  -o-transition: 0.6s ease-in-out top;
+  transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 100%;
+}
+
+.carousel.vertical .prev {
+  top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -100%;
+}
+
+.carousel.vertical .active.right {
+  top: 100%;
+}
+
+.carousel.vertical .item {
+  left: 0;
+}
+
+
+/*Overwriten Bootstrap Classis*/
+
+.small-thumbnail {
+  display: block;
+  width: 50px;
+  padding: 4px;
+  margin-bottom: 1px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+ 
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.small-thumbnail img {
+  max-width: 100%;
+  width: 50px;
+}
+
+.custom-carousel-inner {
+    /* overflow: hidden; */
+    position: relative;
+    width: 75px !important;
+    height: 168px;
+    /* margin: 10px; */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

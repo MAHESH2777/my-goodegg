@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GoodEgg</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Cabin&display=swap" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+<!-- vertical carousel -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+  
+  <!-- background video links -->
+
+  <link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+  <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="assets/css/theme.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- table link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <style>
+
+    @font-face {
+      font-family: 'Aileron-Black';
+      src: url(./fonts/Aileron-Black.otf);
+      src: url(./fonts/Aileron-Regular.otf);
+
+    }
+
+   
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6 .h6 {
+      font-family: 'Aileron-Black' !important;
+    }
+ p{
+  font-family: 'Cabin', sans-serif;
+ }
+ ul{
+  font-family: 'Aileron-Regular' !important;
+  font-size: 17px;
+ }
+ .owl-nav {
+    display: none;
+}
+
+
+
+    .eggsul {
+      background-color: rgba(255, 255, 255, 0) !important;
+      position: relative;
+      border: none !important;
+      margin: 5px 0px;
+
+      /* box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%); */
+      border-radius: 6px;
+      height: 24px;
+    }
+
+    .slider-wrapper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+
+
+@media (min-width: 1200px){
+  .main-header .is-stuck {
+  background: #33b6bbd9  !important;
+  backdrop-filter: none;
+}
+
+}
+    .comparison-slider {}
+
+    .before-wrapper {
+      display: block;
+      overflow: hidden;
+      width: auto;
+      height: 100%;
+      /* position: relative;
+    background: url("http://emphasizestudio.nl/img/dystopia.jpg") no-repeat center center #111111; */
+      background-size: 100% auto;
+    }
+
+    .before-wrapper:before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+
+    }
+    .lqd-sticky-placeholder.hide {
+    height: 0px !important;
+}
+
+
+  
+
+
+
+    figure.clip-svg.loaded {
+      clip-path: url(#masked-image-1);
+      background-blend-mode: color;
+      background-image: url('file:///D:/Prodigit-work/task/assets/demo/misc/masked-img-1.jpg');
+      background-color: #f7f7f7;
+    }
+
+
+
+
+
+  
+ 
+    table {
+    border: none;
+}
+table tr {
+    border-bottom: none;
+}
+
+
+.table-responsive-stack tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+   display:block;
+/*      
+   flex-grow | flex-shrink | flex-basis   */
+   -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.table-responsive-stack .table-responsive-stack-thead {
+   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+   .table-responsive-stack tr {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      border-bottom: 3px solid #ccc;
+      display:block;
+      
+   }
+   /*  IE9 FIX   */
+   .table-responsive-stack td {
+      float: left\9;
+      width:100%;
+   }
+}
+
+
+
+ 
+  </style>
+  <link rel="stylesheet" href="assets/css/themes/creative.css" />
+
+  <script async src="assets/vendors/modernizr.min.js"></script>
+
+  <!-- egg section links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js">
+
+
+</head>
+
+<body>
+    
+  <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
+    <header class="main-header main-header-overlay" data-sticky-header="true"
+      data-sticky-options="{ &quot;stickyTrigger&quot;: &quot;first-section&quot; }">
+      <div class="mainbar-wrap">
+        <div class="container-fluid mainbar-container">
+          <div class="mainbar">
+            <div class="row mainbar-row align-items-lg-stretch px-4">
+
+              <div class="col">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html" rel="home">
+                    <span class="navbar-brand-inner">
+                      <img class="logo-dark" src="img/logo.png" alt="Ave HTML Template">
+                      <img class="logo-sticky" src="img/logo.png" alt="Ave HTML Template">
+                      <img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
+                      <img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
+                    </span>
+                  </a>
+                  <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse"
+                    data-target="#main-header-collapse" aria-expanded="false"
+                    data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="bars">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </span>
+                  </button>
+                </div><!-- /.navbar-header -->
+              </div><!-- /.col -->
+
+              <div class="col">
+
+                <div class="collapse navbar-collapse" id="main-header-collapse">
+
+                  <ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-end"
+                    data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
+
+                    <li>
+                      <a href="goodeggs.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">
+                            GoodEggs
+                            <span class="submenu-expander">
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+
+
+                    <li class="menu-item-has-children megamenu megamenu-fullwidth columns-4 position-applied"
+                      data-bg-color="rgb(33, 33, 33)" data-megamenu-bg-scheme="dark">
+                      <a href="goodhens.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">
+                            GoodHens
+                            <span class="submenu-expander">
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+
+                    </li>
+                    <li class="menu-item-has-children position-applied">
+                      <a href="recipe.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">
+                            Recipes
+                            <span class="submenu-expander">
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+
+                    </li>
+                    <li class="menu-item-has-children position-applied">
+                      <a href="contact.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">
+                            Contact
+                            <span class="submenu-expander">
+                              <i class="fa fa-angle-down"></i>
+                            </span>
+                          </span>
+                        </span>
+                      </a>
+
+                    </li>
+
+
+                  </ul><!-- /#primary-nav  -->
+
+                </div><!-- /#main-header-collapse -->
+
+
+
+              </div><!-- /.col -->
+
+            </div><!-- /.mainbar-row -->
+          </div><!-- /.mainbar -->
+        </div><!-- /.mainbar-container -->
+      </div><!-- /.mainbar-wrap -->
+
+    </header>
+    <!-- <div class="past">The past</div>
+    <div class="future">The future</div> -->
+    <div class="lqd-vbg-wrap">
+      <div class="lqd-vbg-inner">
+        <span class="lqd-vbg-loader"></span>
+        <div class="lqd-vbg-video" data-video-bg="true"
+          data-youtube-options='{"videoURL":"https://youtu.be/0BNNjZpMKRI"}'> </div>
+      </div><!-- /.lqd-vbg-inner -->
+    </div><!-- /.lqd-vbg-wrap -->
+
+    <div class="container">
+      <!-- <h1 class="bannertxt">loraom text</h1> -->
+
+      <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
+
+      <div class="row before-wrapper d-flex flex-wrap align-items-center">
+
+        <div class="lqd-column col-lg-5 ">
+
+         
+
+</div><!-- /.col-lg-7 col-md-6 -->
+
+        <div class="lqd-column col-lg-7 lqd-column" data-custom-animations="true"
+          data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+              <div class="onlybgclr">
+                <div class="ld-fancy-heading mask-text">
+                  <h2 class="cracktxt" data-split-text="true" data-custom-animations="true"
+                    data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+                    data-split-options='{"type":"lines"}'>
+                    <span class="ld-fh-txt"> CRACK OPEN THE</span>
+                  </h2>
+                </div><!-- /.ld-fancy-heading -->
+      
+                <div class="ld-fancy-heading mask-text mb-75">
+                  <h1 class="goodtxt" data-split-text="true" data-custom-animations="true"
+                    data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+                    data-split-options='{"type":"lines"}'>
+                    <span class="gtxt ld-fh-txt">GOODNESS</span>
+                </h1>
+              </div>
+              </div>
+          </div><!-- /.ld-fancy-heading -->
+
+          <div class="row">
+
+            <div class="lqd-column col-sm-6 mb-3 mb-md-0">
+
+
+            </div><!-- /.col-sm-6 -->
+
+            <div class="lqd-column col-sm-6">
+
+              <div class="ld-fancy-heading">
+                <p>
+                  <span class="ld-fh-txt">
+                    <strong><span style="color: #fe688b"></span></strong>
+                    <br>
+                    <span style="color: #a7a9b8"></span>
+                  </span>
+                </p>
+              </div>
+
+            </div><!-- /.col-sm-6 -->
+
+          </div><!-- /.row -->
+
+        </div><!-- /.col-lg-5 col-md-6 -->
+      </div>
+
+
+
+
+
+    </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+  <section>
+      <div class="container-fluid onerow">
+          <div class="row">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-10 text-center">
+                  <h1 class="vtxt">
+                      
+VITAMIN A
+& CAROTENOIDS
+                  </h1>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur iste voluptate labore placeat similique rem culpa veniam magni soluta itaque, id eligendi repellendus est incidunt eveniet aspernatur necessitatibus quidem?</p>
+              </div>
+          </div>
+          <div class="row ">
+     
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+              </div>
+         <div class="col-lg-1">
+    
+         </div>
+         <div class="col-lg-4">
+            <h2 class="text-white sidehead">
+               <span class="betxt">BENE</span>FITS
+            </h2>
+            <p class="benp">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain uncompromised quality standards in choosing only the ideal eggs. The authentic packaging techniques keep eggs free from microbes. Our Stainless &amp; odorless eggs undergo triple quality check procedure. Our specialty is Bright Amber solid yolks. Good Eggs motivate your cellular metabolism with ample nutrition content.</p>
+            
+          </div>
+       
+         <div class="col-lg-1">
+    
+        </div>
+      
+       </div>
+       <div class="row">
+           <div class="col-lg-1"></div>
+           <div class="col-lg-10 text-center">
+               <h5 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h5>
+               <h6 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h6>
+           </div>
+           <div class="col-lg-1"></div>
+       </div>
+       <div class="row">
+         <div class="col-lg-1"></div>
+         <div class="col-lg-10">
+          <div class="container">
+
+            <h2>Common Fruits</h2>
+            <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+               <thead class="thead-dark">
+                  <tr>
+                     <th>Name</th>
+                     <th>Color</th>
+                     <th>Taste</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Apple</td>
+                     <td>Green and Red</td>
+                     <td>Sweet and Tart</td>
+                  </tr>
+                  <tr>
+                     <td>Banana</td>
+                     <td>Yellow</td>
+                     <td>Sweet and Mushy</td>
+                  </tr>
+                  <tr>
+                     <td>Mango</td>
+                     <td>Yellowish Green</td>
+                     <td>Tangy</td>
+                  </tr>
+                  <tr>
+                     <td>Orange</td>
+                     <td>Orange</td>
+                     <td>Sweet and Tangy</td>
+                  </tr>
+                  <tr>
+                     <td>Blueberry</td>
+                     <td>Blue</td>
+                     <td>Mild Sweetness</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+           
+            
+         
+          
+         </div>
+         <!-- /.container -->
+         <p class="btxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quae. Quam, iure eaque. Voluptas dolor nisi magni porro esse repellendus et ut nobis amet officia, corrupti numquam voluptatum autem est?</p>
+         </div>
+         <div class="col-lg-1"></div>
+       </div>
+       <div class="row">
+         <div class="col-lg-1"></div>
+         <div class="col-lg-10">
+           <h1 class="vtxt">
+            CAROTENOIDS
+           </h1>
+           <p class="btxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fugiat. Nesciunt soluta quo recusandae earum dolores sint velit magnam minus, dicta perspiciatis corporis ipsum adipisci laborum expedita, vitae odio aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor aliquid quam ea unde veniam repudiandae nihil, ullam nisi. Eos deleniti sunt a et ad, fugit distinctio debitis alias inventore?  </p>
+           <br>
+           <p class="btxt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sapiente nihil, sit beatae iusto est. Minus voluptas dolore incidunt corrupti molestiae sed praesentium. Corrupti hic deleniti possimus explicabo repellat a?
+          </p>
+         
+          </div>
+         <div class="col-lg-1"></div>
+       </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container-fluid tworow">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 text-center">
+                <h1 class="vtxt">
+                    
+                  VITAMIN E
+                  & SELENIUM
+                </h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur iste voluptate labore placeat similique rem culpa veniam magni soluta itaque, id eligendi repellendus est incidunt eveniet aspernatur necessitatibus quidem?</p>
+            </div>
+        </div>
+        <div class="row ">
+   
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6">
+              <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+            </div>
+       <div class="col-lg-1">
+  
+       </div>
+       <div class="col-lg-4">
+          <h2 class="text-white sidehead">
+             <span class="betxt">BENE</span>FITS
+          </h2>
+          <p class="benp">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain uncompromised quality standards in choosing only the ideal eggs. The authentic packaging techniques keep eggs free from microbes. Our Stainless &amp; odorless eggs undergo triple quality check procedure. Our specialty is Bright Amber solid yolks. Good Eggs motivate your cellular metabolism with ample nutrition content.</p>
+          
+        </div>
+     
+       <div class="col-lg-1">
+  
+      </div>
+    
+     </div>
+     <div class="row">
+         <div class="col-lg-1"></div>
+         <div class="col-lg-10 text-center">
+             <h5 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h5>
+             <h6 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h6>
+         </div>
+         <div class="col-lg-1"></div>
+     </div>
+     <div class="row">
+       <div class="col-lg-1"></div>
+       <div class="col-lg-10">
+        <div class="container">
+
+          <h2>Common Fruits</h2>
+          <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+             <thead class="thead-dark">
+                <tr>
+                   <th>Name</th>
+                   <th>Color</th>
+                   <th>Taste</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                   <td>Apple</td>
+                   <td>Green and Red</td>
+                   <td>Sweet and Tart</td>
+                </tr>
+                <tr>
+                   <td>Banana</td>
+                   <td>Yellow</td>
+                   <td>Sweet and Mushy</td>
+                </tr>
+                <tr>
+                   <td>Mango</td>
+                   <td>Yellowish Green</td>
+                   <td>Tangy</td>
+                </tr>
+                <tr>
+                   <td>Orange</td>
+                   <td>Orange</td>
+                   <td>Sweet and Tangy</td>
+                </tr>
+                <tr>
+                   <td>Blueberry</td>
+                   <td>Blue</td>
+                   <td>Mild Sweetness</td>
+                </tr>
+             </tbody>
+          </table>
+          
+         
+          
+       
+        
+       </div>
+       <!-- /.container -->
+       <p class="btxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quae. Quam, iure eaque. Voluptas dolor nisi magni porro esse repellendus et ut nobis amet officia, corrupti numquam voluptatum autem est?</p>
+       </div>
+       <div class="col-lg-1"></div>
+     </div>
+     <div class="row">
+       <div class="col-lg-1"></div>
+       <div class="col-lg-10">
+         <h1 class="vtxt">
+          CAROTENOIDS
+         </h1>
+         <p class="btxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fugiat. Nesciunt soluta quo recusandae earum dolores sint velit magnam minus, dicta perspiciatis corporis ipsum adipisci laborum expedita, vitae odio aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor aliquid quam ea unde veniam repudiandae nihil, ullam nisi. Eos deleniti sunt a et ad, fugit distinctio debitis alias inventore?  </p>
+         <br>
+         <p class="btxt">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sapiente nihil, sit beatae iusto est. Minus voluptas dolore incidunt corrupti molestiae sed praesentium. Corrupti hic deleniti possimus explicabo repellat a?
+        </p>
+       
+        </div>
+       <div class="col-lg-1"></div>
+     </div>
+    </div>
+</section>
+
+<section>
+  <div class="container-fluid threerow">
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 text-center">
+              <h1 class="vtxt">
+                  
+                VITAMIN E
+                & SELENIUM
+              </h1>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur iste voluptate labore placeat similique rem culpa veniam magni soluta itaque, id eligendi repellendus est incidunt eveniet aspernatur necessitatibus quidem?</p>
+          </div>
+      </div>
+      <div class="row ">
+ 
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+            <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+          </div>
+     <div class="col-lg-1">
+
+     </div>
+     <div class="col-lg-4">
+        <h2 class="text-white sidehead">
+           <span class="betxt">BENE</span>FITS
+        </h2>
+        <p class="benp">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain uncompromised quality standards in choosing only the ideal eggs. The authentic packaging techniques keep eggs free from microbes. Our Stainless &amp; odorless eggs undergo triple quality check procedure. Our specialty is Bright Amber solid yolks. Good Eggs motivate your cellular metabolism with ample nutrition content.</p>
+        
+      </div>
+   
+     <div class="col-lg-1">
+
+    </div>
+  
+   </div>
+   <div class="row">
+       <div class="col-lg-1"></div>
+       <div class="col-lg-10 text-center">
+           <h5 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h5>
+           <h6 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h6>
+       </div>
+       <div class="col-lg-1"></div>
+   </div>
+   <div class="row">
+     <div class="col-lg-1"></div>
+     <div class="col-lg-10">
+      <div class="container">
+
+        <h2>Common Fruits</h2>
+        <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+           <thead class="thead-dark">
+              <tr>
+                 <th>Name</th>
+                 <th>Color</th>
+                 <th>Taste</th>
+              </tr>
+           </thead>
+           <tbody>
+              <tr>
+                 <td>Apple</td>
+                 <td>Green and Red</td>
+                 <td>Sweet and Tart</td>
+              </tr>
+              <tr>
+                 <td>Banana</td>
+                 <td>Yellow</td>
+                 <td>Sweet and Mushy</td>
+              </tr>
+              <tr>
+                 <td>Mango</td>
+                 <td>Yellowish Green</td>
+                 <td>Tangy</td>
+              </tr>
+              <tr>
+                 <td>Orange</td>
+                 <td>Orange</td>
+                 <td>Sweet and Tangy</td>
+              </tr>
+              <tr>
+                 <td>Blueberry</td>
+                 <td>Blue</td>
+                 <td>Mild Sweetness</td>
+              </tr>
+           </tbody>
+        </table>
+        
+       
+        
+     
+      
+     </div>
+     <!-- /.container -->
+     <p class="btxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quae. Quam, iure eaque. Voluptas dolor nisi magni porro esse repellendus et ut nobis amet officia, corrupti numquam voluptatum autem est?</p>
+     </div>
+     <div class="col-lg-1"></div>
+   </div>
+   <div class="row">
+     <div class="col-lg-1"></div>
+     <div class="col-lg-10">
+       <h1 class="vtxt">
+        CAROTENOIDS
+       </h1>
+       <p class="btxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fugiat. Nesciunt soluta quo recusandae earum dolores sint velit magnam minus, dicta perspiciatis corporis ipsum adipisci laborum expedita, vitae odio aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor aliquid quam ea unde veniam repudiandae nihil, ullam nisi. Eos deleniti sunt a et ad, fugit distinctio debitis alias inventore?  </p>
+       <br>
+       <p class="btxt">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sapiente nihil, sit beatae iusto est. Minus voluptas dolore incidunt corrupti molestiae sed praesentium. Corrupti hic deleniti possimus explicabo repellat a?
+      </p>
+     
+      </div>
+     <div class="col-lg-1"></div>
+   </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid fourrow">
+      <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 text-center">
+              <h1 class="vtxt">
+                  
+                VITAMIN E
+                & SELENIUM
+              </h1>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere consequatur iste voluptate labore placeat similique rem culpa veniam magni soluta itaque, id eligendi repellendus est incidunt eveniet aspernatur necessitatibus quidem?</p>
+          </div>
+      </div>
+      <div class="row ">
+ 
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+            <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+          </div>
+     <div class="col-lg-1">
+
+     </div>
+     <div class="col-lg-4">
+        <h2 class="text-white sidehead">
+           <span class="betxt">BENE</span>FITS
+        </h2>
+        <p class="benp">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain uncompromised quality standards in choosing only the ideal eggs. The authentic packaging techniques keep eggs free from microbes. Our Stainless &amp; odorless eggs undergo triple quality check procedure. Our specialty is Bright Amber solid yolks. Good Eggs motivate your cellular metabolism with ample nutrition content.</p>
+        
+      </div>
+   
+     <div class="col-lg-1">
+
+    </div>
+  
+   </div>
+   <div class="row">
+       <div class="col-lg-1"></div>
+       <div class="col-lg-10 text-center">
+           <h5 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h5>
+           <h6 class="text-white">Good Eggs have 21 days of shelf life depicting utmost freshness and we maintain</h6>
+       </div>
+       <div class="col-lg-1"></div>
+   </div>
+   <div class="row">
+     <div class="col-lg-1"></div>
+     <div class="col-lg-10">
+      <div class="container">
+
+        <h2>Common Fruits</h2>
+        <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+           <thead class="thead-dark">
+              <tr>
+                 <th>Name</th>
+                 <th>Color</th>
+                 <th>Taste</th>
+              </tr>
+           </thead>
+           <tbody>
+              <tr>
+                 <td>Apple</td>
+                 <td>Green and Red</td>
+                 <td>Sweet and Tart</td>
+              </tr>
+              <tr>
+                 <td>Banana</td>
+                 <td>Yellow</td>
+                 <td>Sweet and Mushy</td>
+              </tr>
+              <tr>
+                 <td>Mango</td>
+                 <td>Yellowish Green</td>
+                 <td>Tangy</td>
+              </tr>
+              <tr>
+                 <td>Orange</td>
+                 <td>Orange</td>
+                 <td>Sweet and Tangy</td>
+              </tr>
+              <tr>
+                 <td>Blueberry</td>
+                 <td>Blue</td>
+                 <td>Mild Sweetness</td>
+              </tr>
+           </tbody>
+        </table>
+        
+       
+        
+     
+      
+     </div>
+     <!-- /.container -->
+     <p class="btxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, quae. Quam, iure eaque. Voluptas dolor nisi magni porro esse repellendus et ut nobis amet officia, corrupti numquam voluptatum autem est?</p>
+     </div>
+     <div class="col-lg-1"></div>
+   </div>
+   <div class="row">
+     <div class="col-lg-1"></div>
+     <div class="col-lg-10">
+       <h1 class="vtxt">
+        CAROTENOIDS
+       </h1>
+       <p class="btxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fugiat. Nesciunt soluta quo recusandae earum dolores sint velit magnam minus, dicta perspiciatis corporis ipsum adipisci laborum expedita, vitae odio aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor aliquid quam ea unde veniam repudiandae nihil, ullam nisi. Eos deleniti sunt a et ad, fugit distinctio debitis alias inventore?  </p>
+       <br>
+       <p class="btxt">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sapiente nihil, sit beatae iusto est. Minus voluptas dolore incidunt corrupti molestiae sed praesentium. Corrupti hic deleniti possimus explicabo repellat a?
+      </p>
+     
+      </div>
+     <div class="col-lg-1"></div>
+   </div>
+  </div>
+</section>
+  <footer class="  text-lg-start">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 class="folotxt">FOllOW US</h4>
+          <ul class="social">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ <div class="container-fluid">
+   <div class="row pdfoot">
+    <div class="col-lg-1"></div>
+   
+    <div class="col-lg-4 footerbgshadow">
+     <div class="row">
+       <div class="col-lg-5">
+         <ul>
+           <li class="line"></li>
+           <li>About Us</li>
+           <li>FAQ</li>
+           <li>Contact Us</li>
+           
+         </ul>
+       </div>
+       <div class="col-lg-5">
+         <ul>
+           <li class="line2"></li>
+           <li>Home</li>
+           <li>Good Eggs</li>
+           <li>Good Hens</li>
+       
+         </ul>
+       </div>
+       <div class="col-lg-2">
+         <ul>
+           <li class="line2"></li>
+        
+         </ul>
+       </div>
+     </div>
+  
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1 bdron"></div>
+    <div class="col-lg-4">
+      <h3 class="conttxt">Contact</h3>
+      <p style="font-family: 'Aileron-Black' !important;">490-335-184 <br>
+      Hours available: 9:00am - 4:00pm IST <br>
+      contact@goodeggs.com
+    </p>
+    </div>
+    <div class="col-lg-1">
+      <img src="img/logo.png" class="smlogo" width="130px" alt="">
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-lg-3"></div>
+     <div class="col-lg-6">
+       <div class="row">
+         <div class="col-lg-4 ">
+          
+         </div>
+         <div class="col-lg-4 ">
+           <h6 class="text-white">
+            Copyright@goodeggs.com
+           </h6>
+         
+         </div>
+         <div class="col-lg-4 ">
+           <h6 class="text-white">
+          
+           </h6>
+          
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-3"></div>
+   </div>
+ </div>
+
+     
+  </footer>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</body>
+<script>
+  $(document).ready(function() {
+
+   
+// inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
+$('.table-responsive-stack').each(function (i) {
+   var id = $(this).attr('id');
+   //alert(id);
+   $(this).find("th").each(function(i) {
+      $('#'+id + ' td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+             $(this).text() + ':</span> ');
+      $('.table-responsive-stack-thead').hide();
+      
+   });
+   
+
+   
+});
+
+
+
+
+
+$( '.table-responsive-stack' ).each(function() {
+var thCount = $(this).find("th").length; 
+var rowGrow = 100 / thCount + '%';
+//console.log(rowGrow);
+$(this).find("th, td").css('flex-basis', rowGrow);   
+});
+
+
+
+
+function flexTable(){
+if ($(window).width() < 768) {
+   
+$(".table-responsive-stack").each(function (i) {
+   $(this).find(".table-responsive-stack-thead").show();
+   $(this).find('thead').hide();
+});
+   
+ 
+// window is less than 768px   
+} else {
+   
+   
+$(".table-responsive-stack").each(function (i) {
+   $(this).find(".table-responsive-stack-thead").hide();
+   $(this).find('thead').show();
+});
+   
+   
+
+}
+// flextable   
+}      
+
+flexTable();
+
+window.onresize = function(event) {
+ flexTable();
+};
+
+
+
+
+
+
+// document ready  
+});
+
+
+
+
+</script>
+
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/js/theme-vendors.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+
+
+
+
+
+</html>
