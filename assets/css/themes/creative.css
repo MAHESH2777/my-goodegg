@@ -87,8 +87,8 @@ h6 {
 .main-nav > li.is-active > a,
 .main-nav > li.current-menu-item > a,
 .main-nav > li:hover > a,
-.main-nav > li > a:hover {
-  color: #fe688b;
+.main-nav > li > a:active {
+  color: #20b4b1;
 }
 
 .main-footer {

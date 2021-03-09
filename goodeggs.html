@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>GoodEgg</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+   <link rel="icon" href="img/logo.png" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -67,15 +67,18 @@
       font-family: 'Aileron-Black' !important;
     }
  p{
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Aileron-Black' !important;
  }
  ul{
-  font-family: 'Aileron-Regular' !important;
-  font-size: 17px;
+  font-family: 'Aileron-Black' !important;
+    font-size: 17px;
+    color: white;
+    list-style-type: none;
  }
  .owl-nav {
     display: none;
 }
+
 
 
 
@@ -141,7 +144,11 @@
     }
 
 
-
+.ongtxt{
+  color: white;
+  font-size: 19px;
+  margin: 0px;
+}
 
 
   
@@ -153,7 +160,6 @@ table tr {
     border-bottom: none;
 }
 
-
 .table-responsive-stack tr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,7 +169,36 @@ table tr {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-
+.btxt {
+    color: white;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+td {
+    flex-basis: 20%;
+    font-size: 19px !important;
+    color: white;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-left: 1px solid #dee2e6 !important;
+}
+.headnone .thead-dark th {
+  display: none;
+}
+.table-bordered td, .table-bordered th {
+    border: none;
+}
+.table .thead-dark th {
+    color: #fff;
+    border: 2px solid white;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #343a4000;
+    border-color: #ffffff;
+}
 
 .table-responsive-stack td,
 .table-responsive-stack th {
@@ -195,7 +230,13 @@ table tr {
    }
 }
 
-
+.lqd-sticky-placeholder {
+    height: 0px !important;
+}
+h2.text-white.sidehead {
+    margin: 0px;
+    text-align: center;
+}
 
  
   </style>
@@ -213,134 +254,101 @@ table tr {
 <body>
     
   <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
-    <header class="main-header main-header-overlay" data-sticky-header="true"
-      data-sticky-options="{ &quot;stickyTrigger&quot;: &quot;first-section&quot; }">
-      <div class="mainbar-wrap">
-        <div class="container-fluid mainbar-container">
-          <div class="mainbar">
-            <div class="row mainbar-row align-items-lg-stretch px-4">
-
-              <div class="col">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html" rel="home">
-                    <span class="navbar-brand-inner">
-                      <img class="logo-dark" src="img/logo.png" alt="Ave HTML Template">
-                      <img class="logo-sticky" src="img/logo.png" alt="Ave HTML Template">
-                      <img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
-                      <img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
-                    </span>
-                  </a>
-                  <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse"
-                    data-target="#main-header-collapse" aria-expanded="false"
-                    data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="bars">
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                    </span>
-                  </button>
-                </div><!-- /.navbar-header -->
-              </div><!-- /.col -->
-
-              <div class="col">
-
-                <div class="collapse navbar-collapse" id="main-header-collapse">
-
-                  <ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-end"
-                    data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
-
-                    <li>
-                      <a href="goodeggs.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            GoodEggs
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="about.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            About Us
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-
-                    <li class="menu-item-has-children megamenu megamenu-fullwidth columns-4 position-applied"
-                      data-bg-color="rgb(33, 33, 33)" data-megamenu-bg-scheme="dark">
-                      <a href="goodhens.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            GoodHens
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-
-                    </li>
-                    <li class="menu-item-has-children position-applied">
-                      <a href="recipe.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            Recipes
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-
-                    </li>
-                    <li class="menu-item-has-children position-applied">
-                      <a href="contact.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            Contact
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-
-                    </li>
-
-
-                  </ul><!-- /#primary-nav  -->
-
-                </div><!-- /#main-header-collapse -->
-
-
-
-              </div><!-- /.col -->
-
-            </div><!-- /.mainbar-row -->
-          </div><!-- /.mainbar -->
-        </div><!-- /.mainbar-container -->
-      </div><!-- /.mainbar-wrap -->
-
-    </header>
+    <header class="main-header main-header-overlay  " data-sticky-header="true">
+			
+			<div class="lqd-sticky-placeholder" style="height: 95px;"></div><div class="mainbar-wrap is-stuck">
+				<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+				<div class="container-fluid mainbar-container">
+					<div class="mainbar">
+						<div class="row mainbar-row align-items-lg-stretch px-4">
+							
+							<div class="col pr-5">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="index.html" rel="home">
+										<span class="navbar-brand-inner">
+											<img class="logo-sticky" src="img/logo.png" alt="Ave WordPress Theme">
+											<img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
+											<img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
+										</span>
+									</a>
+									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="bars">
+											<span class="bar"></span>
+											<span class="bar"></span>
+											<span class="bar"></span>
+										</span>
+									</button>
+								</div><!-- /.navbar-header -->
+							</div><!-- /.col -->
+							
+							<div class="col">
+								
+								<div class="collapse navbar-collapse" id="main-header-collapse">
+									
+									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center main-nav-hover-underline-1" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }" data-localscroll="true">
+										
+										<li class="is-active">
+											<a href="goodeggs.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">GoodEggs</span>
+												</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="about.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">About Us</span>
+												</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="goodhens.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">GoodHens</span>
+												</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="recipe.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Recipes</span>
+												</span>
+											</a>
+										</li>
+								
+										<li>
+											<a href="contact.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Contact</span>
+												</span>
+											</a>
+										</li>
+									
+									</ul><!-- /#primary-nav  -->
+								
+								</div><!-- /#main-header-collapse -->
+								
+							</div><!-- /.col -->
+						
+						
+						
+						</div><!-- /.mainbar-row -->
+					</div><!-- /.mainbar -->
+				</div><!-- /.mainbar-container -->
+			</div><!-- /.mainbar-wrap -->
+			
+		</header>
     <!-- <div class="past">The past</div>
     <div class="future">The future</div> -->
     <div class="lqd-vbg-wrap">
@@ -358,32 +366,31 @@ table tr {
 
       <div class="row before-wrapper d-flex flex-wrap align-items-center">
 
-        <div class="lqd-column col-lg-5 ">
+        <div class="lqd-column col-lg-4 ">
 
          
 
 </div><!-- /.col-lg-7 col-md-6 -->
 
-        <div class="lqd-column col-lg-7 lqd-column" data-custom-animations="true"
-          data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
-              <div class="onlybgclr">
-                <div class="ld-fancy-heading mask-text">
-                  <h2 class="cracktxt" data-split-text="true" data-custom-animations="true"
-                    data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
-                    data-split-options='{"type":"lines"}'>
-                    <span class="ld-fh-txt"> CRACK OPEN THE</span>
-                  </h2>
-                </div><!-- /.ld-fancy-heading -->
-      
-                <div class="ld-fancy-heading mask-text mb-75">
-                  <h1 class="goodtxt" data-split-text="true" data-custom-animations="true"
-                    data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
-                    data-split-options='{"type":"lines"}'>
-                    <span class="gtxt ld-fh-txt">GOODNESS</span>
-                </h1>
-              </div>
-              </div>
-          </div><!-- /.ld-fancy-heading -->
+    
+<div class="lqd-column col-lg-8 lqd-column" data-custom-animations="true"
+data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+   
+
+<h1 class="title uk-heading-hero" id="thd"> <span id="typed"></span>
+  <div class="type-wrap" id="typhd">
+     <div id="typed-strings" class="typstr">
+        <p id="typdesg">We believe that our eggs should be good for you, good for our hens, and good for the land!</p>
+        <p id="typdev">We believe that our eggs should be good for you, good for our hens, and good for the land!</p>
+        <p id="typcc" class="mtxt">We believe that our eggs should be good for you, good for our hens, and good for the land!</p>
+        <p id="typsm" class="mtxt">We believe that our eggs should be good for you, good for our hens, and good for the land!</p>
+        <p id="typag" class="mtxt">We believe that our eggs should be good for you, good for our hens, and good for the land!</p>
+     </div>
+  </div>
+</h1>
+
+
+</div><!-- /.ld-fancy-heading -->
 
           <div class="row">
 
@@ -419,48 +426,90 @@ table tr {
     </div><!-- /.container -->
   </section>
   <section>
-      <div class="container-fluid onerow">
+      <div class="container-fluid onerowgh" id="vitaminA">
           <div class="row">
               <div class="col-lg-1"></div>
               <div class="col-lg-10 text-center">
                   <h1 class="vtxt">
-                    VITAMIN A AND CAROTENOIDS
+                    VITAMIN A & CAROTENOIDS
                    
                   </h1>
-                  <p class="text-white">Vitamin A is the name of a group of fat-soluble retinoids, including retinol, retinal, and retinyl esters. Vitamin A is involved in immune function, vision, reproduction, and cellular communication.</p>
+                  <p class="btxt">Vitamin A is the name of a group of fat-soluble retinoids, including retinol, retinal, and retinyl esters. Vitamin A is involved in immune function, vision, reproduction, and cellular communication.</p>
               </div>
           </div>
           <div class="row ">
      
             <div class="col-lg-1"></div>
             <div class="col-lg-6">
-                <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+                <img src="img/goodeggs/good eggs page image1.png" class="img-fluid" alt="">
               </div>
-         <div class="col-lg-1">
-    
-         </div>
-         <div class="col-lg-4">
-            <h2 class="text-white sidehead">
-               <span class="betxt">BENE</span>FITS
-            </h2>
-            <ul>
-              <li> It is a potent Antioxidant.</li>
-              <li>Essential for eye health and prevents macular degeneration.</li>
-              <li>Boosts the immune system and prevents certain types of cancers.</li>
-              <li>Vital for fertility and fetal development</li>
-
-            </ul>
+          <div class="col-lg-1"></div>
+         <div class="col-lg-4 align-self-center">
+           <div class="row">
+             <div class="col-md-6 ">
+              <h2 class="text-white sidehead">
+                <span class="betxt">BENE</span>FITS
+             </h2>
+             <img src="img/goodeggs/wavy line1.png" alt="">
+             </div>
+             <div class="col-md-6"></div>
+           </div>
+            
+            <div class="row p-2">
+              <div class="col-md-2 text-center">
+                <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+              </div>
+              <div class="col-md-10 p-0">
+                <p class="btxt">
+                  It is a potent Antioxidant.
+                </p>
+               
+              </div>
+            </div>
+              <div class="row p-2">
+                <div class="col-md-2 text-center">
+                  <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+                </div>
+                <div class="col-md-10 p-0">
+                  <p class="btxt">
+                    Essential for eye health and prevents macular degeneration..
+                  </p>
+                 
+                </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-md-2 text-center">
+                <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+              </div>
+              <div class="col-md-10 p-0">
+                <p class="btxt">
+                  Boosts the immune system and prevents certain types of cancers.
+                </p>
+               
+              </div>
+          </div>
+          <div class="row p-2">
+            <div class="col-md-2 text-center">
+              <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+            </div>
+            <div class="col-md-10 p-0">
+              <p class="btxt">
+              
+                Vital for fertility and fetal development
+              </p>
+             
+            </div>
+        </div>
+          
           </div>
        
-         <div class="col-lg-1">
-    
-        </div>
+        
       
        </div>
        <div class="row">
            <div class="col-lg-1"></div>
            <div class="col-lg-10 text-center">
-               <h5 class="text-white">The adequate Vitamin A intake recommendations set out by the National Health and Medical Research </h5>
+               <h5 class="text-white">The adequate Vitamin A intake recommendations set out by the National Health and Medical </h5>
 
            </div>
            <div class="col-lg-1"></div>
@@ -490,25 +539,54 @@ table tr {
                      <td></td>
                   </tr>
                   <tr>
-                     <td>Banana</td>
-                     <td>Yellow</td>
-                     <td>Sweet and Mushy</td>
+                     <td>7–12 months</td>
+                     <td>500 mcg RAE</td>
+                     <td>500 mcg RAE</td>
+                     <td></td>
+                     <td></td>
                   </tr>
                   <tr>
-                     <td>Mango</td>
-                     <td>Yellowish Green</td>
-                     <td>Tangy</td>
+                     <td>1–3 years</td>
+                     <td>300 mcg RAE</td>
+                     <td>300 mcg RAE</td>
+                     <td></td>
+                     <td></td>
                   </tr>
                   <tr>
-                     <td>Orange</td>
-                     <td>Orange</td>
-                     <td>Sweet and Tangy</td>
+                     <td>4–8 years</td>
+                     <td>400 mcg RAE</td>
+                     <td>400 mcg RAE</td>
+                     <td></td>
+                     <td></td>
                   </tr>
                   <tr>
-                     <td>Blueberry</td>
-                     <td>Blue</td>
-                     <td>Mild Sweetness</td>
+                     <td>9–13 years</td>
+                     <td>600 mcg RAE	</td>
+                     <td>600 mcg RAE</td>
+                     <td></td>
+                     <td></td>
                   </tr>
+                  <tr>
+                    <td>14–18 years</td>
+                    <td>900 mcg RAE</td>
+                    <td>700 mcg RAE</td>
+                    <td>750 mcg RAE</td>
+                    <td>1,200 mcg RAE</td>
+                  </tr>
+                  <tr>
+                    <td>19–50 years</td>
+                    <td>900 mcg RAE</td>
+                    <td>700 mcg RAE</td>
+                    <td>770 mcg RAE	</td>
+                    <td>1,300 mcg RAE</td>
+                  </tr>
+                    <tr>
+                      <td>51+ years</td>
+                      <td>900 mcg RAE</td>
+                      <td>700 mcg RAE</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
                </tbody>
             </table>
             
@@ -518,7 +596,7 @@ table tr {
           
          </div>
          <!-- /.container -->
-         <p class="btxt">Vitamin A deficiency is the leading cause of preventable blindness in children worldwide. Vitamin A deficiency also increases the severity and risk of dying from infections like measles and diarrhea. </p>
+         <p class="btxt">Vitamin A deficiency is the leading cause of preventable blindness in children worldwide. Vitamin A deficiency also increases the severity and risk of dying from infections like measles and diarrhea. Do you know that Vitamin A pills or supplements create a negative impact on kidneys in the long run? It's best for our health to go for the natural Good Eggs, having 6X Vitamin A content compared to the other eggs!</p>
          </div>
          <div class="col-lg-1"></div>
        </div>
@@ -528,20 +606,22 @@ table tr {
            <h1 class="vtxt">
             CAROTENOIDS
            </h1>
-           <p class="btxt">Carotenoids represent another group of lipid soluble bioactive compounds that are present in eggs and that give egg yolk the yellow, orange or golden color. Lutein and Zeaxanthin are xanthophyll Carotenoids found in the yolks of our Good Eggs. They play significant roles in human health, particularly the health of eyes, and are linked with reduced risk of age-related macular degeneration and cataracts. </p>
+           <p class="btxt">Carotenoids represent another group of lipid-soluble bioactive compounds that are present in eggs and that give egg yolk the yellow, orange, or golden color. Lutein and Zeaxanthin are Xanthophyll Carotenoids found in the yolks of our Good Eggs. They play significant roles in human health, particularly the health of eyes, and are linked with reduced risk of age-related macular degeneration and cataracts. </p>
            <br>
            <p class="btxt">
-            Keeping in view the importance of Lutein and Zeaxanthin to human health, our laying hens are given higher level of dietary supplementation in their feed for the purpose of increasing yolk Lutein content in eggs. Carotenoids present in the Good Eggs’ yolks have been demonstrated to be highly bioavailable, which makes our eggs an interesting carrier of these biologically active pigments!
+            Keeping in view the importance of Lutein and Zeaxanthin to human health, our laying hens are given a higher level of dietary supplementation in their feed to increase yolk Lutein content in eggs. Carotenoids present in the Good Eggs’ yolks have been demonstrated to be highly bioavailable, which makes our eggs an interesting carrier of these biologically active pigments!
           </p>
          
           </div>
          <div class="col-lg-1"></div>
        </div>
+       
       </div>
+      <img src="img/goodeggs/good eggs page curve2.png" class="ghcurveone" alt="">
   </section>
 
   <section>
-    <div class="container-fluid tworow">
+    <div class="container-fluid tworowgh" id="vitaminE">
         <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-lg-10 text-center">
@@ -550,33 +630,77 @@ table tr {
                   VITAMIN E
                   & SELENIUM
                 </h1>
-                <p class="text-white">Vitamin E is a fat-soluble vitamin with several forms, but alpha-tocopherol is the only one used by the human body.</p>
+                <p class="btxt">Vitamin E is a fat-soluble vitamin with several forms, but alpha-tocopherol is the only one used by the human body.</p>
             </div>
         </div>
         <div class="row ">
    
           <div class="col-lg-1"></div>
-          <div class="col-lg-6">
-              <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+          <div class="col-lg-4 align-self-center">
+            <div class="row">
+              <div class="col-md-6 ">
+               <h2 class="text-white sidehead">
+                 <span class="betxt">BENE</span>FITS
+              </h2>
+              <img src="img/goodeggs/wavy line1.png" alt="">
+              </div>
+              <div class="col-md-6"></div>
             </div>
-       <div class="col-lg-1">
-  
-       </div>
-       <div class="col-lg-4">
-          <h2 class="text-white sidehead">
-             <span class="betxt">BENE</span>FITS
-          </h2>
-         <ul><li> Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.</li>
-             <li> It enhances immune function and prevents clots from forming in heart arteries.</li>
-             <li>Vitamin E supplements prevent cardiovascular diseases.</li>
-             <li> Vitamin E helps protect against Alzheimer’s, Parkinson’s, and other diseases of the brain and nervous system.</li>
-        </ul>
-       
+            <div class="row p-2">
+              <div class="col-md-2 text-center">
+                <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+              </div>
+              <div class="col-md-10 p-0">
+                <p class="btxt">
+                  Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                </p>
+               
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-md-2 text-center">
+                <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+              </div>
+              <div class="col-md-10 p-0">
+                <p class="btxt">
+                  It enhances immune function and prevents clots from forming in heart arteries.
+                </p>
+               
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-md-2 text-center">
+                <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+              </div>
+              <div class="col-md-10 p-0">
+                <p class="btxt">
+                  Vitamin E supplements prevent cardiovascular diseases.
+                </p>
+               
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-md-2 text-center">
+                <img src="img/goodeggs/point icon.png" class="img-fluid" width="20px" alt="">
+              </div>
+              <div class="col-md-10 p-0">
+                <p class="btxt">
+                  Vitamin E helps protect against Alzheimer’s, Parkinson’s, and other diseases of the brain and nervous system.
+                </p>
+               
+              </div>
+            </div>
+         
+         
+        
+    
         </div>
-     
-       <div class="col-lg-1">
-  
-      </div>
+        <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+              <img src="img/goodeggs/good eggs page image2.png" class="img-fluid" alt="">
+            </div>
+      
+      
     
      </div>
      <div class="row">
@@ -586,7 +710,7 @@ table tr {
               The Recommended Dietary Allowance (RDA) for vitamin E for males and females ages 14 years and older is 15 mg daily (or 22 international units, IU), including women who are pregnant. Lactating women need slightly more at 19 mg (28 IU) daily.
              </p>
              <p class="btxt">
-              Vitamin E deficiency can cause Retinopathy (damage to the retina of the eyes that can impair vision), Peripheral neuropathy (damage to the peripheral nerves, usually in the hands or feet, causing weakness or pain), Ataxia (loss of control of body movements) and Decreased immune function.
+              Vitamin E deficiency can cause Retinopathy (damage to the retina of the eyes that can impair vision), Peripheral neuropathy (damage to the peripheral nerves, usually in the hands or feet,causing weakness or pain), Ataxia (loss of control of body movements) and Decreased immune function.
              </p>
          </div>
          <div class="col-lg-1"></div>
@@ -598,45 +722,60 @@ table tr {
          <h1 class="vtxt">
           Selenium
          </h1>
-         <p class="btxt">Selenium is a powerful mineral that is essential for the proper functioning of our body. It plays a critical role in metabolism and thyroid function and helps protect our body from damage caused by oxidative stress. It is an essential trace mineral that is important for many bodily processes, including cognitive function, a healthy immune system, and fertility in both men and women.</p>
-         <p class="btxt">The recommended Daily Value (DV), or daily allowance, for selenium is 55 micrograms (mcg) per day for adults. During pregnancy, a woman should consume 60 mcg, and lactating women should consume 70 mcg a day.</p>
+         <p class="btxt">Selenium is a powerful mineral that is essential for the proper functioning of our body. It plays a critical role in metabolism and thyroid function and helps protect our body from damage caused by oxidative stress. It is an essential trace mineral that is important for many bodily processes, including cognitive function, a healthy immune system, and fertility in both men and women. Thyroid issues are the major cause of concern in India and Good Eggs have about 508 MCG of Selenium content.</p>
+         <p class="btxt">The recommended Daily Value (DV), or daily allowance, for Selenium, is 55 micrograms (mcg) per day for adults. During pregnancy, a woman should consume 60 mcg, and lactating women should consume 70 mcg a day.</p>
        
          <h4 class="text-white">Selenium helps to</h4>
          <br>
          <div class="row">
 
-          <div class="col-lg-1"></div>
+         
           <div class="col-lg-4">
             
-          
-            <div class="ghcontant">
-              <img src="img/omlette icon.png" alt="">
-              <p class="bptxt">Prevent HIV from progressing to AIDS</p>
-      
-            </div><br>
-            <div class="ghcontant">
-              <img src="img/omlette icon.png" alt="">
-              <p class="bptxt">Reduce the risk of miscarriage</p>
-      
+          <div class="row">
+            <div class="col-lg-2">
+              <img src="img/omlette icon.png" class="img-fluid" alt="">
             </div>
-        
-        </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-4">
-            <div class="ghcontant">
-              <img src="img/omlette icon.png" alt="">
-              <p class="bptxt">Protect against asthma</p>
-      
-            </div><br>
-            <div class="ghcontant">
-              <img src="img/omlette icon.png" alt="">
-              <p class="bptxt">Prevents cognitive decline</p>
-      
+            <div class="col-lg-10 p-0 align-self-center">
+              <p class="ongtxt">Prevent HIV from progressing to AIDS</p>
             </div>
           </div>
+           <br>
+           <div class="row">
+             <div class="col-lg-2">
+              <img src="img/omlette icon.png" class="img-fluid" alt="">
+             </div>
+             <div class="col-lg-10 p-0 align-self-center">
+              <p class="ongtxt">Reduce the risk of miscarriage</p>
+             </div>
+           </div>
+            
         </div>
+          <div class="col-lg-3"></div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="img/omlette icon.png" alt="">
+              </div>
+              <div class="col-lg-10 p-0 align-self-center">
+                <p class="ongtxt ">Protect against asthma</p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="img/omlette icon.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-10 p-0 align-self-center">
+                <p class="ongtxt ">Prevents cognitive decline, which means disorders related to thinking and cancer. </p>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        <br>
         <p class="btxt">
-           which means disorders related to thinking and cancer.  The enriched Good Egg yolk with vitamin E is very popular because of its antioxidative characteristics. Increase in the strength of the vitelline membrane, the stability of egg-yolk pigments, a positive effect on Haugh units, egg weight and the percentage of egg albumen in our Good Eggs is all about Se enrichment!
+          The enriched Good Egg yolk with vitamin E is very popular because of its antioxidative characteristics. An increase in the strength of the vitelline membrane, the stability of egg-yolk pigments, a positive effect on Haugh units, egg weight, and the percentage of egg albumen in our Good Eggs is all about Se enrichment!
         </p>
         </div>
        <div class="col-lg-1"></div>
@@ -644,10 +783,11 @@ table tr {
 
   
     </div>
+    <img src="img/goodeggs/good eggs page curve4.png" class="ghcurve4" alt="">
 </section>
 
 <section>
-  <div class="container-fluid threerow">
+  <div class="container-fluid threerowgh" id="vitaminD">
       <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-10 text-center">
@@ -656,34 +796,80 @@ table tr {
                 VITAMIN D
             
               </h1>
-              <p class="text-white">Vitamin D, sometimes called the ‘sunshine vitamin’ is a fat-soluble vitamin obtained from food and made by the body when sunlight hits the skin. It can also be found in supplements.</p>
+              <p class="btxt">Vitamin D, sometimes called the ‘sunshine vitamin’ is a fat-soluble vitamin obtained from food and made by the body when sunlight hits the skin. It can also be found in supplements.</p>
           </div>
       </div>
       <div class="row ">
  
         <div class="col-lg-1"></div>
-        <div class="col-lg-6">
-            <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+        <div class="col-lg-5">
+            <img src="img/goodeggs/good eggs page image3.png" class="img-fluid" alt="">
           </div>
-     <div class="col-lg-1">
-
-     </div>
-     <div class="col-lg-4">
-        <h2 class="text-white sidehead">
+     <div class="col-lg-1"></div>
+     <div class="col-lg-4 align-self-center">
+      <div class="row">
+        <div class="col-md-6 ">
+         <h2 class="text-white sidehead">
            <span class="betxt">BENE</span>FITS
         </h2>
-      <ul>
-        <li>Plays a crucial role in maintaining healthy bones and teeth and muscle function.</li>
-        <li>Regulates our immune system. </li>
-        <li>Responsible for bone development in children and skeletal health in adults.</li>
-        <li>Aids in Calcium and phosphorus absorption and metabolism.</li>
-        
-      </ul>
+        <img src="img/goodeggs/wavy line1.png" alt="">
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+        <div class="row p-2">
+          <div class="col-md-2 text-center">
+            <img src="img/goodeggs/point icon.png" class="" width="20px" alt=""> 
+          </div>
+          <div class="col-md-10 p-0">
+        <p class="btxt">
+          Plays a crucial role in maintaining healthy bones and teeth and muscle function.
+        </p>
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-md-2 text-center">
+            <img src="img/goodeggs/point icon.png" class="" width="20px" alt=""> 
+          </div>
+          <div class="col-md-10 p-0">
+        <p class="btxt">
+          Regulates our immune system. 
+        </p>
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-md-2 text-center">
+            <img src="img/goodeggs/point icon.png" class="" width="20px" alt=""> 
+          </div>
+          <div class="col-md-10 p-0">
+        <p class="btxt">
+          Responsible for bone development in children and skeletal health in adults.
+        </p>
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-md-2 text-center">
+            <img src="img/goodeggs/point icon.png" class="" width="20px" alt=""> 
+          </div>
+          <div class="col-md-10 p-0">
+        <p class="btxt">
+          Aids in Calcium and phosphorus absorption and metabolism.
+        </p>
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-md-2 text-center">
+            <img src="img/goodeggs/point icon.png" class="" width="20px" alt=""> 
+          </div>
+          <div class="col-md-10 p-0">
+        <p class="btxt">
+          Prevents Osteoporosis. 
+        </p>
+          </div>
+        </div>
+     
       </div>
    
-     <div class="col-lg-1">
-
-    </div>
+  
   
    </div>
    <div class="row">
@@ -691,12 +877,12 @@ table tr {
        <div class="col-lg-10">
            <h5 class="text-white text-center">Ever wondered what happens if you don't have enough vitamin D?</h5>
            <p class="btxt">
-            We’re at risk of developing weak bones in case of vitamin D deficiency. Unfortunately, 75% of the adults live with mild or moderate vitamin D deficiency. Severe vitamin D deficiencies could have major health ramifications. With an average serve of eggs offering 82 per cent of the recommended dietary intake, eggs are a preferable choice for those who are considering supplements and looking to boost their vitamin D levels.
+            We’re at risk of developing weak bones in case of vitamin D deficiency. Unfortunately, 75% of adults live with mild or moderate vitamin D deficiency. Severe vitamin D deficiencies could have major health ramifications. With an average serve of eggs offering 82 percent of the recommended dietary intake, Good Eggs are a preferable choice for those who are considering supplements and looking to boost their vitamin D level
            </p>
            <br>
-           <h5 class="text-white">
-            The adequate Vitamin D intake recommendations set out by the National Health and Medical Research 
-           </h5>
+           <h3 class="dh3txt">
+            The adequate Vitamin D intake recommendations set out by the <br> <b>National Health and Medical Research Council</b>  are as follows
+           </h3>
        </div>
        <div class="col-lg-1"></div>
    </div>
@@ -705,40 +891,62 @@ table tr {
      <div class="col-lg-10">
       <div class="container">
 
-        <h2>Common Fruits</h2>
+        <h4 class="text-white">
+          Council are as follows:
+        </h4>
         <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
            <thead class="thead-dark">
               <tr>
-                 <th>Name</th>
-                 <th>Color</th>
-                 <th>Taste</th>
+                 <th>AGE</th>
+                 <th>QUANTITY</th>
+            
               </tr>
            </thead>
            <tbody>
               <tr>
-                 <td>Apple</td>
-                 <td>Green and Red</td>
-                 <td>Sweet and Tart</td>
+                 <td>0-6 months</td>
+                 <td>5.0µg/day</td>
+             
               </tr>
               <tr>
-                 <td>Banana</td>
-                 <td>Yellow</td>
-                 <td>Sweet and Mushy</td>
+                 <td>7-12 months</td>
+                 <td>5.0µg/day</td>
+                
               </tr>
               <tr>
-                 <td>Mango</td>
-                 <td>Yellowish Green</td>
-                 <td>Tangy</td>
+                 <td>1-3 yr</td>
+                 <td>5.0 µg/day</td>
+              
               </tr>
               <tr>
-                 <td>Orange</td>
-                 <td>Orange</td>
-                 <td>Sweet and Tangy</td>
+                 <td>4-8 yr</td>
+                 <td>5.0 µg /day</td>
+      
               </tr>
               <tr>
-                 <td>Blueberry</td>
-                 <td>Blue</td>
-                 <td>Mild Sweetness</td>
+                 <td>9-13 yr</td>
+                 <td>5.0 µg/day</td>
+             
+              </tr>
+              <tr>
+                <td>14-18 yr</td>
+                <td>5.0 µg/day</td>
+              </tr>
+              <tr>
+                <td>19-30 yr</td>
+                <td>5.0 µg /day</td>
+              </tr>
+              <tr>
+                <td>31-50 yr</td>
+                <td>5.0 µg /day</td>
+              </tr>
+              <tr>
+                <td>51-70 yr</td>
+                <td>10.0 µg /day</td>
+              </tr>
+              <tr>
+                <td>70 yr</td>
+                <td>15.0 µg /day</td>
               </tr>
            </tbody>
         </table>
@@ -749,41 +957,48 @@ table tr {
       
      </div>
      <!-- /.container -->
-     <p class="btxt">Good Eggs are high in natural vitamin D content. Do you know that an average serving of two eggs provides 82% of your daily recommended intake of vitamin D? One egg yolk has 41 IU, 10 percent of your daily value of Vitamin D. </p>
+     <p class="btxt">Good Eggs are high in natural vitamin D content. Do you know that an average serving of two eggs provides 82% of your daily recommended intake of vitamin D? One egg yolk has 41 IU, 10 percent of your daily value of Vitamin D.  </p>
      <p class="btxt">Scrumptious breakfast or a snack with delicious and nutritious Good Eggs helps you maintain the optimal vitamin D levels!</p> 
     </div>
      <div class="col-lg-1"></div>
    </div>
 
   </div>
+  <img src="img/goodeggs/good eggs page curve6.png" class="ghcurve6" alt="">
 </section>
 <section>
-  <div class="container-fluid fourrow">
+  <div class="container-fluid fourrowgh" id="premimum">
       <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-10 text-center">
               <h1 class="vtxt">
                  PREMIUM FRESH
               </h1>
-              <p class="btxt">What would we do without the egg? It's a dietary mainstay, not only for breakfast but to feed finicky kids, stand in for a quick lunch or supper, blend raw into holiday nogs, and as an ingredient in all kinds of sweet and savory dishes. </p>
-            
+              <p class="btxt">What would we do without the egg? It's a dietary mainstay, not only for breakfast but to feed finicky kids, a stand-in for a quick lunch or supper, blend raw into holiday nogs, and as an ingredient in all kinds of sweet and savory dishes.  </p>
+
             </div>
       </div>
       <div class="row ">
  
         <div class="col-lg-1"></div>
         <div class="col-lg-6">
-            <img src="img/BLOG IMAGE1.png" class="img-fluid" alt="">
+            <img src="img/goodeggs/good eggs page image4.png" class="img-fluid" alt="">
           </div>
      <div class="col-lg-1">
 
      </div>
-     <div class="col-lg-4">
-        <h2 class="text-white sidehead">
+     <div class="col-lg-4 align-self-center">
+      <div class="row">
+        <div class="col-md-6 ">
+         <h2 class="text-white sidehead">
            <span class="betxt">BENE</span>FITS
         </h2>
+        <img src="img/goodeggs/wavy line1.png" alt="">
+        </div>
+        <div class="col-md-6"></div>
+      </div>
         <p class="btxt">
-          Along with milk, eggs contain the highest biological value (or gold standard) for protein. One egg has only 75 calories but 7 grams of high-quality protein, 5 grams of fat, and 1.6 grams of saturated fat, along with iron, vitamins and minerals. Eggs are easy to eat, well-tolerated by young and old, adaptable to any meal, and inexpensive. Whether you prefer designer or generic Good Eggs, you can manage your egg intake over the course of a week.
+          Along with milk, Good Eggs contain the highest biological value (or gold standard) for protein. One egg has only 75 calories but 7 grams of high-quality protein, 5 grams of fat, and 1.6 grams of saturated fat, along with iron, vitamins, and minerals. Eggs are easy to eat, well-tolerated by young and old, adaptable to any meal, and inexpensive. Whether you prefer designer or generic Good Eggs, you can manage your egg intake over the course of a week.
         </p>
       </div>
    
@@ -795,8 +1010,8 @@ table tr {
    <div class="row">
        <div class="col-lg-1"></div>
        <div class="col-lg-10 text-center">
-           <h5 class="text-white">Our Premium Fresh Good Eggs are loaded with nutrients, protein and healthy fats. The nutritional analysis is:</h5>
-           
+           <h5 class="text-white">Our Premium Fresh Good Eggs are loaded with nutrients, protein, and healthy fats. The nutritional analysis is : </h5>
+           <br>
        </div>
        <div class="col-lg-1"></div>
    </div>
@@ -804,41 +1019,72 @@ table tr {
      <div class="col-lg-1"></div>
      <div class="col-lg-10">
       <div class="container">
-
-        <h2>Common Fruits</h2>
-        <table class="table table-bordered table-striped table-responsive-stack" id="tableOne">
+   
+        <table class="table headnone table-bordered table-striped table-responsive-stack" id="tableOne">
            <thead class="thead-dark">
               <tr>
-                 <th>Name</th>
-                 <th>Color</th>
-                 <th>Taste</th>
+                 <th></th>
+                 <th></th>
+             
               </tr>
            </thead>
            <tbody>
               <tr>
-                 <td>Apple</td>
-                 <td>Green and Red</td>
-                 <td>Sweet and Tart</td>
+                 <td>Calories</td>
+                 <td>77</td>
+               
               </tr>
               <tr>
-                 <td>Banana</td>
-                 <td>Yellow</td>
-                 <td>Sweet and Mushy</td>
+                 <td>Carbs</td>
+                 <td>0.6 grams</td>
+             
               </tr>
               <tr>
-                 <td>Mango</td>
-                 <td>Yellowish Green</td>
-                 <td>Tangy</td>
+                 <td>Total fat</td>
+                 <td>5.3 grams</td>
+              
               </tr>
               <tr>
-                 <td>Orange</td>
-                 <td>Orange</td>
-                 <td>Sweet and Tangy</td>
+                 <td>Saturated fat</td>
+                 <td>1.6 grams</td>
+   
               </tr>
               <tr>
-                 <td>Blueberry</td>
-                 <td>Blue</td>
-                 <td>Mild Sweetness</td>
+                 <td>Monounsaturated fat</td>
+                 <td> 2.0 grams</td>
+               
+              </tr>
+              <tr>
+                <td>Cholesterol</td>
+                <td>212 mg</td>
+              </tr>
+              <tr>
+                <td>Protein</td>
+                <td>6.3 grams</td>
+              </tr>
+              <tr>
+                <td>Vitamin A</td>
+                <td>6% of the Recommended Dietary Allowance (RDA), 6MG per 100G.</td>
+              </tr>
+              <tr>
+                <td>Phosphorus</td>
+                <td>86 mg or 9% of the RDA</td>
+              </tr>
+              <tr>
+                <td>Selenium</td>
+                <td>15.4 mcg, or 22% of the RDA</td>
+              </tr>
+              <tr>
+                <td>Vitamin B5 (pantothenic acid)</td>
+                <td>7% of the RDA</td>
+              </tr>
+              <tr>
+                <td>Phosphorus</td>
+                <td>86 mg, or 9% of the RDA</td>
+              </tr>
+              <tr>
+                <td>Selenium</td>
+                <td> 15.4 mcg, or 22% of the RDA</td>
               </tr>
            </tbody>
         </table>
@@ -849,103 +1095,103 @@ table tr {
       
      </div>
      <!-- /.container -->
-     <p class="btxt">Choline is crucial for maintaining a healthy nervous system, as it helps produce acetylcholine, a neurotransmitter involved in memory and learning. One, large, hard-boiled Good Egg contains 147 mg of Choline, which is 27% of the daily value. In fact, eggs are the most concentrated source of Choline. As a whole, eggs are a low-calorie, nutrient-dense food. They’re an excellent source of high-quality protein and rich in B vitamins, zinc, calcium and other important nutrients and antioxidants like Choline.</p>
-     <p class="ptxt">Our everyday value days are of better quality than the regular ones with additional nutritional content and undergo stringent quality checks and are absolutely clean and odorless. </p> 
+     <p class="btxt">Choline is crucial for maintaining a healthy nervous system, as it helps produce acetylcholine, a neurotransmitter involved in memory and learning. One, large, hard-boiled Good Egg contains 147 mg of Choline, which is 27% of the daily value. Good Eggs are the most concentrated source of Choline. As a whole, eggs are a low-calorie, nutrient-dense food. They’re an excellent source of high-quality protein and rich in B vitamins, zinc, calcium, and other important nutrients and antioxidants like Choline.</p>
+     <p class="btxt">Our everyday value eggs are of better quality than the regular ones with additional nutritional content and undergo stringent quality checks and are clean and odorless. </p> 
     </div>
      <div class="col-lg-1"></div>
    </div>
 
   </div>
 </section>
-  <footer class="  text-lg-start">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h4 class="folotxt">FOllOW US</h4>
-          <ul class="social">
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-          </ul>
-        </div>
+<img src="img/goodeggs/good eggs page curve8.png" class="gecurve8" alt="">
+<footer class="  text-lg-start">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h4 class="folotxt">FOllOW US</h4>
+        <ul class="social">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-linkedin-in"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
       </div>
     </div>
- <div class="container-fluid">
-   <div class="row pdfoot">
-    <div class="col-lg-1"></div>
-   
-    <div class="col-lg-4 footerbgshadow">
-     <div class="row">
-       <div class="col-lg-5">
-         <ul>
-           <li class="line"></li>
-           <li>About Us</li>
-           <li>FAQ</li>
-           <li>Contact Us</li>
-           
-         </ul>
-       </div>
-       <div class="col-lg-5">
-         <ul>
-           <li class="line2"></li>
-           <li>Home</li>
-           <li>Good Eggs</li>
-           <li>Good Hens</li>
-       
-         </ul>
-       </div>
-       <div class="col-lg-2">
-         <ul>
-           <li class="line2"></li>
-        
-         </ul>
-       </div>
-     </div>
-  
-    </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1 bdron"></div>
-    <div class="col-lg-4">
-      <h3 class="conttxt">Contact</h3>
-      <p style="font-family: 'Aileron-Black' !important;">490-335-184 <br>
-      Hours available: 9:00am - 4:00pm IST <br>
-      contact@goodeggs.com
-    </p>
-    </div>
-    <div class="col-lg-1">
-      <img src="img/logo.png" class="smlogo" width="130px" alt="">
-    </div>
-   </div>
+  </div>
+<div class="container-fluid">
+ <div class="row pdfoot">
+  <div class="col-lg-1"></div>
+ 
+  <div class="col-lg-4 footerbgshadow">
    <div class="row">
-     <div class="col-lg-3"></div>
-     <div class="col-lg-6">
-       <div class="row">
-         <div class="col-lg-4 ">
-          
-         </div>
-         <div class="col-lg-4 ">
-           <h6 class="text-white">
-            Copyright@goodeggs.com
-           </h6>
+     <div class="col-lg-5">
+       <ul>
+         <li class="line"></li>
+         <li> <a href="about.html">About Us</a>  </li>
+         <li ><a href="faq.html">FAQ</a> </li>
+         <li><a href="contact.html">Contact Us</a> </li>
          
-         </div>
-         <div class="col-lg-4 ">
-           <h6 class="text-white">
-          
-           </h6>
-          
-         </div>
+       </ul>
+     </div>
+     <div class="col-lg-5">
+       <ul>
+         <li class="line2"></li>
+         <li><a href="index.html"> Home</a></li>
+         <li><a href="goodeggs.html">Good Eggs</a> </li>
+         <li><a href="goodhens.html">Good Hens</a> </li>
+     
+       </ul>
+     </div>
+     <div class="col-lg-2">
+       <ul>
+         <li class="line2"></li>
+      
+       </ul>
+     </div>
+   </div>
+
+  </div>
+  <div class="col-lg-1"></div>
+  <div class="col-lg-1 bdron"></div>
+  <div class="col-lg-4">
+    <h3 class="conttxt">Contact</h3>
+    <p style="font-family: 'Aileron-Black' !important;">490-335-184 <br>
+    Hours available: 9:00am - 4:00pm IST <br>
+    contact@goodeggs.com
+  </p>
+  </div>
+  <div class="col-lg-1">
+    <img src="img/logo.png" class="smlogo" width="130px" alt="">
+  </div>
+ </div>
+ <div class="row">
+   <div class="col-lg-3"></div>
+   <div class="col-lg-6">
+     <div class="row copytxt">
+       <div class="col-lg-4 ">
+        
+       </div>
+       <div class="col-lg-4 ">
+         <h6 class="text-white">
+          Copyright@goodeggs.com
+         </h6>
+       
+       </div>
+       <div class="col-lg-4 ">
+         <h6 class="text-white">
+        
+         </h6>
+        
        </div>
      </div>
-     <div class="col-lg-3"></div>
    </div>
+   <div class="col-lg-3"></div>
  </div>
+</div>
 
-     
-  </footer>
-
+   
+</footer>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -1040,9 +1286,12 @@ window.onresize = function(event) {
 
 </script>
 
+
 <script src="./assets/vendors/jquery.min.js"></script>
 <script src="./assets/js/theme-vendors.js"></script>
 <script src="./assets/js/theme.min.js"></script>
+<script src="typeffect/lib/typed.js" type="text/javascript"></script>
+<script src="typeffect/assets/demos.js"></script><!-- Facebook Pixel Code -->
 
 
 

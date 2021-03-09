@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>GoodEgg</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+   <link rel="icon" href="img/logo.png" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -57,16 +57,27 @@
       font-family: 'Aileron-Black' !important;
     }
  p{
-  font-family: 'Aileron-Regular' !important;
+  font-family: 'Aileron-Black' !important;
  }
  ul{
-  font-family: 'Aileron-Regular' !important;
+  font-family: 'Aileron-Black' !important;
  }
-
+ p.ptxt {
+    color: black;
+    font-size: 18px;
+}  
     body {
       font-family: 'Aileron-Regular';
       background-color: #fff6a2;
    
+    }
+    @media only screen and (min-width: 1460px) and (max-width: 1601px){
+img.onewave {
+    position: absolute;
+    top: 689px;
+    z-index: 9;
+    width: 177px;
+}
     }
     .main-nav > li > a {
     -webkit-box-flex: 1;
@@ -226,9 +237,7 @@
     /* left: 0px; */
     right: 20px;
 }
-ul#primary-nav li {
-    padding: 0px 17px;
-}
+
 .is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
     color: rgb(29 178 177) !important;
 }
@@ -267,172 +276,140 @@ img.twoark {
   </head>
 <body>
   <div class="image-wrap">
-    <header class="main-header main-header-overlay" data-sticky-header="true"
-      data-sticky-options="{ &quot;stickyTrigger&quot;: &quot;first-section&quot; }">
-      <div class="mainbar-wrap">
-        <div class="container-fluid mainbar-container">
-          <div class="mainbar">
-            <div class="row mainbar-row align-items-lg-stretch px-4">
-
-              <div class="col">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="index.html" rel="home">
-                    <span class="navbar-brand-inner">
-                      <img class="logo-dark" src="img/logo.png" alt="Ave HTML Template">
-                      <img class="logo-sticky" src="img/logo.png" alt="Ave HTML Template">
-                      <img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
-                      <img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
-                    </span>
-                  </a>
-                  <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse"
-                    data-target="#main-header-collapse" aria-expanded="false"
-                    data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="bars">
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                    </span>
-                  </button>
-                </div><!-- /.navbar-header -->
-              </div><!-- /.col -->
-
-              <div class="col">
-
-                <div class="collapse navbar-collapse" id="main-header-collapse">
-
-                  <ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-end"
-                    data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }">
-
-                    <li>
-                      <a href="goodeggs.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            GoodEggs
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="about.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            About Us
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-                    </li>
-
-                    <li class="menu-item-has-children megamenu megamenu-fullwidth columns-4 position-applied"
-                      data-bg-color="rgb(33, 33, 33)" data-megamenu-bg-scheme="dark">
-                      <a href="goodhens.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            GoodHens
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-
-                    </li>
-                    <li class="menu-item-has-children position-applied">
-                      <a href="recipe.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            Recipes
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-
-                    </li>
-                    <li class="menu-item-has-children position-applied">
-                      <a href="contact.html">
-                        <span class="link-icon"></span>
-                        <span class="link-txt">
-                          <span class="link-ext"></span>
-                          <span class="txt">
-                            Contact
-                            <span class="submenu-expander">
-                              <i class="fa fa-angle-down"></i>
-                            </span>
-                          </span>
-                        </span>
-                      </a>
-
-                    </li>
-
-
-                  </ul><!-- /#primary-nav  -->
-
-                </div><!-- /#main-header-collapse -->
-
-
-
-              </div><!-- /.col -->
-
-            </div><!-- /.mainbar-row -->
-          </div><!-- /.mainbar -->
-        </div><!-- /.mainbar-container -->
-      </div><!-- /.mainbar-wrap -->
-
-    </header>
+    <header class="main-header main-header-overlay  " data-sticky-header="true">
+			
+			<div class="lqd-sticky-placeholder" style="height: 95px;"></div><div class="mainbar-wrap is-stuck">
+				<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+				<div class="container-fluid mainbar-container">
+					<div class="mainbar">
+						<div class="row mainbar-row align-items-lg-stretch px-4">
+							
+							<div class="col pr-5">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="index.html" rel="home">
+										<span class="navbar-brand-inner">
+											<img class="logo-sticky" src="img/logo.png" alt="Ave WordPress Theme">
+											<img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
+											<img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
+										</span>
+									</a>
+									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="bars">
+											<span class="bar"></span>
+											<span class="bar"></span>
+											<span class="bar"></span>
+										</span>
+									</button>
+								</div><!-- /.navbar-header -->
+							</div><!-- /.col -->
+							
+							<div class="col">
+								
+								<div class="collapse navbar-collapse" id="main-header-collapse">
+									
+									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center main-nav-hover-underline-1" data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }" data-localscroll="true">
+										
+										<li class="">
+											<a href="goodeggs.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">GoodEggs</span>
+												</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="about.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">About Us</span>
+												</span>
+											</a>
+										</li>
+										<li class="">
+											<a href="goodhens.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">GoodHens</span>
+												</span>
+											</a>
+										</li>
+										<li class="is-active">
+											<a href="recipe.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Recipes</span>
+												</span>
+											</a>
+										</li>
+								
+										<li>
+											<a href="contact.html">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Contact</span>
+												</span>
+											</a>
+										</li>
+									
+									</ul><!-- /#primary-nav  -->
+								
+								</div><!-- /#main-header-collapse -->
+								
+							</div><!-- /.col -->
+						
+						
+						
+						</div><!-- /.mainbar-row -->
+					</div><!-- /.mainbar -->
+				</div><!-- /.mainbar-container -->
+			</div><!-- /.mainbar-wrap -->
+			
+		</header>
     <div class="img-content">
-        <img src="https://image.freepik.com/free-photo/raw-meat-fresh-vegetable-hot-pot-shabu-menu_1150-35277.jpg" alt="">
+        <img src="img/recipe inner page banner image.jpg" alt="">
     </div>
     <div class="overlay"></div>
 </div>
 <div class="banner-content">
-    <h1 class="bntxt">loram text start here</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Accusamus sequi, cupiditate quae quidem assumenda aliquam <br> esse dignissimos exercitationem vitae autem voluptates repudiandae <br></p>
-
+    <h1 class="bntxt">Cheese Omelette</h1>
+   
 </div>
 <img class="oneark" src="img/curves/RECIPE INNER PAGE ARC SHAPE TOP.png" alt="">
 <section>
   <img class="onewave" src="img/wavy design.png" alt="">
+ 
   <div class="container-fluid innersec">
-
+     <div class="row">
+       <div class="col-lg-1"></div>
+       <div class="col-lg-9">
+        <h3 class="inshead">INGREDIENTS</h3>
+       </div>
+     </div>
     <div class="row">
       <div class="col-lg-1">
      
       </div>
-      <div class="col-lg-9">
-        <h3 class="inshead">INGREDIENTS</h3>
+      <div class="col-lg-4">
+      
         <ul class="contul">
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-          <li>1/4 Recipes text</li>
-          <li>1/3 coup part section</li>
-        </ul>
+          <li>GOOD EGG</li>
+          <li>teaspoon whole milk or water</li>
+          <li> tablespoon cheese, shredded </li>
+          <li> teaspoon butter or oil</li>
+        
+        
       </div>
+      <div class="col-lg-4">
+      
+       
+      </div>
+
       <div class="col-lg-2 align-self-center">
         <img src="img/wavy design.png" alt="">
       </div>
@@ -440,16 +417,29 @@ img.twoark {
     <div class="row">
       <div class="col-lg-1"></div>
       <div class="col-lg-9">
-        <h3 class="inshead">INGREDIENTS</h3>
+        <h3 class="inshead">PREPARATION</h3>
+        <p class="ptxt">
+          Whisk the egg and milk in a bowl with a fork until thoroughly combined.
+        </p>
+        <p class="ptxt">
+          Melt butter in a 6 or 8-inch omelette pan over medium heat (approximately 30 seconds) making sure it coats the bottom of the pan. As soon as the butter stops bubbling (and before it starts to brown) slowly pour in the egg mixture.
+        </p>
+        <p class="ptxt">
+          Pour in the egg mixture tilting the pan to spread it evenly. Let the egg firm up a little, and after about ten-seconds, shake the pan a bit and use a spatula to gently direct the mixture away from the sides and into the middle. Allow the remaining liquid to then flow into the space left at the sides of the pan.
+        </p>
         <p class="intertxt">
-          <img src="img/omlette icon.png" width="60px" alt="">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro vitae necessitatibus dolor debitis enim error deserunt aspernatur molestiae repudiandae nemo similique nisi ipsa voluptatibus pariatur at nobis, eos autem quis!</p>
+          <img src="img/omlette icon.png" width="80px" alt="">
+          Continue to cook for another minute or so until the egg mixture holds together. Do not let the underside of the eggs brown. Sprinkle the top with the shredded cheese and with a spatula; gently fold the omelette in a half moon shape. Continue to cook another 30 seconds or until the omelette is thoroughly cooked through. Add veggies and chilies according to your taste and enjoy the scrumptious breakfast with Good Eggs!</p>
       </div>
     </div>
    
   </div>
 </section>
-<section>
+
+<img class="twoark" src="img/curves/RECIPE INNER PAGE ARC SHAPE.png" alt="">
+<br>
+<br>
+<footer class="  text-lg-start">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -464,37 +454,33 @@ img.twoark {
       </div>
     </div>
   </div>
-</section>
-<img class="twoark" src="img/curves/RECIPE INNER PAGE ARC SHAPE.png" alt="">
-<br>
-<br>
-<footer class="  text-lg-start">
-
 <div class="container-fluid">
- <div class="row">
-  <div class="col-lg-2"></div>
+ <div class="row pdfoot">
+  <div class="col-lg-1"></div>
  
-  <div class="col-lg-3 footerbgshadow">
+  <div class="col-lg-4 footerbgshadow">
    <div class="row">
-     <div class="col-lg-5 ">
+     <div class="col-lg-5">
        <ul>
-         <li>Vitamin A</li>
-         <li>Vitamin B</li>
-         <li>Vitamin C</li>
-         <li>Vitamin D</li>
+         <li class="line"></li>
+         <li> <a href="about.html">About Us</a>  </li>
+         <li ><a href="faq.html">FAQ</a> </li>
+         <li><a href="contact.html">Contact Us</a> </li>
+         
        </ul>
      </div>
-     <div class="col-lg-4">
+     <div class="col-lg-5">
        <ul>
-         <li>GoodEgg</li>
-         <li>About</li>
-         <li>GoodHend</li>
-         <li>Recipes</li>
+         <li class="line2"></li>
+         <li><a href="index.html"> Home</a></li>
+         <li><a href="goodeggs.html">Good Eggs</a> </li>
+         <li><a href="goodhens.html">Good Hens</a> </li>
+     
        </ul>
      </div>
-     <div class="col-lg-3">
+     <div class="col-lg-2">
        <ul>
-         <li>faq</li>
+         <li class="line2"></li>
       
        </ul>
      </div>
@@ -503,30 +489,33 @@ img.twoark {
   </div>
   <div class="col-lg-1"></div>
   <div class="col-lg-1 bdron"></div>
-  <div class="col-lg-3">
-    <h3>Contact</h3>
-    <p style="font-family: 'Aileron-Black' !important;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A fugit necessitatibus nostrum perferendis deserunt animi porro quis quo neque voluptas. Eum quos delectus excepturi cupiditate tenetur mollitia ea, quam dicta?</p>
+  <div class="col-lg-4">
+    <h3 class="conttxt">Contact</h3>
+    <p style="font-family: 'Aileron-Black' !important;">490-335-184 <br>
+    Hours available: 9:00am - 4:00pm IST <br>
+    contact@goodeggs.com
+  </p>
   </div>
-  <div class="col-lg-2">
+  <div class="col-lg-1">
     <img src="img/logo.png" class="smlogo" width="130px" alt="">
   </div>
  </div>
  <div class="row">
    <div class="col-lg-3"></div>
    <div class="col-lg-6">
-     <div class="row">
+     <div class="row copytxt">
        <div class="col-lg-4 ">
-         <h6 class="text-white"> careers</h6>
+        
        </div>
        <div class="col-lg-4 ">
          <h6 class="text-white">
-          Privacy Policy
+          Copyright@goodeggs.com
          </h6>
        
        </div>
        <div class="col-lg-4 ">
          <h6 class="text-white">
-          Terms of Use
+        
          </h6>
         
        </div>
@@ -535,6 +524,7 @@ img.twoark {
    <div class="col-lg-3"></div>
  </div>
 </div>
+
    
 </footer>
 </body>
