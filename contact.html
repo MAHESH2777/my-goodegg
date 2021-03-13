@@ -107,8 +107,13 @@ label {
 }
 
 .is-stuck .social-icon a:hover, .is-stuck .main-nav > li > a:hover, .is-stuck .ld-module-search-visible-form .input-icon {
-    color: #000000 !important;
+    color: #0dbfc9 !important;
 }
+.main-nav>li.active>a,
+      .main-nav>li.current-menu-item>a,
+      .main-nav>li>a {
+        color: #0dbfc9 !important;
+      }
     </style>
 </head>
 
@@ -219,34 +224,34 @@ label {
             </div><!-- /.lqd-vbg-inner -->
         </div><!-- /.lqd-vbg-wrap -->
 
-        <div class="container">
+        <div class="container-fluid">
             <!-- <h1 class="bannertxt">loraom text</h1> -->
 
             <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
 
             <div class="row before-wrapper d-flex flex-wrap align-items-center">
 
-                <div class="lqd-column col-lg-4 ">
+                <div class="lqd-column col-lg-8">
 
-
+                    <h1 class="title uk-heading-hero" id="thd"> <span id="typed"></span>
+                        <div class="type-wrap" id="typhd">
+                           <div id="typed-strings" class="typstr">
+                              <p id="typdesg">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
+                              <p id="typdev">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
+                              <p id="typcc" class="mtxt">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
+                              <p id="typsm" class="mtxt">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
+                              <p id="typag" class="mtxt">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
+                           </div>
+                        </div>
+                      </h1>
 
                 </div><!-- /.col-lg-7 col-md-6 -->
 
-                <div class="lqd-column col-lg-8 lqd-column" data-custom-animations="true"
+                <div class="lqd-column col-lg-4 lqd-column" data-custom-animations="true"
                 data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
                    
                 
-                <h1 class="title uk-heading-hero" id="thd"> <span id="typed"></span>
-                  <div class="type-wrap" id="typhd">
-                     <div id="typed-strings" class="typstr">
-                        <p id="typdesg">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
-                        <p id="typdev">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
-                        <p id="typcc" class="mtxt">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
-                        <p id="typsm" class="mtxt">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
-                        <p id="typag" class="mtxt">We care too much just like our hens as we also have the Mother Hen Syndrome!!!</p>
-                     </div>
-                  </div>
-                </h1>
+        
                 
                 
                 </div><!-- /.ld-fancy-heading -->
@@ -296,13 +301,13 @@ label {
                         <P class="bptxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
 
 
-              <form class="text-center border border-light p-5" action="">
+              <form class="text-center border border-light confm" action="">
                         <!-- Default form contact -->
                         <div class="row">
                             <div class="col-md-6 text-align-start">
                                 <label for="FIRST NAME">FIRST NAME</label>
                                 <input type="text" id="defaultContactFormName" class="form-control mb-4"
-                                    placeholder="Name">
+                                    placeholder="FIRST NAME">
                             </div>
                             <div class="col-md-6">
                                 <label for="LAST NAME">LAST NAME </label>
@@ -315,8 +320,8 @@ label {
                                 <label for="">
                                     CONTACT NUMBER
                                 </label>
-                                <input type="text" id="defaultContactFormName" class="form-control mb-4"
-                                    placeholder="Name">
+                                <input type="number" id="defaultContactFormName" class="form-control mb-4"
+                                    placeholder="CONTACT NUMBER">
                             </div>
                             <div class="col-md-6">
                                 <label for="">
@@ -330,7 +335,7 @@ label {
                             <div class="col-md-12">
                                 <Label>ADDRESS</Label>
                                 <input type="text" id="defaultContactFormName" class="form-control mb-4"
-                                    placeholder="Name">
+                                    placeholder="ADDRESS">
                             </div>
 
                         </div>
@@ -339,12 +344,12 @@ label {
                             <div class="col-md-6">
                                 <label for="">CITY/STATE/REGION</label>
                                 <input type="text" id="defaultContactFormName" class="form-control mb-4"
-                                    placeholder="Name">
+                                    placeholder="CITY/STATE/REGIONe">
                             </div>
                             <div class="col-md-6">
                                 <Label>PIN</Label>
                                 <input type="text" id="defaultContactFormName" class="form-control mb-4"
-                                    placeholder="Name">
+                                    placeholder="PIN NUMBER">
                             </div>
                         </div>
                         <div class="row">
@@ -352,7 +357,7 @@ label {
                                 <div class="form-group">
                                     <label for=""> MEASSAGE</label>
                                     <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
-                                        placeholder="Message"></textarea>
+                                        placeholder="MEASSAGE"></textarea>
                                 </div>
                             </div>
 
@@ -380,7 +385,7 @@ label {
 
     <footer class="  text-lg-start">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row ftpadd">
             <div class="col-lg-12 text-center">
               <h4 class="folotxt">FOllOW US</h4>
               <ul class="social">
@@ -399,7 +404,7 @@ label {
        
         <div class="col-lg-4 footerbgshadow">
          <div class="row">
-           <div class="col-lg-5">
+           <div class="col-lg-5 col-6">
              <ul>
                <li class="line"></li>
                <li> <a href="about.html">About Us</a>  </li>
@@ -408,7 +413,7 @@ label {
                
              </ul>
            </div>
-           <div class="col-lg-5">
+           <div class="col-lg-5 col-6">
              <ul>
                <li class="line2"></li>
                <li><a href="index.html"> Home</a></li>
@@ -430,7 +435,7 @@ label {
         <div class="col-lg-1 bdron"></div>
         <div class="col-lg-4">
           <h3 class="conttxt">Contact</h3>
-          <p style="font-family: 'Aileron-Black' !important;">490-335-184 <br>
+          <p class="ponmb">490-335-184 <br>
           Hours available: 9:00am - 4:00pm IST <br>
           contact@goodeggs.com
         </p>
@@ -440,7 +445,7 @@ label {
         </div>
        </div>
        <div class="row">
-         <div class="col-lg-3"></div>
+         <div class="col-lg-3 col-6"></div>
          <div class="col-lg-6">
            <div class="row copytxt">
              <div class="col-lg-4 ">
@@ -448,7 +453,7 @@ label {
              </div>
              <div class="col-lg-4 ">
                <h6 class="text-white">
-                Copyright@goodeggs.com
+                 Copyright&#169;goodeggs.com
                </h6>
              
              </div>
@@ -460,7 +465,7 @@ label {
              </div>
            </div>
          </div>
-         <div class="col-lg-3"></div>
+         <div class="col-lg-3 col-6"></div>
        </div>
      </div>
     

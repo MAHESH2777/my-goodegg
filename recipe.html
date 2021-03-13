@@ -88,7 +88,7 @@
     }
 
     p {
-      font-family: 'Aileron-Regular' !important;
+      font-family: 'Aileron-Black' !important;
     }
 
     ul {
@@ -220,8 +220,14 @@
       transform: translateX(50%);
     }
 
+    .main-nav > li > a {
 
-
+    color: #24b6b2; 
+ 
+}
+.is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
+    color: rgb(13 191 201) !important;
+}
 
     figure.clip-svg.loaded {
       clip-path: url(#masked-image-1);
@@ -553,19 +559,7 @@
 
     }
 
-    img.onewave {
-      position: absolute;
-      top: 120%;
-      left: 116px;
-      z-index: 9;
-    }
-
-    img.twowave {
-      position: absolute;
-      right: -28px;
-      top: 1616px;
-      z-index: 9;
-    }
+ 
  
 .is-stuck .social-icon a:hover, .is-stuck .main-nav > li > a:hover, .is-stuck .ld-module-search-visible-form .input-icon {
     color: #0dbfc9 !important;
@@ -689,34 +683,34 @@
       </div><!-- /.lqd-vbg-inner -->
     </div><!-- /.lqd-vbg-wrap -->
 
-    <div class="container">
+    <div class="container-fluid">
       <!-- <h1 class="bannertxt">loraom text</h1> -->
 
       <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
 
       <div class="row before-wrapper d-flex flex-wrap align-items-center">
 
-        <div class="lqd-column col-lg-4 ">
+        <div class="lqd-column col-lg-8 ">
 
-
+          <h1 class="title uk-heading-hero" id="thd"> <span id="typed"></span>
+            <div class="type-wrap" id="typhd">
+               <div id="typed-strings" class="typstr">
+                  <p id="typdesg">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
+                  <p id="typdev">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
+                  <p id="typcc" class="mtxt">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
+                  <p id="typsm" class="mtxt">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
+                  <p id="typag" class="mtxt">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
+               </div>
+            </div>
+          </h1>
 
         </div><!-- /.col-lg-7 col-md-6 -->
 
-        <div class="lqd-column col-lg-8 lqd-column" data-custom-animations="true"
+        <div class="lqd-column col-lg-4 lqd-column" data-custom-animations="true"
         data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
            
         
-        <h1 class="title uk-heading-hero" id="thd"> <span id="typed"></span>
-          <div class="type-wrap" id="typhd">
-             <div id="typed-strings" class="typstr">
-                <p id="typdesg">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
-                <p id="typdev">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
-                <p id="typcc" class="mtxt">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
-                <p id="typsm" class="mtxt">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
-                <p id="typag" class="mtxt">We don’t care what came first- the chicken or the egg, as we love & eat both!!</p>
-             </div>
-          </div>
-        </h1>
+       
         
         
         </div><!-- /.ld-fancy-heading -->
@@ -759,8 +753,8 @@
   <section class="secrep">
 
     <div class="portfolio">
-      <img class="onewave" src="img/wavy design.png" alt="">
-      <img class="twowave" src="img/wavy design.png" alt="">
+      <img class="rconewave" src="img/wavy design.png"  alt="">
+      <img class="rctwowave" src="img/wavy design.png" alt="">
       <div class="filters">
 
 
@@ -906,12 +900,12 @@
 
       </div>
     </div>
-    <img class="twowave" src="img/wavy design.png" alt="">
+ 
   </section>
 
   <footer class="  text-lg-start">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row ftpadd">
         <div class="col-lg-12 text-center">
           <h4 class="folotxt">FOllOW US</h4>
           <ul class="social">
@@ -930,7 +924,7 @@
    
     <div class="col-lg-4 footerbgshadow">
      <div class="row">
-       <div class="col-lg-5">
+       <div class="col-lg-5 col-6">
          <ul>
            <li class="line"></li>
            <li> <a href="about.html">About Us</a>  </li>
@@ -939,7 +933,7 @@
            
          </ul>
        </div>
-       <div class="col-lg-5">
+       <div class="col-lg-5 col-6">
          <ul>
            <li class="line2"></li>
            <li><a href="index.html"> Home</a></li>
@@ -961,7 +955,7 @@
     <div class="col-lg-1 bdron"></div>
     <div class="col-lg-4">
       <h3 class="conttxt">Contact</h3>
-      <p style="font-family: 'Aileron-Black' !important;">490-335-184 <br>
+      <p class="ponmb">490-335-184 <br>
       Hours available: 9:00am - 4:00pm IST <br>
       contact@goodeggs.com
     </p>
@@ -971,7 +965,7 @@
     </div>
    </div>
    <div class="row">
-     <div class="col-lg-3"></div>
+     <div class="col-lg-3 col-6"></div>
      <div class="col-lg-6">
        <div class="row copytxt">
          <div class="col-lg-4 ">
@@ -979,7 +973,7 @@
          </div>
          <div class="col-lg-4 ">
            <h6 class="text-white">
-            Copyright@goodeggs.com
+             Copyright&#169;goodeggs.com
            </h6>
          
          </div>
@@ -991,7 +985,7 @@
          </div>
        </div>
      </div>
-     <div class="col-lg-3"></div>
+     <div class="col-lg-3 col-6"></div>
    </div>
  </div>
 
