@@ -111,6 +111,14 @@ footer {
   background-color: #ffffff;
 
 }
+.fqptxt{
+  font-size: 19px;
+  color: #000;
+  font-weight: 500;
+}
+.faqone{
+  background-color: #9feed1;
+}
 img.abcurve1 {
   position: absolute;
   right: 0px;
@@ -120,7 +128,8 @@ img.abcurve1 {
 h3.dh3txt {
   font-size: 32px;
   color: white;
-  font-weight: 200;
+  text-align: left;
+  font-weight: 100;
 }
 h3.dh3txt b{
   font-weight: 600;
@@ -139,9 +148,9 @@ h3.dh3txt b{
 p.bptxt {
   color: white;
   font-size: 18px;
-  padding: 0px 8px;
+  padding: 10px 0px;
   font-family: 'Aileron-Black' !important;
-
+  margin: 0px;
 }
 .bdron{
   border-left: 3px solid #00a4aa;
@@ -213,7 +222,7 @@ h3.conttxt {
 }
 .secrep {
   /* position: relative; */
-  padding: 100px 0px;
+
 }
 .dragtxt h6{
 
@@ -306,11 +315,25 @@ div#main-header-collapse {
     margin: 10px 0px;
 
 }
+.fonttxt {
+  color: white;
+  font-weight: 100;
+  font-size: 24px;
+}
+.fonttxt b {
+  color: white;
+  font-weight: 700;
+}
 .myvideo{
   border-radius: 35px !important;
   width: 413px;
   border: none;
 
+}
+.myvideogh {
+  border-radius: 117px !important;
+  width: 413px;
+  border: none;
 }
 .vdbrg {
   background-image: url(../img/video\ bg\ image.png);
@@ -372,8 +395,9 @@ footer{
   background-image: url(../img/about/about\ us\ page\ splash\ image.png);
   background-position: right;
   background-size: contain;
+  padding: 0px;
   background-repeat: no-repeat;
-  padding-top: 100px;
+
 }
 .abrowtwo{
   background-color: #f39b19;
@@ -640,7 +664,7 @@ h6.burosmtxt {
   font-size: 45px;
   padding: 0px;
     margin: 0px;
-    text-shadow: 2px 2px 4px #b1aaaa;
+  
 }
 .lastsec{
   padding: 40px 0px;
@@ -860,7 +884,7 @@ div.waves{
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: contain;
-  padding-top: 80px;
+ 
 }
 
 /* wave2 animations start here */
@@ -1531,14 +1555,15 @@ recipe page styles start here */
   --width: ;
   --height: ;
 }
-.imgphtxt{
+.imgphtxt {
   margin: 10px;
-
   position: absolute;
   text-align: left;
   color: white;
   bottom: 0;
   padding: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .button,
@@ -1916,6 +1941,9 @@ audio {
   top: 0px !important;
   left: auto;
 }
+.nocolmob {
+  display: none;
+}
  
   ul#primary-nav li {
     padding: 0px 9px;
@@ -1967,6 +1995,9 @@ img.onewave {
 }
 .dragtxt2 h6 {
   display: none;
+}
+.row.pdfoot {
+  padding-bottom: 150px;
 }
 .dragimg {
 
@@ -2209,7 +2240,7 @@ button.lrnbtn1 {
 .nav-trigger.style-mobile .bars {
   width: 20px;
   height: 15px;
-  margin-left: 20px !important;
+  margin-left: 40px !important;
   -webkit-transform: rotate(0);
   transform: rotate(0);
   -webkit-transition: all 0.45s 0.2s cubic-bezier(0.23, 1, 0.32, 1);
@@ -2290,13 +2321,16 @@ img.rconewave {
   left: 0px;
   z-index: 9;
 }
+img.wave1 {
+  display: none;
+}
 .ghh1 {
   padding: 0px 47px;
   color: #0ebfc9;
   font-size: 29px;
 }
 .confm{
-  padding: 10px;
+  padding: 10px; 
 }
 #tile-1 .nav-tabs li a {
   position: relative;
@@ -2373,6 +2407,11 @@ font-size: 32px;
   height: 550px;
   display: block;
 }
+.row.copytxt {
+  /* margin: 2px 0px; */
+  padding: 0px 0px 37px 0px;
+  text-align: center;
+}
 .oneark {
 
   display: none;
@@ -2401,7 +2440,9 @@ img.wave0 {
   top: 0px !important;
   left: auto;
 }
- 
+.nocolmob {
+  display: none;
+}
   ul#primary-nav li {
     padding: 0px 9px;
     width: 100%;
@@ -2477,6 +2518,9 @@ display: none;
 .onerow p {
   font-size: 14px;
   font-weight: lighter;
+}
+.row.pdfoot {
+  padding-bottom: 150px;
 }
 img.twowave {
 display: none;
@@ -2594,7 +2638,7 @@ button.lrnbtn1 {
 }
 .signimg {
   position: absolute;
-  bottom: 741px;
+  bottom: 762px;
   width: 200px;
   left: 62px;
 }
@@ -2602,20 +2646,14 @@ button.lrnbtn1 {
 
   display: none;
 }
-p.ponmb {
-  background-color: white;
-  box-shadow: 0 10px 33px rgb(0 0 0 / 8%);
-
-  border-radius: 13px;
-}
 
 .smlogo {
 
   display: none;
 }
 img#DataDisplay {
-  width: 160px;
-  padding: 27px 0px;
+    width: 160px;
+    margin: 27px 0px;
 }
 .custom-carousel-inner {
   /* overflow: hidden; */
@@ -2637,7 +2675,11 @@ h2.ltxt {
   font-size: 25px;
   padding: 20px 0px 0px;
 }
-
+.row.copytxt {
+  /* margin: 2px 0px; */
+  padding: 0px 0px 37px 0px;
+  text-align: center;
+}
 img.abcurve1 {
   position: absolute;
   right: 0px;
@@ -2686,7 +2728,7 @@ img.wave1 {
 .nav-trigger.style-mobile .bars {
   width: 20px;
   height: 15px;
-  margin-left: 20px !important;
+  margin-left: 57px !important;
   -webkit-transform: rotate(0);
   transform: rotate(0);
   -webkit-transition: all 0.45s 0.2s cubic-bezier(0.23, 1, 0.32, 1);
@@ -2870,7 +2912,9 @@ font-size: 32px;
     background-color: #cb0030;
     padding: 56px 0px !important;
   }
-
+  .colonmob {
+    display: none;
+  }
   img.threewave {
     display: none;
 }
@@ -2962,12 +3006,7 @@ img.wave0 {
 .smlogo {
 display: none;
 }
-p.ponmb {
-  background-color: white;
-  box-shadow: 0 10px 33px rgb(0 0 0 / 8%);
-  border-radius: 13px;
-  width: 300px;
-}
+
 .fgetxt2 {
   font-size: 38px;
   color: #ffffff;
@@ -3094,6 +3133,9 @@ left: auto;
     font-size: 1.5em;
     color: #fff !important;
     line-height: 1.5;
+}
+.colonmob {
+  display: none;
 }
   .burosec {
 
@@ -3361,6 +3403,9 @@ left: auto;
 top: -7vh;
 right: -65vw;
 left: -30vw;
+}
+.colonmob {
+  display: none;
 }
 .single-container {
   width: 245px;
@@ -3802,6 +3847,9 @@ img.curve2 {
     right: -65vw !important;
     left: -21vw !important;
   }
+  .colonmob {
+    display: none;
+  }
   img.rconewave {
     position: absolute;
     top: 120%;
@@ -4147,6 +4195,9 @@ img.threewave {
   .pdr{
     padding-right: 40px;
   }
+  .colonmob {
+    display: none;
+  }
   .copytxt{
     padding: 20px 0px;
   }
@@ -4183,9 +4234,10 @@ img.rconewave {
 
 img.rctwowave {
   position: absolute;
-  right: -28px;
-  top: 1616px;
+  right: 0px;
+  top: 1097px;
   z-index: 9;
+  width: 180px;
 }
 
 .single-container img {
@@ -4461,6 +4513,9 @@ img.threewave {
     /* bottom: -38px; */
     /* right: 120px; */
     z-index: 9;
+}
+.colonmob {
+  display: none;
 }
 img.crackimgs {
   width: 400px;
@@ -4865,6 +4920,9 @@ div.waves {
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: contain;
+}
+.colonmob {
+  display: none;
 }
 .dragtxt2 h6 {
   display: block;
@@ -5307,8 +5365,8 @@ img.hearts {
 }
 .contactpg{
   background-color: #00a4aa;
-  padding: 100px 0px 120px 0px;
-
+  padding:0px;
+padding-bottom: 30px;
   width: 100%;
   background-image: url(../img/shapes/splash1.png);
   background-repeat: no-repeat;
