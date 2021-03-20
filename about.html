@@ -62,6 +62,11 @@
     h6 .h6 {
       font-family: 'Aileron-Black' !important;
     }
+    .typed-cursor {
+  /* opacity: 1; */
+  display: none;
+
+}
  p{
   font-family: 'Cabin', sans-serif;
  }
@@ -72,10 +77,7 @@
  .owl-nav {
     display: none;
 }
-.row {
-    padding: 0px !important;
-    /* margin: 0px !important; */
-}
+
 
 
     .eggsul {
@@ -295,30 +297,15 @@ table tr {
 
       <div class="row before-wrapper d-flex flex-wrap align-items-center">
 
-        <div class="lqd-column col-lg-8 ">
+        <div class="lqd-column col-lg-12 ">
 
-          <h1 class="title uk-heading-hero" id="thd"> <span id="typed"></span>
-            <div class="type-wrap" id="typhd">
-               <div id="typed-strings" class="typstr">
-                  <p id="typdesg">Ethical and humane poultry production- giving due regard to bird welfare</p>
-                  <p id="typdev">Ethical and humane poultry production- giving due regard to bird welfare</p>
-                  <p id="typcc" class="mtxt">Ethical and humane poultry production- giving due regard to bird welfare</p>
-                  <p id="typsm" class="mtxt">Ethical and humane poultry production- giving due regard to bird welfare</p>
-                  <p id="typag" class="mtxt">Ethical and humane poultry production- giving due regard to bird welfare</p>
-               </div>
-            </div>
-          </h1>
+          <div class="container-fluid">
+            <h1 class="typing"></h1>
+          </div>
 
 </div><!-- /.col-lg-7 col-md-6 -->
 
-<div class="lqd-column col-lg-4 lqd-column" data-custom-animations="true"
-data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
-   
-
-
-
-
-</div><!-- /.ld-fancy-heading -->
+<!-- /.ld-fancy-heading -->
 
           <div class="row">
 
@@ -439,7 +426,7 @@ data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","dura
             </div>
             <div class="col-lg-1"></div>
         </div>
-         <div class="row">
+         <div class="row newrow">
             <div class="col-lg-1"></div>
               <div class="col-lg-4 align-self-center colonmob">
                 <h1 class="vtxt">
@@ -465,7 +452,7 @@ data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","dura
     </div>
     <div class="container-fluid abrowtwo">
       <img class="abonewave" src="img/wavy design.png" alt="">
-        <div class="row">
+        <div class="row newrow">
             <div class="col-lg-1"></div>
             <div class="col-lg-5 align-self-center">
                 <h1 class="vtxt">
@@ -480,7 +467,7 @@ data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","dura
             </div>
             <div class="col-lg-1"></div>
         </div>
-         <div class="row">
+         <div class="row newrow">
             <div class="col-lg-1"></div>
             <div class="col-lg-4 align-self-center colonmob">
               <h1 class="vtxt">
@@ -504,19 +491,28 @@ data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","dura
             <div class="col-lg-1"></div>
         </div>
         <br>
-        <div class="row pt-5">
+        <div class="row ">
           <img class="abthreewave" src="img/wavy design.png" alt="">
             <div class="col-lg-1">
 
             </div>
-            <div class="col-lg-11">
+            <div class="col-lg-10">
                 <p class="bptxt">
                   The heritage of our family farm and the importance of both land and livestock have allowed us to take the lead in the development of sustainable practices as a core principle of the poultry business. A variety of philosophies, policies, and practices have contributed to this goal. People in many different capacities, from farmers to consumers, have shared this vision and contributed to it.
                 </p>
                 <p class="bptxt">
                   Last but not the least, Good Eggs is certified by Bureau Veritas, established in 1828 and a world leader in Testing, Inspection, and Certification. Anyone can name themselves but the proof ultimately speaks out the loudest. Isn’t it? We just don’t print the facts on our packages. The quality reflects in our Good Eggs too!!!
                 </p>
-                    <img class="text-center" src="img/Comp-2.gif" alt="">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <video class="myvideo" autoplay="" muted="" loop="" playsinline="" preload="metadata">
+                      <source src="https://ak.picdn.net/shutterstock/videos/1062581524/preview/stock-footage-finishing-homemade-nutrition-breakfast-with-sandwich-lettuce-leaf-tomato-and-poached-egg-putting.webm" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+                
                 
                 <p class="bptxt">
                   Our Holistic approaches focus on how the health of animals is integrated with the health of the environment and people. We maintain Bird health with practices that prevent the introduction of diseases, such as biosecurity. Increasingly, we raise birds without the routine use of antibiotics. We follow the Animal and Bird welfare guidelines to ensure the physical and mental well-being of our Good Hens!
@@ -598,11 +594,11 @@ data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","dura
         
        </div>
        <div class="col-lg-4 ">
-         <h6 class="text-white">
-           Copyright&#169;goodeggs.com
-         </h6>
-       
-       </div>
+           <h6 class="">
+             Copyright&#169;goodeggs.in
+           </h6>
+         
+         </div>
        <div class="col-lg-4 ">
          <h6 class="text-white">
         
@@ -639,7 +635,14 @@ data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","dura
 <script src="./assets/js/theme.min.js"></script>
 <script src="typeffect/lib/typed.js" type="text/javascript"></script>
 <script src="typeffect/assets/demos.js"></script><!-- Facebook Pixel Code -->
-
+<script>
+  let typed = new Typed(".typing", {
+    strings:["Ethical and humane poultry production- giving due regard to bird welfare"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+</script>
 
 
 </html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GoodEggs</title>
+  <!-- MDB icon -->
+   <link rel="icon" href="img/FAV_icon.png" type="image/png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- background video links -->
+
+  <link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+  <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="assets/css/theme.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- gallary links start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js">
+  <link rel="stylesheet" href="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js">
+  <link rel="stylesheet" href="https://rawgit.com/noelboss/featherlight/master/src/featherlight.js">
+
+  <style>
+    @font-face {
+      font-family: 'Aileron-Regular';
+      src: url(./fonts/Aileron-Regular.otf);
+    }
+
+    body {
+      font-family: 'Aileron-Regular';
+
+      background-image: url('./img/recipe\ page\ splash5.png');
+ background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    .secrep {
+    position: relative;
+}
+    .ld-masked-image svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6 .h6 {
+      font-family: 'Aileron-Black' !important;
+    }
+
+    .slider-wrapper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+
+
+    .comparison-slider {}
+
+    .before-wrapper {
+      display: block;
+      overflow: hidden;
+      width: auto;
+      height: 100%;
+      /* position: relative;
+            background: url("http://emphasizestudio.nl/img/dystopia.jpg") no-repeat center center #111111; */
+      background-size: 100% auto;
+    }
+
+    .before-wrapper:before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+
+    }
+
+    /* @media (min-width: 992px){
+        .ld-masked-image {
+            top: 0px;
+            right: -65vw;
+            left: -25vw;
+        }
+          } */
+
+
+    .after-wrapper,
+    .after-image {}
+
+    .after-wrapper {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+
+    .after-image {
+      display: block;
+      width: auto;
+      height: 100%;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+
+      transform: translateX(-50%);
+
+      background: url("http://emphasizestudio.nl/img/utopia.jpg") no-repeat center center #efefef;
+      background-size: 100% auto;
+
+    }
+
+    /* .past, .future{
+            padding: 40px;
+            color:#fff;
+            text-transform:uppercase;
+            font-size:20px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+            font-weight:800;
+          } */
+
+    .past {
+      position: absolute;
+      display: block;
+      bottom: 0px;
+      left: 0px;
+    }
+
+    .you {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      display: block;
+      right: 0px;
+      left: 0px;
+      z-index: 999;
+      background: red;
+    }
+
+    .future {
+      position: absolute;
+      display: block;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .after-wrapper {
+      overflow: initial;
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+
+
+
+
+    figure.clip-svg.loaded {
+      clip-path: url(#masked-image-1);
+      background-blend-mode: color;
+      background-image: url('file:///D:/Prodigit-work/task/assets/demo/misc/masked-img-1.jpg');
+      background-color: #f7f7f7;
+    }
+
+
+    @media only screen and (min-width: 900px) and (max-width: 1025px) {
+
+      .burosec {
+        opacity: 0.8;
+        background-color: #cb0030;
+        padding: 56px 0px !important;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 717px;
+        right: 94px;
+        z-index: 999;
+      }
+    }
+
+    @media only screen and (min-width: 1100px) and (max-width: 1370px) {
+      .ld-masked-image {
+        top: -7vh;
+        right: -65vw;
+        left: -21vw;
+      }
+
+      .burosec {
+        background-color: #cb0030;
+        padding: 83px 0px;
+        position: relative;
+      }
+
+    }
+
+    @media only screen and (min-width: 1380px) and (max-width: 1450px) {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 722px;
+        right: 161px;
+        z-index: 999;
+      }
+
+      .henimg {
+        width: 31px;
+      }
+    }
+
+    @media only screen and (min-width: 1460px) and (max-width: 1601px) {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 718px;
+        right: 161px;
+        z-index: 999;
+      }
+
+      .henimg {
+        width: 31px;
+      }
+
+
+
+    }
+
+    @media only screen and (min-width: 1610px) and (max-width: 1950px) {
+      img.bimg {
+        position: absolute;
+        top: 1032px;
+        right: 227px;
+        z-index: 999;
+      }
+
+      .ld-masked-image {
+        top: 9vh;
+        right: -65vw;
+        left: -12vw;
+      }
+
+      .inline-YTPlayer {
+        position: relative;
+        max-width: 1920px;
+      }
+
+      .btxt {
+        color: white;
+        font-size: 77px;
+        font-weight: bold;
+      }
+
+      .burosec {
+        background-color: #cb0030;
+        padding: 72px 0px;
+        position: relative;
+      }
+
+      .tworow p {
+        font-size: 20px;
+      }
+
+      .dragimg {
+        position: absolute;
+        top: 76px;
+        right: 80px;
+        width: 90px;
+      }
+
+      img.curve3,
+      .curve2,
+      .curve4 {
+        width: 1920px;
+      }
+
+      .nurotxt {
+        padding: 0px 0px 0px 337px !important;
+      }
+    }
+
+    @media only screen and (min-width: 2000px) and (max-width: 2600px) {
+      .ld-masked-image {
+        top: -14vh;
+        right: -65vw;
+        left: -5vw;
+      }
+
+      .inline-YTPlayer {
+        position: relative;
+        max-width: 2560px;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 715px;
+        right: 227px;
+        z-index: 999;
+      }
+
+      .zero,
+      .seg2,
+      .seg3,
+      .seg4,
+      .seg5 {
+        display: none;
+      }
+
+      img.curve2 {
+        background-color: #9feed1;
+        width: 2560px;
+      }
+
+      img.curve3 {
+        width: 2560px;
+      }
+
+      .curve4 {
+        width: 2560px;
+      }
+
+      .dragimg {
+        position: absolute;
+        top: 85px;
+        right: 227px;
+        width: 97px;
+      }
+
+      div#YTP_1613547492898 {
+        display: block;
+        position: fixed !important;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        height: 0px;
+      }
+
+      .inline-YTPlayer {
+        position: relative;
+        max-width: 2560px;
+      }
+    }
+
+    .recpone {
+    background-color: #fff6a2;
+    padding: 107px 0px;
+    position: relative;
+    
+}
+img.onewave {
+    position: absolute;
+    left: 116px;
+    z-index: 9;
+}
+img.twowave {
+    position: absolute;
+    right: 63px;
+    top: 50%;
+    z-index: 9;
+}
+  </style>
+
+
+</head>
+
+<body>
+
+  <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="goodhens.html">GoodHens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recipe.html">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="past">The past</div>
+            <div class="future">The future</div> -->
+    <div class="lqd-vbg-wrap">
+      <div class="lqd-vbg-inner">
+        <span class="lqd-vbg-loader"></span>
+        <div class="lqd-vbg-video" data-video-bg="true"
+          data-youtube-options='{"videoURL":"https://youtu.be/0BNNjZpMKRI"}'> </div>
+      </div><!-- /.lqd-vbg-inner -->
+    </div><!-- /.lqd-vbg-wrap -->
+
+    <div class="container">
+      <!-- <h1 class="bannertxt">loraom text</h1> -->
+      <img class="bannertxt0" src="img/text/CRACK OPEN THE.png" alt="">
+      <img class="bannertxt" src="img/text/GOODNESS GRADIENT.png" alt="">
+      <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
+
+      <div class="row before-wrapper d-flex flex-wrap align-items-center">
+
+        <div class="lqd-column col-lg-7 col-md-6 hidden-xs hidden-sm hidden-md after-wrapper">
+
+
+          <div class="ld-masked-image " data-dynamic-shape="true">
+            <svg version="1.1" class="scene " width="0" height="0" preserveAspectRatio="none" viewBox="0 0 1440 800">
+              <defs>
+                <clipPath id="masked-image-1">
+                  <path fill="black"
+                    d="M131,40 C84.135,83.534 96.819,148.446 63.283,217.394 C31.508,282.723 -3.621,324.812 1.461,394.323 C3.451,421.533 12.117,449.828 29.796,480.002 C87.412,578.34 -15.301,663.448 94.611,833.387 C156.302,928.77 316.559,918.015 435.971,936.052 C572.741,956.711 653.384,1003.601 753.566,971.715 C877.689,932.209 924.99262,809.932822 972.63862,707.700822 C1063.84662,512.000822 1038.71071,197.732895 884.476705,67.2268952 C788.919705,-13.6291048 714.704,70.008 529,43 C339.693,15.468 212.609,-35.808 131,40 Z"
+                    pathdata:id="
+                              M175.270836,26.7977911 C128.405836,70.3317911 129.938279,144.739124 96.4022789,213.687124 C64.6272789,279.016124 41.242383,286.071679 46.324383,355.582679 C48.314383,382.792679 79.5246278,459.251586 88.7738696,492.334164 C116.497714,591.496483 -75.3047466,680.552915 34.6072534,850.491915 C96.2982534,945.874915 281.559,906.015 400.971,924.052 C537.741,944.711 678.161685,902.348368 778.343685,870.462368 C902.466685,830.956368 927.354,806.232 975,704 C1066.208,508.3 1058.68971,185.848951 904.455709,55.3429506 C808.898709,-25.5130494 786.027661,117.60054 600.323661,90.5925401 C411.016661,63.0605401 256.879836,-49.0102089 175.270836,26.7977911 Z;
+                              M200.391256,6 C138.06059,22.7990703 77.9622177,42.6445401 44.4262177,111.59254 C12.6512177,176.92154 -4.1051307,212.01786 0.976869296,281.52886 C2.9668693,308.73886 99.0297526,534.545109 108.278994,567.627688 C136.002839,666.790006 -29.1381304,721.523368 80.7738696,891.462368 C142.46487,986.845368 331.636556,840.153183 451.048556,858.190183 C587.818556,878.849183 705.371102,948.496676 805.553102,916.610676 C929.676102,877.104676 941.497784,689.3436 989.143784,587.1116 C1080.35178,391.4116 1050.68971,206.848951 896.455709,76.3429506 C800.898709,-4.5130494 778.027661,138.60054 592.323661,111.59254 C403.016661,84.0605401 312.765712,-24.2866392 200.391256,6 Z" />
+                </clipPath>
+              </defs>
+            </svg>
+            <figure class="clip-svg " data-responsive-bg="true"
+              style="clip-path: url(#masked-image-1); -webkit-clip-path: url(#masked-image-1);">
+              <img src="./assets/demo/misc/masked-img-1.jpg" class="after-image" alt="Image">
+
+            </figure>
+
+          </div><!-- /ld-masked-image -->
+
+        </div><!-- /.col-lg-7 col-md-6 -->
+
+        <div class="lqd-column col-lg-5 lqd-column" data-custom-animations="true"
+          data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+          <div class="ld-fancy-heading mask-text">
+            <h1 data-split-text="true" data-custom-animations="true"
+              data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+              data-split-options='{"type":"lines"}'>
+              <span class="ld-fh-txt"> </span>
+            </h1>
+          </div><!-- /.ld-fancy-heading -->
+
+          <div class="ld-fancy-heading mask-text mb-75">
+            <p data-split-text="true" data-custom-animations="true"
+              data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+              data-split-options='{"type":"lines"}'>
+              <span class="ld-fh-txt"> </span>
+            </p>
+          </div><!-- /.ld-fancy-heading -->
+
+          <div class="row">
+
+            <div class="lqd-column col-sm-6 mb-3 mb-md-0">
+
+
+            </div><!-- /.col-sm-6 -->
+
+            <div class="lqd-column col-sm-6">
+
+              <div class="ld-fancy-heading">
+                <p>
+                  <span class="ld-fh-txt">
+                    <strong><span style="color: #fe688b"></span></strong>
+                    <br>
+                    <span style="color: #a7a9b8"></span>
+                  </span>
+                </p>
+              </div>
+
+            </div><!-- /.col-sm-6 -->
+
+          </div><!-- /.row -->
+
+        </div><!-- /.col-lg-5 col-md-6 -->
+      </div>
+
+
+
+
+
+    </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+
+ 
+
+  <section class="secrep">
+    <div class="container-fluid p-0">
+      <div class="row">
+     <div class="col-lg-6">
+
+     </div>
+     <div class="col-lg-6 recpone">
+
+     </div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <img class="onewave" src="img/wavy design.png" alt="">
+      <div class="filters">
+  
+  
+        <div class="ui-group">
+          <div class="button-group js-radio-button-group group-2" data-filter-group="medium">
+            <button class="button" data-filter=".all-media">All Recipes</button><button class="button"
+              data-filter=".articles">breakfast</button><button class="button" data-filter=".photos">Brunch</button><button
+              class="button" data-filter=".video">Lunch</button>
+            <button class="button" data-filter=".graphics">Dinner</button>
+            <!-- <button class="button"
+              data-filter=".audio">Audio</button> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class="grid">
+        <div class="all-types all-media content licensed articles">
+          <div class="c-container">
+  
+            <a client="CityNews" data-featherlight="iframe"
+              href="">
+              <h3 class="imgphtxt">hello</h3>
+              <img alt=""
+                src="img/Recipe image1.png"
+                title="A licensed news story on vaping related illness in Ontario, published by CityNews."></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom photos">
+          <div class="c-container">
+            <a 
+              href="inner-recipe.html">
+              <h3 class="imgphtxt">Loram text here</h3>
+              <img alt=""
+                src="img/Recipe image2.png"
+                title="Custom assignment photograph from The Canadian Cancer Society's 'Cops for Cancer' event."></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom photos">
+          <div class="c-container">
+            <a 
+              href="inner-recipe.html">
+              <h3 class="imgphtxt">Loram text here</h3>
+              <img alt=""
+                src="img/Recipe image3.png"
+                title="Custom assignment photograph from The Canadian Cancer Society's 'Cops for Cancer' event."></a>
+          </div>
+        </div>
+     
+        <div class="all-types all-media content licensed graphics">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="#tot-graphic" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2017/05/jays-tale-of-the-tape-tinified.jpg"
+                title="Tale of the Tape | An animated graphic showcasing comparative stats between rival teams."></a>
+            <iframe id="tot-graphic" name="tot-graphic"
+              src="https://thecanadianpress-a.akamaihd.net/graphics/2016/blue-jays-alds/iframe.html"></iframe>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom video audio">
+          <div class="c-container">
+            <a client="Journalists for Human Rights" data-featherlight="#video2" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/10/v2.png"
+                title="A custom video produced for Journalists for Human Rights with custom audio in the form of narration tracking and sound design.">
+              <video controls="" id="video2">
+                <source type="video/mp4"
+                  src="https://player.vimeo.com/external/361906897.hd.mp4?s=149fcbed883d69fb7cfb0d234315652bfefbd47d&profile_id=174">
+                Your browser does not support the <code>video</code> element.
+              </video></a>
+          </div>
+        </div>
+        
+        <div class="all-types all-media content custom graphics">
+          <div class="c-container">
+            <a client="Aquisio" data-featherlight="#grade-graphic" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/11/aquisio.png"
+                title="An animated infographic produced as part of a custom graphics package for Aquisio."></a>
+            <iframe id="grade-graphic" name="grade-graphic"
+              src="https://thecanadianpress-a.akamaihd.net/graphics/client-interactives/misc/aquisio/aquisiointeractive.html"></iframe>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom articles">
+          <div class="c-container">
+            <a client="Goeasy, Easy Financial" data-featherlight="iframe"
+              href="https://drive.google.com/file/d/1UZETmaOZFDJoRiP0XlExlU5Sz9gGcDgL/preview"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/easy1.png"
+                title="A custom text project written as part of a series for Goeasy Academy."></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content licensed photos">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="image"
+              href="https://www.thecanadianpress.com/app/uploads/2019/09/66623514_159759471866107_4819040900418195721_n.jpg"><img
+                alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/66623514_159759471866107_4819040900418195721_n.jpg"
+                title="Winner Bianca Andreescu of Canada hugs the winner's trophy after Serena Williams of the USA had to retire from the final of the Rogers Cup tennis tournament in Toronto on Sunday, Aug. 11, 2019. THE CANADIAN PRESS/Frank Gunn"></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom video">
+          <div class="c-container">
+            <a client="BMO Financial Group" data-featherlight="#video3" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/10/v3.png"
+                title="A custom video project documenting a corporate community event | BMO - Raptors Camp."><video
+                controls="" id="video3">
+                <source
+                  src="https://player.vimeo.com/external/240833731.hd.mp4?s=044d89b73882ee37a6b6277411c496dcdbf0a836&profile_id=174"
+                  type="video/mp4">Your browser does not support the <code>video</code> element.
+              </video></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content licensed graphics">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="iframe"
+              href="https://thecanadianpress-a.akamaihd.net/graphics/2015/pan-am-btn/index.html"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2017/05/pan-am-graphic-tinified.jpg"
+                title="An interactive and animated graphic highlighting By the Numbers data from the Pan Am Games."></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content licensed audio">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="#audio1" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/lic-audio.jpg"
+                title="A licensed audio clip from a news recording of Prime Minister Justin Trudeau."> <audio controls=""
+                id="audio1" src="https://www.thecanadianpress.com/app/uploads/2019/09/CP201909200126-1.mp3">Your browser
+                does not support the <code>audio</code> element.</audio></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom articles">
+          <div class="c-container">
+            <a client="Allstate" data-featherlight="iframe"
+              href="https://drive.google.com/file/d/1BFTWurN47uvZpmba1mW6s0e6slt56hHv/preview"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/allstate.jpg"
+                title="A custom text project written as part of a series for an Allstate branded blog."></a>
+          </div>
+        </div>
+  
+       
+  
+  
+       
+      </div>
+    </div>
+    <img class="twowave" src="img/wavy design.png" alt="">
+  </section>
+ 
+
+  <footer class="  text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase bhtxt">Footer Content</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase bhtxt">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase bhtxt mb-0">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(255 255 255 / 0%);    color: black;">
+      © 2020 Copyright:
+      <a class="text-white" href="">GoodEggs</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</body>
+
+
+
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/js/theme-vendors.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+
+<script>
+  // Filter based on two factors
+  // Uses URI hash as trigger allowing direct links
+  // Losely based on: http://isotope.metafizzy.co/filtering.html#url-hash and a Lynda/LinkedinLearning series, lol
+
+  jQuery(document).ready(function ($) {
+    var $container = $(".grid");
+
+    // Filter isotope
+    $container.isotope({
+      // options
+      itemSelector: ".content",
+      layoutMode: "masonry",
+      // fade in from bottom
+      visibleStyle: {
+        opacity: 1,
+        transform: "translateY(0)"
+      },
+      hiddenStyle: {
+        opacity: 0,
+        transform: "translateY(100px)"
+      }
+    });
+
+    // layout Isotope again after all images have loaded
+    $container.imagesLoaded(function () {
+      $container.isotope("layout");
+    });
+
+    // Set up filters array with default values
+    var filters = {};
+
+    // When a button is pressed, run filterSelect
+    $(".button-group button").on("click", filterSelect);
+
+    // Set the URI hash to the current selected filters
+    function filterSelect() {
+      // Current hash value
+      var hashFilter = getHashFilter();
+
+      // Set filters to current values (important for first run)
+      filters["type"] = hashFilter["type"];
+      filters["medium"] = hashFilter["medium"];
+
+      // data-filter attribute of clicked button
+      var currentFilter = $(this).attr("data-filter");
+      // Navigation group (subject or author) as object
+      var $navGroup = $(this).parents(".button-group");
+      // data-filter-group key for the current nav group
+      var filterGroup = $navGroup.attr("data-filter-group");
+
+      // If the current data-filter attribute matches the current filter,
+      if (
+        currentFilter == hashFilter["type"] ||
+        currentFilter == hashFilter["medium"]
+      ) {
+        // Reset group filter as the user has unselected the button
+        filters[filterGroup] = "";
+      } else {
+        // Set data-filter of current button as value with filterGroup as key
+        filters[filterGroup] = $(this).attr("data-filter");
+      }
+
+      // Create new hash
+      var newHash =
+        "type=" +
+        encodeURIComponent(filters["type"]) +
+        "&medium=" +
+        encodeURIComponent(filters["medium"]);
+
+      // Apply the new hash to the URI, triggering onHashchange()
+      location.hash = newHash;
+    } // filterSelect
+
+    function onHashChange() {
+      // Current hash value
+      var hashFilter = getHashFilter();
+      // Concatenate subject and author for Isotope filtering
+      var theFilter = hashFilter["type"] + hashFilter["medium"];
+
+      if (hashFilter) {
+        // Repaint Isotope container with current filters and sorts
+        $container.isotope({
+          filter: decodeURIComponent(theFilter)
+        });
+
+        // Toggle checked status of filter buttons
+        $(".button-group")
+          .find(".is-checked")
+          .removeClass("is-checked");
+        $(".button-group")
+          .find(
+            "[data-filter='" +
+            hashFilter["type"] +
+            "'],[data-filter='" +
+            hashFilter["medium"] +
+            "']"
+          )
+          .addClass("is-checked");
+      }
+    } // onHashchange
+
+    function getHashFilter() {
+      // Get filters (matches)
+      var type = location.hash.match(/type=([^&]+)/i);
+      var medium = location.hash.match(/medium=([^&]+)/i);
+
+      // Set up a hashFilter array
+      var hashFilter = {};
+      // Populate array with matches using ternary logic
+      hashFilter["type"] = type ? type[1] : ".all-types";
+      hashFilter["medium"] = medium ? medium[1] : ".all-media";
+
+      return hashFilter;
+    } // getHashFilter
+
+    // When the hash changes, run onHashchange
+    window.onhashchange = onHashChange;
+
+    // When the page loads for the first time, run onHashChange
+    onHashChange();
+  });
+
+  //caption display code
+  $.featherlight.prototype.afterContent = function () {
+    var caption = this.$currentTarget.find("img").attr("title");
+    this.$instance.find(".d-caption").remove();
+    $('<div class="d-caption">')
+      .text(caption)
+      .appendTo(this.$instance.find(".featherlight-content"));
+  };
+
+</script>
+
+</html>

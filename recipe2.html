@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GoodEggs</title>
+  <!-- MDB icon -->
+   <link rel="icon" href="img/FAV_icon.png" type="image/png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- background video links -->
+
+  <link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+  <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="assets/css/theme.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- gallary links start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js">
+  <link rel="stylesheet" href="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js">
+  <link rel="stylesheet" href="https://rawgit.com/noelboss/featherlight/master/src/featherlight.js">
+
+  <style>
+    @font-face {
+      font-family: 'Aileron-Black';
+      src: url(./fonts/Aileron-Black.otf);
+    }
+
+    body {
+      font-family: 'Aileron-Black';
+
+      background-image: url('./img/recipe\ page\ splash5.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .ld-masked-image svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+
+    @font-face {
+      font-family: 'Aileron-Black';
+      src: url(./fonts/Aileron-Black.otf);
+      src: url(./fonts/Aileron-Regular.otf);
+
+    }
+
+
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6 .h6 {
+      font-family: 'Aileron-Black' !important;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: 'Aileron-Black' !important;
+    }
+
+    ul {
+      font-family: 'Aileron-Regular' !important;
+    }
+
+    .lqd-sticky-placeholder.hide {
+      height: 0px !important;
+    }
+
+    .slider-wrapper {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+
+    .owlimgs li {
+      padding: 0px 127px;
+    }
+
+
+    div#main-header-collapse {
+      width: 100%;
+      height: 61px !important;
+      margin-top: 33px;
+      font-family: 'Aileron-Black' !important;
+    }
+
+    .comparison-slider {}
+
+    .before-wrapper {
+      display: block;
+      overflow: hidden;
+      width: auto;
+      height: 100%;
+      /* position: relative;
+            background: url("http://emphasizestudio.nl/img/dystopia.jpg") no-repeat center center #111111; */
+      background-size: 100% auto;
+    }
+
+    .before-wrapper:before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+
+    }
+
+    /* @media (min-width: 992px){
+        .ld-masked-image {
+            top: 0px;
+            right: -65vw;
+            left: -25vw;
+        }
+          } */
+
+
+    .after-wrapper,
+    .after-image {}
+
+    .after-wrapper {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+
+    .after-image {
+      display: block;
+      width: auto;
+      height: 100%;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+
+      transform: translateX(-50%);
+
+      background: url("http://emphasizestudio.nl/img/utopia.jpg") no-repeat center center #efefef;
+      background-size: 100% auto;
+
+    }
+
+    /* .past, .future{
+            padding: 40px;
+            color:#fff;
+            text-transform:uppercase;
+            font-size:20px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+            font-weight:800;
+          } */
+
+    .past {
+      position: absolute;
+      display: block;
+      bottom: 0px;
+      left: 0px;
+    }
+
+    .you {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      display: block;
+      right: 0px;
+      left: 0px;
+      z-index: 999;
+      background: red;
+    }
+
+    .future {
+      position: absolute;
+      display: block;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .after-wrapper {
+      overflow: initial;
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+
+    .main-nav > li > a {
+
+    color: #24b6b2; 
+ 
+}
+.is-stuck .social-icon a, .is-stuck .header-module .ld-module-trigger, .is-stuck .main-nav > li > a {
+    color: rgb(13 191 201) !important;
+}
+
+    figure.clip-svg.loaded {
+      clip-path: url(#masked-image-1);
+      background-blend-mode: color;
+      background-image: url('file:///D:/Prodigit-work/task/assets/demo/misc/masked-img-1.jpg');
+      background-color: #f7f7f7;
+    }
+
+
+    @media only screen and (min-width: 900px) and (max-width: 1025px) {
+
+      .burosec {
+        opacity: 0.8;
+        background-color: #cb0030;
+        padding: 56px 0px !important;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 717px;
+        right: 94px;
+        z-index: 999;
+      }
+    }
+
+    @media only screen and (min-width: 1100px) and (max-width: 1370px) {
+      .ld-masked-image {
+        top: -7vh;
+        right: -65vw;
+        left: -21vw;
+      }
+
+      .ld-masked-image {
+        top: -7vh;
+        right: -65vw;
+        left: -34vw;
+      }
+
+      .bannertxt {
+        position: absolute;
+        top: 38%;
+        right: 36px;
+        z-index: 99;
+        width: 715px;
+      }
+
+      .bannertxt0 {
+        position: absolute;
+        top: 27%;
+        right: 212px;
+        z-index: 99;
+        width: 530px;
+      }
+      img.onewave {
+    position: absolute;
+    top: 120%;
+    left: 24px;
+    z-index: 9;
+}
+      .smlogo {
+        position: absolute;
+        bottom: 169px;
+        /* left: 0px; */
+        right: 7px;
+      }
+
+      ul#primary-nav li {
+        padding: 0px 0px;
+      }
+
+      .is-stuck .social-icon a,
+      .is-stuck .header-module .ld-module-trigger,
+      .is-stuck .main-nav>li>a {
+        color: rgb(29 178 177) !important;
+      }
+
+      .main-nav>li,
+      .main-nav>li>a {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #24b6b2;
+      }
+
+      img.onewave {
+        position: absolute;
+        left: 10px;
+        z-index: 9;
+      }
+
+    }
+
+    @media only screen and (min-width: 1380px) and (max-width: 1450px) {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 722px;
+        right: 161px;
+        z-index: 999;
+      }
+
+      .henimg {
+        width: 31px;
+      }
+
+      .is-stuck .social-icon a,
+      .is-stuck .header-module .ld-module-trigger,
+      .is-stuck .main-nav>li>a {
+        color: rgb(29 178 177) !important;
+      }
+
+      .main-nav>li,
+      .main-nav>li>a {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #24b6b2;
+      }
+    }
+
+    @media only screen and (min-width: 1460px) and (max-width: 1601px) {
+      .ld-masked-image {
+        top: -7vh !important;
+        right: -65vw !important;
+        left: -21vw !important;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 718px;
+        right: 161px;
+        z-index: 999;
+      }
+
+      .henimg {
+        width: 31px;
+      }
+
+      .is-stuck .social-icon a,
+      .is-stuck .header-module .ld-module-trigger,
+      .is-stuck .main-nav>li>a {
+        color: rgb(29 178 177) !important;
+      }
+
+      .main-nav>li,
+      .main-nav>li>a {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #24b6b2;
+      }
+
+
+    }
+
+    @media only screen and (min-width: 1610px) and (max-width: 1950px) {
+      img.bimg {
+        position: absolute;
+        top: 1032px;
+        right: 227px;
+        z-index: 999;
+      }
+
+      .ld-masked-image {
+        top: 13vh;
+        right: -65vw;
+        left: -12vw;
+        width: 3998px;
+        height: 1080px;
+      }
+
+      .bannertxt {
+        position: absolute;
+        top: 38%;
+        right: 36px;
+        z-index: 99;
+        width: 688px;
+      }
+
+      .bannertxt0 {
+        position: absolute;
+        top: 31%;
+        right: 244px;
+        z-index: 99;
+        width: 471px;
+      }
+
+      img.onewave {
+        position: absolute;
+        left: 258px !important;
+        z-index: 9;
+      }
+
+      img.twowave {
+        position: absolute;
+        right: 254px !important;
+        top: 50%;
+        z-index: 9;
+      }
+
+      .main-nav>li.active>a,
+      .main-nav>li.current-menu-item>a,
+      .main-nav>li>a:hover {
+        color: #0dbfc9;
+      }
+
+      nav>li>a:hover,
+      .is-stuck .ld-module-search-visible-form .input-icon {
+        color: #0dbfc9 !important;
+      }
+
+      .smlogo {
+        position: absolute;
+        bottom: 187px;
+        /* left: 0px; */
+        right: 41px;
+        width: 224px;
+      }
+
+      .inline-YTPlayer {
+        position: relative;
+        max-width: 1920px;
+      }
+
+      .btxt {
+        color: white;
+        font-size: 77px;
+        font-weight: bold;
+      }
+
+      .burosec {
+        background-color: #cb0030;
+        padding: 72px 0px;
+        position: relative;
+      }
+
+      .tworow p {
+        font-size: 20px;
+      }
+
+      .dragimg {
+        position: absolute;
+        top: 76px;
+        right: 80px;
+        width: 90px;
+      }
+
+      img.curve3,
+      .curve2,
+      .curve4 {
+        width: 1920px;
+      }
+
+      .nurotxt {
+        padding: 0px 0px 0px 337px !important;
+      }
+    }
+
+    @media only screen and (min-width: 2000px) and (max-width: 2600px) {
+      .ld-masked-image {
+        top: -14vh;
+        right: -65vw;
+        left: -5vw;
+      }
+
+      .inline-YTPlayer {
+        position: relative;
+        max-width: 2560px;
+      }
+
+      img.bimg {
+        position: absolute;
+        top: 715px;
+        right: 227px;
+        z-index: 999;
+      }
+
+      .zero,
+      .seg2,
+      .seg3,
+      .seg4,
+      .seg5 {
+        display: none;
+      }
+
+      img.curve2 {
+        background-color: #9feed1;
+        width: 2560px;
+      }
+
+      img.curve3 {
+        width: 2560px;
+      }
+
+      .curve4 {
+        width: 2560px;
+      }
+
+      .dragimg {
+        position: absolute;
+        top: 85px;
+        right: 227px;
+        width: 97px;
+      }
+
+      div#YTP_1613547492898 {
+        display: block;
+        position: fixed !important;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        height: 0px;
+      }
+
+      .inline-YTPlayer {
+        position: relative;
+        max-width: 2560px;
+      }
+    }
+
+    .recpone {
+      background-color: #fff6a2;
+      padding: 107px 0px;
+      position: relative;
+
+    }
+
+ 
+ 
+.is-stuck .social-icon a:hover, .is-stuck .main-nav > li > a:hover, .is-stuck .ld-module-search-visible-form .input-icon {
+    color: #0dbfc9 !important;
+}
+  </style>
+
+
+</head>
+
+<body>
+
+  <section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50 slider-wrapper">
+    <header class="main-header main-header-overlay  " data-sticky-header="true">
+
+      <div class="lqd-sticky-placeholder" style="height: 95px;"></div>
+      <div class="mainbar-wrap is-stuck">
+        <div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+        <div class="container-fluid mainbar-container">
+          <div class="mainbar">
+            <div class="row mainbar-row align-items-lg-stretch px-4">
+
+              <div class="col pr-5">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html" rel="home">
+                    <span class="navbar-brand-inner">
+                      <img class="logo-sticky" src="img/logo.png" alt="Ave WordPress Theme">
+                      <img class="mobile-logo-default" src="img/logo.png" alt="Ave HTML Template">
+                      <img class="logo-default" src="img/logo.png" alt="Ave HTML Template">
+                    </span>
+                  </a>
+                  <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse"
+                    data-target="#main-header-collapse" aria-expanded="false"
+                    data-changeclassnames="{ &quot;html&quot;: &quot;mobile-nav-activated overflow-hidden&quot; }">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="bars">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                    </span>
+                  </button>
+                </div><!-- /.navbar-header -->
+              </div><!-- /.col -->
+
+              <div class="col">
+
+                <div class="collapse navbar-collapse" id="main-header-collapse">
+
+                  <ul id="primary-nav"
+                    class="main-nav nav align-items-lg-stretch justify-content-lg-center main-nav-hover-underline-1"
+                    data-submenu-options="{ &quot;toggleType&quot;:&quot;fade&quot;, &quot;handler&quot;:&quot;mouse-in-out&quot; }"
+                    data-localscroll="true">
+
+                    <li class="">
+                      <a href="goodeggs.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">GoodEggs</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="about.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">About Us</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="goodhens.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">GoodHens</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="is-active">
+                      <a href="recipe.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">Recipes</span>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="contact.html">
+                        <span class="link-icon"></span>
+                        <span class="link-txt">
+                          <span class="link-ext"></span>
+                          <span class="txt">Contact</span>
+                        </span>
+                      </a>
+                    </li>
+
+                  </ul><!-- /#primary-nav  -->
+
+                </div><!-- /#main-header-collapse -->
+
+              </div><!-- /.col -->
+
+
+
+            </div><!-- /.mainbar-row -->
+          </div><!-- /.mainbar -->
+        </div><!-- /.mainbar-container -->
+      </div><!-- /.mainbar-wrap -->
+
+    </header>
+    <!-- <div class="past">The past</div>
+    <div class="future">The future</div> -->
+    <div class="lqd-vbg-wrap">
+      <div class="lqd-vbg-inner">
+        <span class="lqd-vbg-loader"></span>
+        <div class="lqd-vbg-video" data-video-bg="true"
+          data-youtube-options='{"videoURL":"https://youtu.be/0BNNjZpMKRI"}'> </div>
+      </div><!-- /.lqd-vbg-inner -->
+    </div><!-- /.lqd-vbg-wrap -->
+
+    <div class="container-fluid">
+      <!-- <h1 class="bannertxt">loraom text</h1> -->
+
+      <!-- <img class="bannertxt1" src="img/text/EGGS.png" alt=""> -->
+
+      <div class="row before-wrapper d-flex flex-wrap align-items-center">
+
+        <div class="lqd-column col-lg-8 ">
+
+          <div class="container">
+            <h1 class="typing"></h1>
+          </div>
+
+        </div><!-- /.col-lg-7 col-md-6 -->
+
+        <div class="lqd-column col-lg-4 lqd-column" data-custom-animations="true"
+        data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+           
+        
+       
+        
+        
+        </div><!-- /.ld-fancy-heading -->
+
+        <div class="row">
+
+          <div class="lqd-column col-sm-6 mb-3 mb-md-0">
+
+
+          </div><!-- /.col-sm-6 -->
+
+          <div class="lqd-column col-sm-6">
+
+            <div class="ld-fancy-heading">
+              <p>
+                <span class="ld-fh-txt">
+                  <strong><span style="color: #fe688b"></span></strong>
+                  <br>
+                  <span style="color: #a7a9b8"></span>
+                </span>
+              </p>
+            </div>
+
+          </div><!-- /.col-sm-6 -->
+
+        </div><!-- /.row -->
+
+      </div><!-- /.col-lg-5 col-md-6 -->
+    </div>
+
+
+
+
+
+    </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+
+
+  <section class="secrep">
+    <div class="row">
+      <div class="col-lg-12 p-0">
+        <div class="waves">
+          <svg class="zero" width="100%" height="130px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#fef6a3" />
+              <stop offset="50%" stop-color="#fef6a3" />
+              <stop offset="100%" stop-color="#fef6a3" />
+            </linearGradient>
+            <path fill="url(#grad1)" d="
+            M0 67
+            C 273,183
+            822,-40
+            1920.00,106 
+            
+            V 359 
+            H 0 
+            V 67
+            Z">
+              <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML" values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+      
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+      
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+      
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z
+            ">
+              </animate>
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio">
+      <img class="rconewave" src="img/wavy design.png"  alt="">
+     
+      <div class="filters">
+
+
+        <div class="ui-group">
+          <div class="button-group js-radio-button-group group-2" data-filter-group="medium">
+            <button class="button" data-filter=".all-media">All Recipes</button><button class="button"
+              data-filter=".articles">breakfast</button><button class="button" data-filter=".video">Lunch</button>
+            <button class="button" data-filter=".graphics">Dinner</button>
+            <!-- <button class="button"
+              data-filter=".audio">Audio</button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="all-types all-media content licensed articles">
+          <div class="c-container">
+
+            <a client="BREAKFAST"  href="inner-recipe.html">
+              <h3 class="imgphtxt">Cheese Omelette</h3>
+              <img alt="" src="img/recipes/RECIPE PAGE IMAGE1.png"
+                title="A licensed news story on vaping related illness in Ontario, published by CityNews.">
+            </a>
+          </div>
+        </div>
+
+        <div class="all-types all-media content custom articles">
+          <div class="c-container">
+            <a client="BREAKFAST"  href="frid-egg.html">
+              <h3 class="imgphtxt">Fried Egg Banh Mi</h3>
+              <img alt="" src="img/recipes/RECIPE PAGE IMAGE2.png"
+                title="Custom assignment photograph from The Canadian Cancer Society's 'Cops for Cancer' event.">
+            </a>
+          </div>
+        </div>
+
+        <div class="all-types all-media content custom video audio">
+          <div class="c-container">
+            <a client="LUNCH" href="Parsi-Potatoes.html">
+              <h3 class="imgphtxt">Parsi Potatoes and Egg</h3>
+              <img alt="" src="img/recipes/RECIPE PAGE IMAGE3.png"
+                title="Custom assignment photograph from The Canadian Cancer Society's 'Cops for Cancer' event.">
+            </a>
+          </div>
+        </div>
+
+        <div class="all-types all-media content custom video audio">
+          <div class="c-container">
+            <a client="LUNCH" data-featherlight="#tot-graphic" href="Curried-Egg.html">
+              <h3 class="imgphtxt">Curried Egg Salad</h3><img alt="" src="img/recipes/RECIPE PAGE IMAGE4.png"
+                title="Tale of the Tape | An animated graphic showcasing comparative stats between rival teams.">
+            </a>
+
+
+          </div>
+        </div>
+
+        <div class="all-types all-media content custom graphics ">
+          <div class="c-container">
+            <a client="DINNER" client="Journalists for Human Rights" data-featherlight="#video2" href="Egg-curry-tomato.html">
+              <h3 class="imgphtxt">Egg curry with tomato and Cilantros</h3><img alt=""
+                src="img/recipes/RECIPE PAGE IMAGE5.png"
+                title="A custom video produced for Journalists for Human Rights with custom audio in the form of narration tracking and sound design.">
+          
+            </a>
+          </div>
+        </div>
+
+        <div class="all-types all-media content custom graphics">
+          <div class="c-container">
+            <a client="DINNER" data-featherlight="#grade-graphic" href="Stir-Fried-Black.html">
+              <h3 class="imgphtxt">Stir-Fried Black Rice with Fried Egg and Roasted Broccoli</h3>
+              <img alt="" src="img/recipes/RECIPE PAGE IMAGE6.png"
+                title="An animated infographic produced as part of a custom graphics package for Aquisio.">
+            </a>
+          
+          </div>
+        </div>
+        <!--   
+        <div class="all-types all-media content custom articles">
+          <div class="c-container">
+            <a client="Goeasy, Easy Financial" data-featherlight="iframe"
+              href="https://drive.google.com/file/d/1UZETmaOZFDJoRiP0XlExlU5Sz9gGcDgL/preview"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/easy1.png"
+                title="A custom text project written as part of a series for Goeasy Academy."></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content licensed photos">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="image"
+              href="https://www.thecanadianpress.com/app/uploads/2019/09/66623514_159759471866107_4819040900418195721_n.jpg"><img
+                alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/66623514_159759471866107_4819040900418195721_n.jpg"
+                title="Winner Bianca Andreescu of Canada hugs the winner's trophy after Serena Williams of the USA had to retire from the final of the Rogers Cup tennis tournament in Toronto on Sunday, Aug. 11, 2019. THE CANADIAN PRESS/Frank Gunn"></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom video">
+          <div class="c-container">
+            <a client="BMO Financial Group" data-featherlight="#video3" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/10/v3.png"
+                title="A custom video project documenting a corporate community event | BMO - Raptors Camp."><video
+                controls="" id="video3">
+                <source
+                  src="https://player.vimeo.com/external/240833731.hd.mp4?s=044d89b73882ee37a6b6277411c496dcdbf0a836&profile_id=174"
+                  type="video/mp4">Your browser does not support the <code>video</code> element.
+              </video></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content licensed graphics">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="iframe"
+              href="https://thecanadianpress-a.akamaihd.net/graphics/2015/pan-am-btn/index.html"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2017/05/pan-am-graphic-tinified.jpg"
+                title="An interactive and animated graphic highlighting By the Numbers data from the Pan Am Games."></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content licensed audio">
+          <div class="c-container">
+            <a client="The Canadian Press" data-featherlight="#audio1" href="#"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/lic-audio.jpg"
+                title="A licensed audio clip from a news recording of Prime Minister Justin Trudeau."> <audio controls=""
+                id="audio1" src="https://www.thecanadianpress.com/app/uploads/2019/09/CP201909200126-1.mp3">Your browser
+                does not support the <code>audio</code> element.</audio></a>
+          </div>
+        </div>
+  
+        <div class="all-types all-media content custom articles">
+          <div class="c-container">
+            <a client="Allstate" data-featherlight="iframe"
+              href="https://drive.google.com/file/d/1BFTWurN47uvZpmba1mW6s0e6slt56hHv/preview"><img alt=""
+                src="https://www.thecanadianpress.com/app/uploads/2019/09/allstate.jpg"
+                title="A custom text project written as part of a series for an Allstate branded blog."></a>
+          </div>
+        </div> -->
+
+
+
+
+
+      </div>
+      
+    </div>
+ <div class="container-fluid">
+  <div class="row rcpbmcurve">
+    <div class="col-lg-12">
+      <img class="bmcurve" src="img/wavy design.png" alt="">
+    </div>
+  </div>
+ </div>
+  </section>
+
+
+  <footer class="  text-lg-start">
+    <div class="container-fluid">
+      <div class="row ftpadd">
+        <div class="col-lg-12 text-center">
+          <h4 class="folotxt">FOllOW US</h4>
+          <ul class="social">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ <div class="container-fluid">
+   <div class="row pdfoot">
+    <div class="col-lg-1"></div>
+   
+    <div class="col-lg-4 footerbgshadow">
+     <div class="row">
+       <div class="col-lg-5 col-6">
+         <ul>
+           <li class="line"></li>
+           <li> <a href="about.html">About Us</a>  </li>
+           <li ><a href="faq.html">FAQ</a> </li>
+           <li><a href="contact.html">Contact Us</a> </li>
+           
+         </ul>
+       </div>
+       <div class="col-lg-5 col-6">
+         <ul>
+           <li class="line2"></li>
+           <li><a href="index.html"> Home</a></li>
+           <li><a href="goodeggs.html">Good Eggs</a> </li>
+           <li><a href="goodhens.html">Good Hens</a> </li>
+       
+         </ul>
+       </div>
+       <div class="col-lg-2">
+         <ul>
+           <li class="line2"></li>
+        
+         </ul>
+       </div>
+     </div>
+  
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1 bdron"></div>
+    <div class="col-lg-4">
+      <h3 class="conttxt">Contact</h3>
+      <p class="ponmb">490-335-184 <br>
+      Hours available: 9:00am - 4:00pm IST <br>
+      contact@goodeggs.com
+    </p>
+    </div>
+    <div class="col-lg-1">
+      <img src="img/logo.png" class="smlogo" width="130px" alt="">
+    </div>
+   </div>
+   <div class="row">
+     <div class="col-lg-3 col-6"></div>
+     <div class="col-lg-6">
+       <div class="row copytxt">
+         <div class="col-lg-4 ">
+          
+         </div>
+         <div class="col-lg-4 ">
+           <h6 class="">
+        Copyright&#169;goodeggs.in
+           </h6>
+         
+         </div>
+         <div class="col-lg-4 ">
+           <h6 class="text-white">
+          
+           </h6>
+          
+         </div>
+       </div>
+     </div>
+     <div class="col-lg-3 col-6"></div>
+   </div>
+ </div>
+
+     
+  </footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</body>
+
+
+
+<script src="./assets/vendors/jquery.min.js"></script>
+<script src="./assets/js/theme-vendors.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+<script src="typeffect/lib/typed.js" type="text/javascript"></script>
+<script src="typeffect/assets/demos.js"></script><!-- Facebook Pixel Code -->
+
+<script>
+  // Filter based on two factors
+  // Uses URI hash as trigger allowing direct links
+  // Losely based on: http://isotope.metafizzy.co/filtering.html#url-hash and a Lynda/LinkedinLearning series, lol
+
+  jQuery(document).ready(function ($) {
+    var $container = $(".grid");
+
+    // Filter isotope
+    $container.isotope({
+      // options
+      itemSelector: ".content",
+      layoutMode: "masonry",
+      // fade in from bottom
+      visibleStyle: {
+        opacity: 1,
+        transform: "translateY(0)"
+      },
+      hiddenStyle: {
+        opacity: 0,
+        transform: "translateY(100px)"
+      }
+    });
+
+    // layout Isotope again after all images have loaded
+    $container.imagesLoaded(function () {
+      $container.isotope("layout");
+    });
+
+    // Set up filters array with default values
+    var filters = {};
+
+    // When a button is pressed, run filterSelect
+    $(".button-group button").on("click", filterSelect);
+
+    // Set the URI hash to the current selected filters
+    function filterSelect() {
+      // Current hash value
+      var hashFilter = getHashFilter();
+
+      // Set filters to current values (important for first run)
+      filters["type"] = hashFilter["type"];
+      filters["medium"] = hashFilter["medium"];
+
+      // data-filter attribute of clicked button
+      var currentFilter = $(this).attr("data-filter");
+      // Navigation group (subject or author) as object
+      var $navGroup = $(this).parents(".button-group");
+      // data-filter-group key for the current nav group
+      var filterGroup = $navGroup.attr("data-filter-group");
+
+      // If the current data-filter attribute matches the current filter,
+      if (
+        currentFilter == hashFilter["type"] ||
+        currentFilter == hashFilter["medium"]
+      ) {
+        // Reset group filter as the user has unselected the button
+        filters[filterGroup] = "";
+      } else {
+        // Set data-filter of current button as value with filterGroup as key
+        filters[filterGroup] = $(this).attr("data-filter");
+      }
+
+      // Create new hash
+      var newHash =
+        "type=" +
+        encodeURIComponent(filters["type"]) +
+        "&medium=" +
+        encodeURIComponent(filters["medium"]);
+
+      // Apply the new hash to the URI, triggering onHashchange()
+      location.hash = newHash;
+    } // filterSelect
+
+    function onHashChange() {
+      // Current hash value
+      var hashFilter = getHashFilter();
+      // Concatenate subject and author for Isotope filtering
+      var theFilter = hashFilter["type"] + hashFilter["medium"];
+
+      if (hashFilter) {
+        // Repaint Isotope container with current filters and sorts
+        $container.isotope({
+          filter: decodeURIComponent(theFilter)
+        });
+
+        // Toggle checked status of filter buttons
+        $(".button-group")
+          .find(".is-checked")
+          .removeClass("is-checked");
+        $(".button-group")
+          .find(
+            "[data-filter='" +
+            hashFilter["type"] +
+            "'],[data-filter='" +
+            hashFilter["medium"] +
+            "']"
+          )
+          .addClass("is-checked");
+      }
+    } // onHashchange
+
+    function getHashFilter() {
+      // Get filters (matches)
+      var type = location.hash.match(/type=([^&]+)/i);
+      var medium = location.hash.match(/medium=([^&]+)/i);
+
+      // Set up a hashFilter array
+      var hashFilter = {};
+      // Populate array with matches using ternary logic
+      hashFilter["type"] = type ? type[1] : ".all-types";
+      hashFilter["medium"] = medium ? medium[1] : ".all-media";
+
+      return hashFilter;
+    } // getHashFilter
+
+    // When the hash changes, run onHashchange
+    window.onhashchange = onHashChange;
+
+    // When the page loads for the first time, run onHashChange
+    onHashChange();
+  });
+
+  //caption display code
+  $.featherlight.prototype.afterContent = function () {
+    var caption = this.$currentTarget.find("img").attr("title");
+    this.$instance.find(".d-caption").remove();
+    $('<div class="d-caption">')
+      .text(caption)
+      .appendTo(this.$instance.find(".featherlight-content"));
+  };
+
+</script>
+<script>
+  let typed = new Typed(".typing", {
+    strings:["We don’t care what came first- the chicken or the egg, as we love & eat both!!"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+</script>
+</html>

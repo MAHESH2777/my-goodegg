@@ -11,7 +11,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
@@ -22,7 +22,6 @@
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css">
 
-
     <!-- background video links -->
 
     <link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
@@ -30,7 +29,9 @@
 
     <link rel="stylesheet" href="assets/css/theme.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-
+   
+       
+    
     <!-- gallary links start -->
 
     <style>
@@ -75,7 +76,90 @@
          
 
         }
+  
+.fqans {
+    color: #4e4e4e;
+    font-size: 17px;
+}
+.nav-linkfq {
+    padding: .2rem 1rem;
+    background-color: #0dbfc9 !important;
+    border-radius: 24px;
+    color: white;
+    padding: 13px 33px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.nav-linkfq:hover {
+    padding: .2rem 1rem;
+    background-color: #ffffff !important;
+    border-radius: 24px;
+    color: rgb(0, 0, 0);
+    padding: 13px 33px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.nav-linkfq:active {
+    padding: .2rem 1rem;
+    background-color: #ffffff !important;
+    border-radius: 24px;
+    color: rgb(0, 0, 0);
+    padding: 13px 33px;
+    font-weight: 600;
+    font-size: 19px;
+}
 
+
+@media only screen and (min-width: 200px) and (max-width: 329px) {
+
+
+  .nav-linkfq {
+    padding: .2rem 1rem;
+    background-color: #0dbfc9 !important;
+    border-radius: 24px;
+    color: white;
+    padding: 9px 23px;
+    font-size: 15px;
+    margin: 4px;
+}
+li.nav-item {
+    padding: 0px 22px;
+    display: contents;
+    /* margin: 10px; */
+}
+.sideheadfq {
+    color: #00a4aa;
+    font-weight: 700;
+    padding-top: 50px;
+    margin: 0px;
+    font-size: 27px;
+}
+}
+@media only screen and (min-width: 330px) and (max-width: 600px) {
+
+
+.nav-linkfq {
+  padding: .2rem 1rem;
+  background-color: #0dbfc9 !important;
+  border-radius: 24px;
+  color: white;
+  padding: 9px 23px;
+  font-size: 15px;
+  margin: 9px;
+}
+li.nav-item {
+  padding: 0px 22px;
+  display: contents;
+  /* margin: 10px; */
+}
+.sideheadfq {
+  color: #00a4aa;
+  font-weight: 700;
+  padding-top: 50px;
+  margin: 0px;
+  font-size: 27px;
+}
+}
         .main-nav>li>a {
             -webkit-box-flex: 1;
             -ms-flex: 1 auto;
@@ -141,7 +225,83 @@
         }
 
     
+
+
+
+ .Accordion__tabs {
+
+	 list-style: none;
+}
+ .Accordion__tab {
+	 width: 100%;
+}
+ .Accordion__tab__headline {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+
+	 transition: 0.2s ease all;
+
+	 cursor: pointer;
+	 font-weight: 400;
+}
+
+ .Accordion__tab__headline > h4 {
+	 user-select: none;
+	 text-transform: uppercase;
+	 margin: 0;
+}
+.wrapper p {
+    color: #525252;
+}
+ .Accordion__tab__headline .icon {
+	 display: inline-block;
+	 width: 22px;
+	 height: 22px;
+	 border: 1px solid;
+	 border-radius: 22px;
+	 position: relative;
+}
+ .Accordion__tab__headline .icon::before {
+	 display: block;
+	 position: absolute;
+	 content: "";
+	 top: 10px;
+	 left: 6px;
+	 width: 10px;
+	 height: 2px;
+	 background: currentColor;
+}
+ .Accordion__tab__headline .icon::after {
+	 display: block;
+	 position: absolute;
+	 content: "";
+	 top: 6px;
+	 left: 10px;
+	 width: 2px;
+	 height: 10px;
+	 background: currentColor;
+	 transition: 0.2s ease all;
+}
+ .Accordion__tab__content {
+	 overflow: hidden;
+	 padding: 0px 15px;
+	 box-sizing: border-box;
+	 height: 100%;
+	 max-height: 0;
+	 transition: 0.4s ease all;
+}
+ .Accordion__tab--open .Accordion__tab__headline .icon::after {
+	 transform: scaleY(0);
+}
+@media only screen and (min-width: 200px) and (max-width: 600px){
+img.indcurve1 {
+   display: none;
+}
+
+}
     </style>
+  
 </head>
 
 <body>
@@ -213,7 +373,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li class="is-active">
+                                        <li class="">
                                             <a href="recipe.html">
                                                 <span class="link-icon"></span>
                                                 <span class="link-txt">
@@ -248,196 +408,211 @@
 
         </header>
         <div class="img-content">
-            <img src="img/recipe inner page banner image.jpg" alt="">
+            <img src="img/faq/FAQ PAGE BANNER IMAGE.png" alt="">
         </div>
         <div class="overlay"></div>
     </div>
     <div class="banner-content">
-        <h1 class="bnrctxt">Curried Egg Salad</h1>
+        <h1 class="bnrctxtfq">LET'S <br> HAVE THOSE <br> QUESTIONS</h1>
 
     </div>
-   <section>
-       <div class="container-fluid faqone">
-           <div class="row">
+   <section class="Accordion">
+    <img src="img/wavy design.png" class="indcurve1" alt="">
+       <div class="container-fluid faqone ">
+         <div class="row">
+           <div class="col-lg-1"></div>
+           <div class="col-lg-9">
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-linkfq" href="#section1">OUR HENS</a></li>
+              <li class="nav-item"><a class="nav-linkfq" href="#section2">OUR EGGS</a></li>
+              <li class="nav-item"><a class="nav-linkfq" href="#section3">OUR FARMS</a></li>
+              <li class="nav-item"><a class="nav-linkfq" href="#section4">GENERAL</a></li>
+            </ul>
+           </div>
+         </div>
+         <div class="row" id="section1">
+           <div class="col-lg-1"></div>
+           <div class="col-lg-5">
+            <div class="row">
+              <div class="col-md-6 benstxt">
+               <h1 class="sideheadfq">
+               OUR HENS
+              </h1>
+              <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+           </div>
+         </div>
+           <div class="row Accordion__tabs" >
                <div class="col-lg-1"></div>
                <div class="col-lg-10">
-                <div class="row">
-                    <div class="col-md-6 benstxt">
-                     <h2 class="text-white sidehead">
-                       <span class="betxt">BENE</span>FITS
-                    </h2>
-                    <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
+              
+                  <div class="row" >
+                    <div class="col-lg-2   col-2 text-center align-self-center">
+                      <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                     </div>
-                    <div class="col-md-6"></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-2   col-2 text-center">
-                      <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
-                    </div>
-                    <div class="col-lg-10  align-self-center col-10 ">
-                      <p class="fqptxt">
-                        Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                    <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                      <p class="fqptxt Accordion__tab__headline">
+                        1) What do our hens feed on?
                       </p>
-                     
+                      <div class="Accordion__tab__content">
+                        <div class="wrapper">
+                          <p> Hens in our farm feed on grains, fresh greens, herbs & others formulated in house to achieve a balanced healthy diet. Our feed is 100% natural and no animal by product is fed to our birds. Feed is free from antibiotics, hormones, toxic & synthetic supplements. 
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row" >
+                    <div class="col-lg-2   col-2 text-center align-self-center">
+                      <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+                    </div>
+                    <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                      <p class="fqptxt Accordion__tab__headline">
+                        2) Do we use any forced molting methodologies on the hens?
+                      </p>
+                      <div class="Accordion__tab__content">
+                        <div class="wrapper">
+                          <p>  There’s no forced molting allowed on our Good eggs farms. Plain and simple! 
+                          </p>
+                        </div>
+                      </div>
+                    
                     </div>
                   </div>
                   <hr>
                   <div class="row">
-                    <div class="col-lg-2   col-2 text-center">
-                      <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
+                    <div class="col-lg-2   col-2 text-center align-self-center">
+                      <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                     </div>
-                    <div class="col-lg-10  align-self-center col-10 ">
-                      <p class="fqptxt">
-                        Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                    <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                      <p class="fqptxt Accordion__tab__headline">
+                        3) How do we keep our hens happy?
                       </p>
+               
+                      <div class="Accordion__tab__content">
+                        <div class="wrapper">
+                          <p>   Providing the poultry birds with sufficient feed, water, shelter, health care and other facilities are very important for keeping them happy and productive. And all these activities right from producing the chicks and raising them carefully is called as ‘sustainable poultry farm management,’ which we follow!
+                          </p>
+                        </div>
+                      </div>
                      
                     </div>
                   </div>
                   <hr>
-                  <div class="row">
-                    <div class="col-lg-2   col-2 text-center">
-                      <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
+                  <div class="row" id="section2">
+                    <div class="col-lg-2   col-2 text-center align-self-center">
+                      <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                     </div>
-                    <div class="col-lg-10  align-self-center col-10 ">
-                      <p class="fqptxt">
-                        Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                    <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                      <p class="fqptxt Accordion__tab__headline">
+                        4) Do we give Estrogen and other hormones to the chicken for egg production?
                       </p>
                      
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-lg-2   col-2 text-center">
-                      <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
-                    </div>
-                    <div class="col-lg-10  align-self-center col-10 ">
-                      <p class="fqptxt">
-                        Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
-                      </p>
+                      <div class="Accordion__tab__content">
+                        <div class="wrapper">
+                          <p>   Never. We love our hens and value them as much as we respect our customers!
+                          </p>
+                        </div>
+                      </div>
                      
                     </div>
                   </div>
                </div>
                <div class="col-lg-1"></div>
            </div>
-           <div class="row">
+           <img class="onewave" src="img/wavy design.png" alt="">
+           <div class="row" >
             <div class="col-lg-1"></div>
-            <div class="col-lg-10">
+            <div class="col-lg-5">
              <div class="row">
-                 <div class="col-md-6 benstxt">
-                  <h2 class="text-white sidehead">
-                    <span class="betxt">BENE</span>FITS
-                 </h2>
-                 <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
-                 </div>
-                 <div class="col-md-6"></div>
+               <div class="col-md-6 benstxt">
+                <h1 class="sideheadfq">
+                 OUR EGGS
+               </h1>
+               <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
                </div>
-               <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
-                 </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
-                   </p>
-                  
-                 </div>
-               </div>
-               <hr>
-               <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
-                 </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
-                   </p>
-                  
-                 </div>
-               </div>
-               <hr>
-               <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
-                 </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
-                   </p>
-                  
-                 </div>
-               </div>
-               <hr>
-               <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
-                 </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
-                   </p>
-                  
-                 </div>
-               </div>
+               <div class="col-md-4"></div>
+             </div>
             </div>
-            <div class="col-lg-1"></div>
-        </div>
-        <div class="row">
+          </div>
+           <div class="row" >
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
-             <div class="row">
-                 <div class="col-md-6 benstxt">
-                  <h2 class="text-white sidehead">
-                    <span class="betxt">BENE</span>FITS
-                 </h2>
-                 <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
-                 </div>
-                 <div class="col-md-6"></div>
-               </div>
+           
                <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                  </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    1) What do hormone free and antibiotic free eggs mean?
                    </p>
+                
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>   No hormones are used to advance or increase the egg production & weight of the bird. While anti-biotic free means birds’ diet is free from non therapeutic anti-biotics.
+                      </p>
+                    </div>
+                  </div>
                   
                  </div>
                </div>
                <hr>
                <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                  </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    2) How should I store eggs to keep them fresh?
                    </p>
-                  
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>     Keep them refrigerated and only take them out about 30 minutes before you use them. Eggs can absorb flavors and odors so keep them in their cartons, pointed end down. And avoid washing them until they are ready to be used.
+                      </p>
+                    </div>
+                  </div>
+                
                  </div>
                </div>
                <hr>
                <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                  </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    3) How are our yolks Amber colored?
                    </p>
                   
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>      Bright orange yolk eggs have a richer-tasting quality. The color of the yolk is all-natural and has a rich, creamy taste and are Carotenoid enriched.
+                      </p>
+                    </div>
+                  </div>
                  </div>
                </div>
                <hr>
-               <div class="row">
-                 <div class="col-lg-2   col-2 text-center">
-                   <img src="img/goodeggs/point icon.png" class="img-fluid" width="70px" alt="">
+               <div class="row" id="section3">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
                  </div>
-                 <div class="col-lg-10  align-self-center col-10 ">
-                   <p class="fqptxt">
-                     Its main role is to act as an antioxidant, scavenging loose electrons—so-called “free radicals”—that can damage cells.
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    4) Why does egg shell color vary and does egg quality vary with the color of the shell
                    </p>
+                 
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>  Colour changes in egg shell are due to the pigments called porphyrins being deposited while the eggs are in the process of formation. The process of colour change holds relevance to the breed of a bird which means colour change is natural. Additionally, shell colour has nothing to do with egg quality, flavor, nutritive value, or cooking characteristics.
+                      </p>
+                    </div>
+                  </div>
                   
                  </div>
                </div>
@@ -446,14 +621,203 @@
         </div>
        </div>
    </section>
+   <img class="twowave" src="img/wavy design.png" alt="">
    <section>
-    <div class="container-fluid">
+    <div class="container-fluid faqtwo">
+      <div class="row" >
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+         <div class="row">
+           <div class="col-md-6 benstxt">
+            <h1 class="sideheadfq">
+              OUR FARMS
+           </h1>
+           <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
+           </div>
+           <div class="col-md-4"></div>
+         </div>
+        </div>
+      </div>
         <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-11"></div>
+            <div class="col-lg-10">
+           
+               <div class="row">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+                 </div>
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    1) Do we offer farm tours?
+                   </p>
+                
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>   No. We can’t risk the health of the hens by getting them in contact with anyone who might have had droppings of migratory birds accidentally on them or on their dresses and belongings.
+                      </p>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+               <hr>
+               <div class="row">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+                 </div>
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    2) How often do we inspect our farms?
+                   </p>
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>       The sheds are totally temperature controlled and are run by least human interaction possible to reduce human error. The feed mill is tested and checked multiple times a day. Sensors handle the feed and water control mechanism. 
+                      </p>
+                    </div>
+                  </div>
+                 
+                 </div>
+               </div>
+               <hr>
+               <div class="row">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+                 </div>
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    3) What do we do with the manure?
+                   </p>
+    
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p>The manure in our farms is never allowed to pile up. It is collected and pumped out of the sheds and in turn is sent to the bio gas plant to utilize it in the form of energy in turn.
+                      </p>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+               <hr>
+               <div class="row" id="section4">
+                 <div class="col-lg-2   col-2 text-center align-self-center">
+                   <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+                 </div>
+                 <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                   <p class="fqptxt Accordion__tab__headline">
+                    4) Do we have multiple farms?
+                   </p>
+                   
+                   <div class="Accordion__tab__content">
+                    <div class="wrapper">
+                      <p> We have farms in multiple locations around Hyderabad, each one carefully chosen and planned based on optimal locations, environmental conditions and qualifications of the farmers.
+                      </p>
+                    </div>
+                  </div>
+                  
+                 </div>
+               </div>
+            </div>
+            <div class="col-lg-1"></div>
         </div>
+        <div class="row" >
+         <div class="col-lg-1"></div>
+         <div class="col-lg-5">
+          <div class="row">
+            <div class="col-md-6 benstxt">
+             <h1 class="sideheadfq">
+               GENERAL
+            </h1>
+            <img src="img/goodeggs/wavy line1.png" class="snkwave" alt="">
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+         </div>
+       </div>
+        <div class="row pb-4">
+         <div class="col-lg-1"></div>
+         <div class="col-lg-10">
+        
+            <div class="row">
+              <div class="col-lg-2   col-2 text-center align-self-center">
+                <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+              </div>
+              <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                <p class="fqptxt Accordion__tab__headline">
+                  1) Why Good Eggs?
+                </p>
+               
+                <div class="Accordion__tab__content">
+                  <div class="wrapper">
+                    <p>  No hormones are used to advance or increase the egg production & weight of the bird. While anti-biotic free means birds’ diet is free from non therapeutic anti-biotics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <hr>
+            <div class="row">
+              <div class="col-lg-2   col-2 text-center align-self-center">
+                <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+              </div>
+              <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                <p class="fqptxt Accordion__tab__headline">
+                  2) What are our specialties?
+                </p>
+                <div class="Accordion__tab__content">
+                  <div class="wrapper">
+                    <ul class="fqans">
+                      <li>Uncompromised quality standards in choosing only the ideal eggs</li>
+                      <li>Authentic packaging techniques keep eggs free from microbes</li>
+                      <li>Stainless & odorless eggs with triple quality check procedure</li>
+                    </ul>
+                  </div>
+                </div>
+                 
+               
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-2   col-2 text-center align-self-center">
+                <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+              </div>
+              <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                <p class="fqptxt Accordion__tab__headline">
+                  3) Are we certified?
+                </p>
+                
+                <div class="Accordion__tab__content">
+                  <div class="wrapper">
+                    <p>      We are the only farm that has the prestigious Bureau Veritas certification in Telangana. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-lg-2   col-2 text-center align-self-center">
+                <img src="img/faq/omlette.png" class="img-fluid" width="70px" alt="">
+              </div>
+              <div class="col-lg-10  align-self-center col-10 Accordion__tab " onclick="toggleAccordion(this)">
+                <p class="fqptxt Accordion__tab__headline">
+                  4) Why do our eggs cost more?
+                </p>
+               
+                <div class="Accordion__tab__content">
+                  <div class="wrapper">
+                    <p>   Our hens produce less number of eggs per year when compared to commercial breeds as we don’t force them with unnecessary chemicals. We feed them more when compared to commercial breeds. A lot of effort both in financial & labor, goes to maintain our hens in the sensor controlled sheds. It’s evident on our strong, upright amber yolk!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="col-lg-1"></div>
+     </div>
     </div>
+    
 </section>
+
     <footer class="  text-lg-start">
         <div class="container-fluid">
             <div class="row ftpadd">
@@ -524,7 +888,7 @@
                         </div>
                         <div class="col-lg-4 ">
                             <h6 class="text-white">
-                                Copyright&#169;goodeggs.com
+                                Copyright&#169;goodeggs.in
                             </h6>
 
                         </div>
@@ -558,10 +922,33 @@
 
 </body>
 
+<script>
+var elementOld = null;
+var openClass = "Accordion__tab--open";
 
+function toggleAccordion(element) {
+    content = element.querySelector(".Accordion__tab__content");
+
+    if(elementOld != null){
+        elementOld.classList.remove(openClass);
+        contentOld = elementOld.querySelector(".Accordion__tab__content");
+        contentOld.style.maxHeight = "0px";
+    }
+
+    if(elementOld !== element){
+        element.classList.add(openClass);
+        content.style.maxHeight = content.scrollHeight + "px";
+        elementOld = element;
+    }else{
+        elementOld = null;
+    }
+}
+  
+  </script>
 
 <script src="./assets/vendors/jquery.min.js"></script>
 <script src="./assets/js/theme-vendors.js"></script>
 <script src="./assets/js/theme.min.js"></script>
+
 
 </html>
